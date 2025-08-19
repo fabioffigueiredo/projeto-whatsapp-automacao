@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  web:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    command: bash -lc "pip install -r requirements.txt && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DB_ENGINE=sqlite
+      - SECRET_KEY=${SECRET_KEY:-dev}
+      - DEBUG=True
+    ports:
+      - "8000:8000"
+  n8n:
+    image: n8nio/n8n:latest
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=admin
+    ports:
+      - "5678:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+volumes:
+  n8n_data:
