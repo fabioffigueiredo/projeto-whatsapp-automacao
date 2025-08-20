@@ -1,0 +1,30 @@
+# Django Framework
+Django==5.1
+djangorestframework==3.15
+
+# Database
+psycopg2-binary==2.9.7
+
+# HTTP Requests
+requests==2.32.3
+
+# Environment Variables
+python-dotenv==1.0.1
+python-decouple==3.8
+
+# CORS Headers
+django-cors-headers==4.3.1
+
+# Web Scraping (fallback for FX rates)
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Development
+django-extensions==3.2.3
+
+# Production
+gunicorn==23.0
+whitenoise==6.7
+
+# Monitoring
+sentry-sdk==2.17.0

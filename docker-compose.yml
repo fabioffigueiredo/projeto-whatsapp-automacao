@@ -1,26 +1,79 @@
 version: '3.9'
+
 services:
-  web:
-    image: python:3.11-slim
-    working_dir: /app
+  # Django Backend
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: whatsapp_backend
+    working_dir: /app/backend
     volumes:
-      - ./backend:/app
-    command: bash -lc "pip install -r requirements.txt && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+      - ./backend:/app/backend
+      - ./requirements.txt:/app/requirements.txt
+    command: >
+      bash -c "pip install -r /app/requirements.txt &&
+               python manage.py migrate &&
+               python manage.py runserver 0.0.0.0:8000"
     environment:
-      - DB_ENGINE=sqlite
-      - SECRET_KEY=${SECRET_KEY:-dev}
       - DEBUG=True
+      - SECRET_KEY=${SECRET_KEY:-dev-secret-key-change-in-production}
+      - DATABASE_URL=sqlite:///db.sqlite3
+      - WHATSAPP_ACCESS_TOKEN=${WHATSAPP_ACCESS_TOKEN:-}
+      - WHATSAPP_PHONE_NUMBER_ID=${WHATSAPP_PHONE_NUMBER_ID:-}
+      - WHATSAPP_VERIFY_TOKEN=${WHATSAPP_VERIFY_TOKEN:-}
+      - PAYMENT_WEBHOOK_SECRET=${PAYMENT_WEBHOOK_SECRET:-}
+      - FIXER_API_KEY=${FIXER_API_KEY:-}
+      - XPS247_API_URL=${XPS247_API_URL:-}
+      - XPS247_API_KEY=${XPS247_API_KEY:-}
     ports:
       - "8000:8000"
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # PostgreSQL Database (for production-like environment)
+  db:
+    image: postgres:15-alpine
+    container_name: whatsapp_db
+    environment:
+      - POSTGRES_DB=whatsapp_automation
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  # Redis (for caching and session storage)
+  redis:
+    image: redis:7-alpine
+    container_name: whatsapp_redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  # n8n Workflow Automation (optional)
   n8n:
     image: n8nio/n8n:latest
+    container_name: whatsapp_n8n
     environment:
       - N8N_BASIC_AUTH_ACTIVE=true
-      - N8N_BASIC_AUTH_USER=admin
-      - N8N_BASIC_AUTH_PASSWORD=admin
+      - N8N_BASIC_AUTH_USER=${N8N_USER:-admin}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD:-admin}
+      - WEBHOOK_URL=http://localhost:5678
     ports:
       - "5678:5678"
     volumes:
       - n8n_data:/home/node/.n8n
+      - ./n8n:/home/node/.n8n/workflows
+    restart: unless-stopped
+
 volumes:
+  postgres_data:
   n8n_data:
+
+networks:
+  default:
+    name: whatsapp_network

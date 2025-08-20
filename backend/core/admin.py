@@ -43,3 +43,4 @@ class OperationAdmin(admin.ModelAdmin):
     list_filter = ("status",)
     search_fields = ("client__name","payment_provider_ref")
     date_hierarchy = "updated_at"
+

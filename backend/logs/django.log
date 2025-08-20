@@ -1,0 +1,580 @@
+WARNING 2025-08-20 16:09:14,910 whatsapp 37816 40152 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 17:00:52,585 whatsapp 19128 28540 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 17:01:12,262 whatsapp 18836 40660 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 17:01:18,631 whatsapp 21860 37660 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 17:01:24,782 whatsapp 39628 14984 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 17:01:30,369 whatsapp 424 40452 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 17:01:36,584 autoreload 4600 27732 Watching for file changes with StatReloader
+WARNING 2025-08-20 17:01:37,000 whatsapp 4600 27732 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 17:01:42,492 log 4600 39296 Not Found: /
+WARNING 2025-08-20 17:01:42,493 basehttp 4600 39296 "GET /?ide_webview_request_time=1755720102440 HTTP/1.1" 404 2343
+WARNING 2025-08-20 17:01:42,581 log 4600 39296 Not Found: /@vite/client
+WARNING 2025-08-20 17:01:42,581 basehttp 4600 39296 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 17:01:57,766 whatsapp 4600 16840 WhatsApp webhook verified successfully
+INFO 2025-08-20 17:01:57,766 basehttp 4600 16840 "GET /api/webhook/whatsapp/?hub.mode=subscribe&hub.challenge=test123&hub.verify_token=whatsapp_verify_token_123 HTTP/1.1" 200 7
+WARNING 2025-08-20 18:08:48,815 whatsapp 10 129952001350528 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:08:50,407 autoreload 11 124011989281664 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:08:50,599 whatsapp 11 124011989281664 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:08:51,967 basehttp 11 124011904235200 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:09:07,834 log 11 124011904235200 Not Found: /
+WARNING 2025-08-20 18:09:07,835 basehttp 11 124011904235200 "GET /?ide_webview_request_time=1755720102440 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:09:07,951 log 11 124011895842496 Not Found: /
+WARNING 2025-08-20 18:09:07,951 basehttp 11 124011895842496 "GET /?ide_webview_request_time=1755724147941 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:09:08,044 log 11 124011895842496 Not Found: /@vite/client
+WARNING 2025-08-20 18:09:08,045 basehttp 11 124011895842496 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:09:22,041 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:09:52,127 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:10:22,195 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:10:52,276 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:11:22,354 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:11:52,427 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:12:22,511 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:12:52,594 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:13:22,672 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:13:52,742 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:14:22,817 basehttp 11 124011677742784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:14:40,105 autoreload 11 124011989281664 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 18:14:40,843 autoreload 111 127336161176448 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:14:41,035 whatsapp 111 127336161176448 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:14:52,922 basehttp 111 127336076801728 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:15:23,016 basehttp 111 127336076801728 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:15:53,083 basehttp 111 127336076801728 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:16:23,151 basehttp 111 127336076801728 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:16:24,178 autoreload 111 127336161176448 /app/backend/core/views.py changed, reloading.
+INFO 2025-08-20 18:16:24,858 autoreload 146 134054029134720 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:16:25,043 whatsapp 146 134054029134720 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:17:38,487 autoreload 146 134054029134720 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:17:39,270 autoreload 162 131616919927680 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:17:39,467 whatsapp 162 131616919927680 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:17:46,735 whatsapp 4360 12352 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:17:59,330 autoreload 162 131616919927680 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:18:00,162 autoreload 171 123599092648832 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:18:00,358 whatsapp 171 123599092648832 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:18:08,990 autoreload 171 123599092648832 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:18:09,791 autoreload 173 127410911980416 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:18:09,991 whatsapp 173 127410911980416 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:18:14,464 autoreload 173 127410911980416 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:18:15,290 autoreload 175 135028541971328 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:18:15,521 whatsapp 175 135028541971328 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:18:22,610 whatsapp 6164 6064 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:18:23,502 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:18:53,664 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:19:23,740 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:19:53,822 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:20:23,899 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:20:53,982 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:21:24,059 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:21:54,129 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:22:23,480 log 175 135028386297536 Not Found: /
+WARNING 2025-08-20 18:22:23,481 basehttp 175 135028386297536 "GET /?ide_webview_request_time=1755724147941 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:22:23,524 log 175 135028377904832 Not Found: /
+WARNING 2025-08-20 18:22:23,525 basehttp 175 135028377904832 "GET /?ide_webview_request_time=1755720102440 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:22:23,646 log 175 135028377904832 Not Found: /@vite/client
+WARNING 2025-08-20 18:22:23,646 basehttp 175 135028377904832 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:22:24,212 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:22:54,295 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:22:57,719 log 175 135028377904832 Not Found: /
+WARNING 2025-08-20 18:22:57,720 basehttp 175 135028377904832 "GET /?ide_webview_request_time=1755720102440 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:22:57,751 log 175 135028377904832 Not Found: /
+WARNING 2025-08-20 18:22:57,752 basehttp 175 135028377904832 "GET /?ide_webview_request_time=1755720102440 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:22:57,859 log 175 135028377904832 Not Found: /@vite/client
+WARNING 2025-08-20 18:22:57,860 basehttp 175 135028377904832 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:23:24,388 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:23:54,474 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:24:24,562 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:24:54,643 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:25:24,718 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:25:54,818 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:26:24,980 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:26:29,620 log 175 135028369512128 Not Found: /
+WARNING 2025-08-20 18:26:29,621 basehttp 175 135028369512128 "GET / HTTP/1.1" 404 2304
+WARNING 2025-08-20 18:26:30,955 log 175 135028369512128 Not Found: /favicon.ico
+WARNING 2025-08-20 18:26:30,956 basehttp 175 135028369512128 "GET /favicon.ico HTTP/1.1" 404 2355
+INFO 2025-08-20 18:26:55,054 basehttp 175 135028352726720 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:27:25,153 basehttp 175 135028352726720 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:27:55,224 basehttp 175 135028352726720 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:28:25,307 basehttp 175 135028352726720 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:28:49,418 log 175 135028377904832 Not Found: /
+WARNING 2025-08-20 18:28:49,419 basehttp 175 135028377904832 "GET /?ide_webview_request_time=1755720102440 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:28:49,466 log 175 135028377904832 Not Found: /
+WARNING 2025-08-20 18:28:49,467 basehttp 175 135028377904832 "GET /?ide_webview_request_time=1755720102440 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:28:49,607 log 175 135028377904832 Not Found: /@vite/client
+WARNING 2025-08-20 18:28:49,608 basehttp 175 135028377904832 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:28:55,403 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:29:25,472 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:29:55,548 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:30:25,624 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:30:55,714 basehttp 175 135028386297536 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:31:03,357 log 175 135028386297536 Not Found: /
+WARNING 2025-08-20 18:31:03,358 basehttp 175 135028386297536 "GET /?ide_webview_request_time=1755724147941 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:31:03,474 log 175 135028386297536 Not Found: /@vite/client
+WARNING 2025-08-20 18:31:03,475 basehttp 175 135028386297536 "GET /@vite/client HTTP/1.1" 404 2358
+WARNING 2025-08-20 18:31:18,944 log 175 135028386297536 Not Found: /
+WARNING 2025-08-20 18:31:18,945 basehttp 175 135028386297536 "GET /?ide_webview_request_time=1755724147941 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:31:18,974 log 175 135028386297536 Not Found: /
+WARNING 2025-08-20 18:31:18,974 basehttp 175 135028386297536 "GET /?ide_webview_request_time=1755724147941 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:31:19,135 log 175 135028386297536 Not Found: /@vite/client
+WARNING 2025-08-20 18:31:19,135 basehttp 175 135028386297536 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:31:25,800 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:31:55,891 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:32:25,967 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:32:56,035 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:33:26,105 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:33:56,183 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:34:26,277 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:34:56,366 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:35:26,444 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:35:56,525 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:36:26,611 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:36:56,690 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:37:26,770 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:37:56,849 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:38:26,925 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:38:57,007 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:39:27,091 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:39:57,158 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:40:27,240 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:40:57,327 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:41:27,406 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:41:57,476 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:42:27,559 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:42:57,648 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:43:27,715 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:43:57,815 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:44:27,903 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:44:57,980 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:45:28,066 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:45:58,143 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:46:28,243 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:46:58,317 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:47:28,403 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:47:58,485 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:48:28,564 basehttp 175 135028369512128 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:48:39,504 whatsapp 16948 1616 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:48:56,185 autoreload 175 135028541971328 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 18:48:57,139 autoreload 680 124812185049984 Watching for file changes with StatReloader
+INFO 2025-08-20 18:49:04,415 autoreload 680 124812185049984 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 18:49:05,064 autoreload 689 131820837800832 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:49:05,325 whatsapp 689 131820837800832 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:49:11,965 whatsapp 6492 40080 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:49:16,992 autoreload 689 131820837800832 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 18:49:17,726 autoreload 691 126660510800768 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:49:17,908 whatsapp 691 126660510800768 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:49:24,379 whatsapp 42300 35888 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:49:28,777 basehttp 691 126660426856128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:49:42,231 autoreload 691 126660510800768 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 18:49:42,899 autoreload 701 136730376858496 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:49:43,083 whatsapp 701 136730376858496 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:49:50,217 whatsapp 21232 31576 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:49:58,954 basehttp 701 136730216756928 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:50:29,044 basehttp 701 136730216756928 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:50:59,131 basehttp 701 136730216756928 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:51:29,203 basehttp 701 136730216756928 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 18:51:49,425 whatsapp 39872 35340 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:51:59,272 basehttp 701 136730216756928 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:52:28,497 autoreload 701 136730376858496 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 18:52:29,346 autoreload 744 125973357292416 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:52:29,576 whatsapp 744 125973357292416 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:52:34,183 whatsapp 30468 17324 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:52:39,885 whatsapp 33392 42644 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:52:46,530 autoreload 744 125973357292416 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 18:52:47,299 autoreload 754 134448588827520 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:52:47,491 whatsapp 754 134448588827520 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:52:59,451 basehttp 754 134448435689152 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:53:04,855 autoreload 33392 21104 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:53:05,334 whatsapp 33392 21104 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:53:10,602 log 754 134448435689152 Not Found: /
+WARNING 2025-08-20 18:53:10,603 basehttp 754 134448435689152 "GET /?ide_webview_request_time=1755724147941 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:53:10,728 log 33392 5860 Not Found: /
+WARNING 2025-08-20 18:53:10,728 basehttp 33392 5860 "GET /?ide_webview_request_time=1755726790711 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:53:10,952 log 33392 5860 Not Found: /@vite/client
+WARNING 2025-08-20 18:53:10,955 basehttp 33392 5860 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:53:29,604 basehttp 754 134448427296448 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:53:59,697 basehttp 754 134448427296448 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:54:15,330 autoreload 754 134448588827520 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:54:15,396 autoreload 33392 21104 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:54:16,034 autoreload 15040 12480 Watching for file changes with StatReloader
+INFO 2025-08-20 18:54:16,308 autoreload 781 136484628282240 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:54:16,498 whatsapp 15040 12480 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:54:16,547 whatsapp 781 136484628282240 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:54:29,787 basehttp 781 136484543788736 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:54:47,439 autoreload 15040 12480 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:54:48,031 autoreload 40420 45516 Watching for file changes with StatReloader
+INFO 2025-08-20 18:54:48,209 autoreload 781 136484628282240 /app/backend/core/services/conversation_handler.py changed, reloading.
+WARNING 2025-08-20 18:54:48,497 whatsapp 40420 45516 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:54:48,945 autoreload 791 138734143830912 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:54:49,154 whatsapp 791 138734143830912 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:54:59,870 basehttp 791 138733990966976 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:55:04,186 autoreload 791 138734143830912 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:04,655 autoreload 40420 45516 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:04,873 autoreload 801 129532297276288 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:55:05,062 whatsapp 801 129532297276288 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:55:05,244 autoreload 28288 34952 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:55:05,693 whatsapp 28288 34952 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:55:23,976 autoreload 28288 34952 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:24,088 autoreload 801 129532297276288 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:24,544 autoreload 42192 31048 Watching for file changes with StatReloader
+INFO 2025-08-20 18:55:24,802 autoreload 803 132387992456064 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:55:24,985 whatsapp 803 132387992456064 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:55:24,995 whatsapp 42192 31048 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:55:29,980 basehttp 803 132387837048512 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:55:30,674 autoreload 803 132387992456064 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:30,696 autoreload 42192 31048 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:31,333 autoreload 17608 3588 Watching for file changes with StatReloader
+INFO 2025-08-20 18:55:31,458 autoreload 813 140256551734144 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:55:31,660 whatsapp 813 140256551734144 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:55:31,818 whatsapp 17608 3588 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:55:38,125 log 813 140256466695872 Not Found: /
+WARNING 2025-08-20 18:55:38,126 basehttp 813 140256466695872 "GET /?ide_webview_request_time=1755726938110 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:55:38,198 log 813 140256466695872 Not Found: /@vite/client
+WARNING 2025-08-20 18:55:38,199 basehttp 813 140256466695872 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:55:40,462 autoreload 813 140256551734144 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:40,657 autoreload 17608 3588 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:55:41,215 autoreload 816 127214078045056 Watching for file changes with StatReloader
+INFO 2025-08-20 18:55:41,250 autoreload 12100 23248 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:55:41,408 whatsapp 816 127214078045056 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:55:41,718 whatsapp 12100 23248 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:00,072 basehttp 816 127213993195200 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:56:05,284 autoreload 12100 23248 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:05,793 autoreload 816 127214078045056 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:05,874 autoreload 44992 42644 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:06,341 whatsapp 44992 42644 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:06,584 autoreload 826 138067540581248 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:06,767 whatsapp 826 138067540581248 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:56:11,845 log 826 138067457341120 Not Found: /
+WARNING 2025-08-20 18:56:11,846 basehttp 826 138067457341120 "GET /?ide_webview_request_time=1755726938110 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:56:11,910 log 826 138067457341120 Not Found: /
+WARNING 2025-08-20 18:56:11,911 basehttp 826 138067457341120 "GET /?ide_webview_request_time=1755724147941 HTTP/1.1" 404 2343
+WARNING 2025-08-20 18:56:12,127 log 826 138067457341120 Not Found: /@vite/client
+WARNING 2025-08-20 18:56:12,128 basehttp 826 138067457341120 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 18:56:13,072 autoreload 44992 42644 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:13,464 autoreload 826 138067540581248 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:13,735 autoreload 43372 45308 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:14,239 whatsapp 43372 45308 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:14,269 autoreload 829 132422830648192 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:14,467 whatsapp 829 132422830648192 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:25,146 autoreload 43372 45308 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:25,177 autoreload 829 132422830648192 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:25,724 autoreload 40860 42956 Watching for file changes with StatReloader
+INFO 2025-08-20 18:56:25,914 autoreload 831 139714596592512 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:26,101 whatsapp 831 139714596592512 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:56:26,186 whatsapp 40860 42956 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:30,158 basehttp 831 139714445178560 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:56:31,770 autoreload 831 139714596592512 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:31,823 autoreload 40860 42956 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:32,449 autoreload 35968 44540 Watching for file changes with StatReloader
+INFO 2025-08-20 18:56:32,550 autoreload 841 137209809587072 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:32,742 whatsapp 841 137209809587072 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:56:32,926 whatsapp 35968 44540 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:42,425 autoreload 841 137209809587072 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:42,799 autoreload 35968 44540 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:43,182 autoreload 843 135750923783040 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:43,374 whatsapp 843 135750923783040 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:43,406 autoreload 43016 7052 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:43,855 whatsapp 43016 7052 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:55,143 autoreload 843 135750923783040 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:56:55,789 autoreload 845 131304671865728 Watching for file changes with StatReloader
+INFO 2025-08-20 18:56:55,818 autoreload 43016 7052 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+WARNING 2025-08-20 18:56:55,984 whatsapp 845 131304671865728 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:56:56,416 autoreload 24720 20044 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:56:56,882 whatsapp 24720 20044 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:57:00,258 basehttp 845 131304515434176 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:57:03,578 autoreload 24720 20044 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:57:03,756 autoreload 845 131304671865728 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:57:04,225 autoreload 40752 45884 Watching for file changes with StatReloader
+INFO 2025-08-20 18:57:04,567 autoreload 855 127958382447488 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:57:04,710 whatsapp 40752 45884 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:57:04,760 whatsapp 855 127958382447488 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:57:25,864 autoreload 855 127958382447488 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:57:26,173 autoreload 40752 45884 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:57:26,635 autoreload 857 138352772299648 Watching for file changes with StatReloader
+INFO 2025-08-20 18:57:26,803 autoreload 15656 30256 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:57:26,836 whatsapp 857 138352772299648 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 18:57:27,283 whatsapp 15656 30256 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:57:30,349 basehttp 857 138352619681472 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:57:37,200 autoreload 15656 30256 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:57:37,788 autoreload 857 138352772299648 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 18:57:37,986 autoreload 41928 45424 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:57:38,498 whatsapp 41928 45424 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:57:38,673 autoreload 868 124841009220480 Watching for file changes with StatReloader
+WARNING 2025-08-20 18:57:38,894 whatsapp 868 124841009220480 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 18:58:00,435 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:58:30,601 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:59:00,678 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 18:59:30,767 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:00:00,846 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:00:30,919 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:01:01,002 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:01:31,098 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:02:01,176 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:02:31,253 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:03:01,359 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:03:31,449 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:04:01,515 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:04:31,597 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:05:01,695 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:05:31,771 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:06:01,846 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:06:31,929 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:07:01,999 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:07:32,085 basehttp 868 124840853894848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 19:07:48,998 autoreload 868 124841009220480 /app/backend/core/serializers.py changed, reloading.
+INFO 2025-08-20 19:07:49,665 autoreload 41928 45424 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\serializers.py changed, reloading.
+INFO 2025-08-20 19:07:49,929 autoreload 1033 135940226878336 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:07:50,169 whatsapp 1033 135940226878336 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:07:50,310 autoreload 14368 2636 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:07:50,754 whatsapp 14368 2636 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:07:58,497 autoreload 14368 2636 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls.py changed, reloading.
+INFO 2025-08-20 19:07:58,802 autoreload 1033 135940226878336 /app/backend/core/urls.py changed, reloading.
+INFO 2025-08-20 19:07:59,097 autoreload 44924 33380 Watching for file changes with StatReloader
+INFO 2025-08-20 19:07:59,573 autoreload 1035 128861408713600 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:07:59,576 whatsapp 44924 33380 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 19:07:59,812 whatsapp 1035 128861408713600 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:08:30,668 autoreload 45732 16656 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:08:31,116 whatsapp 45732 16656 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:08:54,805 autoreload 1035 128861408713600 /app/backend/core/services/conversation_handler.py changed, reloading.
+INFO 2025-08-20 19:08:54,936 autoreload 45732 16656 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 19:08:55,513 autoreload 1051 134432975653760 Watching for file changes with StatReloader
+INFO 2025-08-20 19:08:55,529 autoreload 35700 30240 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:08:55,696 whatsapp 1051 134432975653760 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 19:08:55,964 whatsapp 35700 30240 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:09:04,775 autoreload 35700 30240 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 19:09:05,372 autoreload 40016 30256 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:09:05,797 whatsapp 40016 30256 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:09:23,198 autoreload 40016 30256 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 19:09:23,783 autoreload 43640 25088 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:09:24,226 whatsapp 43640 25088 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:09:38,469 autoreload 43640 25088 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 19:09:39,087 autoreload 2100 7732 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:09:39,528 whatsapp 2100 7732 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:10:55,744 autoreload 2100 7732 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\config\settings.py changed, reloading.
+INFO 2025-08-20 19:10:56,263 autoreload 32672 45028 Watching for file changes with StatReloader
+INFO 2025-08-20 19:10:56,528 autoreload 1051 134432975653760 /app/backend/config/settings.py changed, reloading.
+INFO 2025-08-20 19:10:57,221 autoreload 1082 132624733690752 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:10:57,406 whatsapp 1082 132624733690752 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:11:12,092 autoreload 1082 132624733690752 /app/backend/config/settings.py changed, reloading.
+INFO 2025-08-20 19:11:12,806 autoreload 32672 45028 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\config\settings.py changed, reloading.
+INFO 2025-08-20 19:11:12,815 autoreload 1091 128858511911808 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:11:13,030 whatsapp 1091 128858511911808 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:11:13,324 autoreload 23908 21652 Watching for file changes with StatReloader
+INFO 2025-08-20 19:11:41,853 autoreload 37908 22752 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:11:42,320 whatsapp 37908 22752 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:17:53,835 autoreload 1091 128858511911808 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 19:17:54,344 autoreload 37908 22752 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\models.py changed, reloading.
+INFO 2025-08-20 19:17:54,554 autoreload 1185 137705306803072 Watching for file changes with StatReloader
+INFO 2025-08-20 19:17:54,980 autoreload 14184 27816 Watching for file changes with StatReloader
+INFO 2025-08-20 19:18:33,113 autoreload 14184 27816 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\models.py changed, reloading.
+INFO 2025-08-20 19:18:33,182 autoreload 1185 137705306803072 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 19:18:33,726 autoreload 24620 42232 Watching for file changes with StatReloader
+INFO 2025-08-20 19:18:33,945 autoreload 1194 128652102032256 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:18:34,156 whatsapp 1194 128652102032256 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 19:18:34,240 whatsapp 24620 42232 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:19:10,066 autoreload 24620 42232 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\models.py changed, reloading.
+INFO 2025-08-20 19:19:10,615 autoreload 1194 128652102032256 /app/backend/core/models.py changed, reloading.
+INFO 2025-08-20 19:19:10,706 autoreload 45588 44712 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:19:11,177 whatsapp 45588 44712 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:19:11,357 autoreload 1210 134776272653184 Watching for file changes with StatReloader
+WARNING 2025-08-20 19:19:11,553 whatsapp 1210 134776272653184 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 19:19:20,094 whatsapp 43872 39000 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 19:30:27,820 log 45588 43876 Not Found: /
+WARNING 2025-08-20 19:30:27,820 basehttp 45588 43876 "GET / HTTP/1.1" 404 2304
+WARNING 2025-08-20 19:30:29,327 log 45588 43876 Not Found: /favicon.ico
+WARNING 2025-08-20 19:30:29,328 basehttp 45588 43876 "GET /favicon.ico HTTP/1.1" 404 2355
+WARNING 2025-08-20 19:43:14,459 whatsapp 41204 5360 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 19:43:28,425 whatsapp 40972 14932 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 19:44:19,323 whatsapp 47004 22252 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 19:47:38,031 autoreload 45588 44712 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls.py changed, reloading.
+INFO 2025-08-20 19:47:38,804 autoreload 28568 42772 Watching for file changes with StatReloader
+INFO 2025-08-20 19:55:13,410 autoreload 28568 42772 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 19:55:13,992 autoreload 45840 18532 Watching for file changes with StatReloader
+INFO 2025-08-20 19:56:51,847 autoreload 45840 18532 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\serializers\__init__.py changed, reloading.
+INFO 2025-08-20 19:56:52,408 autoreload 27872 40096 Watching for file changes with StatReloader
+INFO 2025-08-20 19:57:11,220 autoreload 27872 40096 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\transfer_service.py changed, reloading.
+INFO 2025-08-20 19:57:11,812 autoreload 44416 46232 Watching for file changes with StatReloader
+INFO 2025-08-20 19:59:49,492 autoreload 44416 46232 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\fx.py changed, reloading.
+INFO 2025-08-20 19:59:50,086 autoreload 30484 18596 Watching for file changes with StatReloader
+INFO 2025-08-20 20:00:09,944 autoreload 30484 18596 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 20:00:10,531 autoreload 15744 44584 Watching for file changes with StatReloader
+INFO 2025-08-20 20:00:52,533 autoreload 15744 44584 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\authentication.py changed, reloading.
+INFO 2025-08-20 20:00:53,128 autoreload 19880 41656 Watching for file changes with StatReloader
+INFO 2025-08-20 20:01:01,353 autoreload 19880 41656 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\authentication.py changed, reloading.
+INFO 2025-08-20 20:01:01,942 autoreload 39564 17412 Watching for file changes with StatReloader
+INFO 2025-08-20 20:01:41,926 autoreload 39564 17412 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 20:01:42,548 autoreload 42248 18048 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:01:43,130 whatsapp 42248 18048 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:01:54,148 autoreload 42248 18048 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 20:01:54,732 autoreload 2964 45404 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:01:55,228 whatsapp 2964 45404 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 20:02:01,877 whatsapp 36312 42376 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 20:09:44,898 whatsapp 11188 37920 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:11:37,521 autoreload 2964 45404 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\config\settings.py changed, reloading.
+INFO 2025-08-20 20:11:38,101 autoreload 44704 46024 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:11:38,584 whatsapp 44704 46024 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:12:49,636 autoreload 44704 46024 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\payments.py changed, reloading.
+INFO 2025-08-20 20:12:50,231 autoreload 42728 37092 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:12:50,716 whatsapp 42728 37092 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:13:12,319 autoreload 42728 37092 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\transfer_service.py changed, reloading.
+INFO 2025-08-20 20:13:12,920 autoreload 16016 32288 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:13:13,410 whatsapp 16016 32288 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:13:41,218 autoreload 16016 32288 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 20:13:41,808 autoreload 42736 37544 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:13:42,307 whatsapp 42736 37544 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:13:52,231 autoreload 42736 37544 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\transfer_urls.py changed, reloading.
+INFO 2025-08-20 20:13:52,832 autoreload 11856 45840 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:13:53,340 whatsapp 11856 45840 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:14:00,052 autoreload 11856 45840 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 20:14:00,633 autoreload 45392 39088 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:14:01,117 whatsapp 45392 39088 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:14:08,876 autoreload 45392 39088 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 20:14:09,535 autoreload 45636 43308 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:14:10,049 whatsapp 45636 43308 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:14:19,876 autoreload 45636 43308 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\webhook_views.py changed, reloading.
+INFO 2025-08-20 20:14:20,486 autoreload 38500 43444 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:14:20,980 whatsapp 38500 43444 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:14:32,918 autoreload 38500 43444 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 20:14:33,531 autoreload 43520 4344 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:14:34,024 whatsapp 43520 4344 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 20:14:40,557 whatsapp 26912 41440 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:14:49,250 autoreload 43520 4344 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\transfer_urls.py changed, reloading.
+INFO 2025-08-20 20:14:49,890 autoreload 47084 35212 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:14:50,396 whatsapp 47084 35212 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 20:14:54,687 log 47084 9408 Not Found: /
+WARNING 2025-08-20 20:14:54,688 basehttp 47084 9408 "GET /?ide_webview_request_time=1755726938110 HTTP/1.1" 404 2343
+WARNING 2025-08-20 20:14:54,746 log 47084 9408 Not Found: /@vite/client
+WARNING 2025-08-20 20:14:54,747 basehttp 47084 9408 "GET /@vite/client HTTP/1.1" 404 2358
+WARNING 2025-08-20 20:14:57,013 whatsapp 2688 46764 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:15:05,310 basehttp 47084 9408 "GET /admin?ide_webview_request_time=1755731705302 HTTP/1.1" 301 0
+INFO 2025-08-20 20:15:05,324 basehttp 47084 41092 "GET /admin/?ide_webview_request_time=1755731705302 HTTP/1.1" 302 0
+INFO 2025-08-20 20:15:05,352 basehttp 47084 41092 "GET /admin/login/?next=/admin/%3Fide_webview_request_time%3D1755731705302 HTTP/1.1" 200 4278
+INFO 2025-08-20 20:15:05,391 basehttp 47084 41092 "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-08-20 20:15:05,393 basehttp 47084 41092 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-08-20 20:15:05,395 basehttp 47084 41092 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-08-20 20:15:05,397 basehttp 47084 41092 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-08-20 20:15:05,400 basehttp 47084 41092 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-08-20 20:15:05,401 basehttp 47084 41092 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-08-20 20:15:05,404 basehttp 47084 41092 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-08-20 20:15:05,458 log 47084 41092 Not Found: /@vite/client
+WARNING 2025-08-20 20:15:05,459 basehttp 47084 41092 "GET /@vite/client HTTP/1.1" 404 2358
+WARNING 2025-08-20 20:15:13,139 log 47084 41092 Not Found: /@vite/client
+WARNING 2025-08-20 20:15:13,139 basehttp 47084 41092 "GET /@vite/client HTTP/1.1" 404 2358
+WARNING 2025-08-20 20:15:15,779 log 47084 41092 Not Found: /api
+WARNING 2025-08-20 20:15:15,780 basehttp 47084 41092 "GET /api?ide_webview_request_time=1755731715771 HTTP/1.1" 404 2370
+WARNING 2025-08-20 20:15:15,807 log 47084 41092 Not Found: /@vite/client
+WARNING 2025-08-20 20:15:15,808 basehttp 47084 41092 "GET /@vite/client HTTP/1.1" 404 2358
+WARNING 2025-08-20 20:15:20,356 log 47084 41092 Not Found: /api
+WARNING 2025-08-20 20:15:20,357 basehttp 47084 41092 "GET /api?ide_webview_request_time=1755731720349 HTTP/1.1" 404 2370
+WARNING 2025-08-20 20:15:20,387 log 47084 41092 Not Found: /@vite/client
+WARNING 2025-08-20 20:15:20,387 basehttp 47084 41092 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:15:28,661 basehttp 47084 41092 "GET /admin?ide_webview_request_time=1755731728653 HTTP/1.1" 301 0
+INFO 2025-08-20 20:15:28,663 basehttp 47084 20132 "GET /admin/?ide_webview_request_time=1755731728653 HTTP/1.1" 302 0
+INFO 2025-08-20 20:15:28,668 basehttp 47084 20132 "GET /admin/login/?next=/admin/%3Fide_webview_request_time%3D1755731728653 HTTP/1.1" 200 4278
+WARNING 2025-08-20 20:15:28,711 log 47084 20132 Not Found: /@vite/client
+WARNING 2025-08-20 20:15:28,712 basehttp 47084 20132 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:16:05,025 autoreload 39704 46688 Watching for file changes with StatReloader
+WARNING 2025-08-20 20:16:05,517 whatsapp 39704 46688 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 20:16:11,755 log 39704 41852 Not Found: /
+WARNING 2025-08-20 20:16:11,756 basehttp 39704 41852 "GET /?ide_webview_request_time=1755731771739 HTTP/1.1" 404 2343
+WARNING 2025-08-20 20:16:11,848 log 39704 41852 Not Found: /@vite/client
+WARNING 2025-08-20 20:16:11,848 basehttp 39704 41852 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:16:46,039 basehttp 39704 18732 "GET /admin?ide_webview_request_time=1755731805718 HTTP/1.1" 301 0
+INFO 2025-08-20 20:16:46,313 basehttp 39704 44328 "GET /admin/?ide_webview_request_time=1755731805718 HTTP/1.1" 302 0
+INFO 2025-08-20 20:16:46,337 basehttp 39704 44328 "GET /admin/login/?next=/admin/%3Fide_webview_request_time%3D1755731805718 HTTP/1.1" 200 4278
+WARNING 2025-08-20 20:16:46,388 log 39704 44328 Not Found: /@vite/client
+WARNING 2025-08-20 20:16:46,388 basehttp 39704 44328 "GET /@vite/client HTTP/1.1" 404 2358
+WARNING 2025-08-20 20:17:40,873 whatsapp 5172 43168 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 20:18:16,144 basehttp 39704 44328 "POST /admin/login/?next=/admin/%3Fide_webview_request_time%3D1755731805718 HTTP/1.1" 302 0
+INFO 2025-08-20 20:18:16,162 basehttp 39704 44328 "GET /admin/?ide_webview_request_time=1755731805718 HTTP/1.1" 200 10530
+INFO 2025-08-20 20:18:16,203 basehttp 39704 44328 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-08-20 20:18:16,208 basehttp 39704 44328 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-08-20 20:18:16,210 basehttp 39704 44328 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+WARNING 2025-08-20 20:18:16,258 log 39704 44328 Not Found: /@vite/client
+WARNING 2025-08-20 20:18:16,259 basehttp 39704 44328 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:19:15,513 basehttp 39704 44328 "GET /admin/core/conversation/add/ HTTP/1.1" 200 13373
+INFO 2025-08-20 20:19:15,524 basehttp 39704 44328 "GET /static/admin/css/forms.css HTTP/1.1" 200 8710
+INFO 2025-08-20 20:19:15,532 basehttp 39704 31176 "GET /admin/jsi18n/ HTTP/1.1" 200 8959
+INFO 2025-08-20 20:19:15,535 basehttp 39704 31176 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-08-20 20:19:15,535 basehttp 39704 44328 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+WARNING 2025-08-20 20:19:15,600 log 39704 44328 Not Found: /@vite/client
+WARNING 2025-08-20 20:19:15,601 basehttp 39704 44328 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:19:24,264 basehttp 39704 44328 "GET /admin/core/messagelog/add/ HTTP/1.1" 200 14532
+INFO 2025-08-20 20:19:24,277 basehttp 39704 44328 "GET /admin/jsi18n/ HTTP/1.1" 200 8959
+INFO 2025-08-20 20:19:24,279 basehttp 39704 31176 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-08-20 20:19:24,279 basehttp 39704 44328 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-08-20 20:19:24,281 basehttp 39704 31176 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-08-20 20:19:24,283 basehttp 39704 44328 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-08-20 20:19:24,284 basehttp 39704 31176 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-08-20 20:19:24,285 basehttp 39704 44328 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-08-20 20:19:24,286 basehttp 39704 31176 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-08-20 20:19:24,288 basehttp 39704 31176 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-08-20 20:19:24,290 basehttp 39704 44328 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-08-20 20:19:24,299 basehttp 39704 44328 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+WARNING 2025-08-20 20:19:24,338 log 39704 44328 Not Found: /@vite/client
+WARNING 2025-08-20 20:19:24,339 basehttp 39704 44328 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:19:31,613 basehttp 39704 44328 "GET /admin/core/messagetemplate/add/ HTTP/1.1" 200 12714
+INFO 2025-08-20 20:19:31,625 basehttp 39704 44328 "GET /admin/jsi18n/ HTTP/1.1" 200 8959
+WARNING 2025-08-20 20:19:31,689 log 39704 44328 Not Found: /@vite/client
+WARNING 2025-08-20 20:19:31,689 basehttp 39704 44328 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:24:22,044 basehttp 39704 16332 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 20:24:22,048 basehttp 39704 16332 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-08-20 20:24:33,544 whatsapp 39704 28712 MOCK: Sending to 5511999999999: Olá! Bem-vindo(a) à XPS247, sua forma rápida e segura de enviar dinheiro dos EUA para o Brasil. Para começarmos e garantir sua segurança, precisamos realizar um breve cadastro. Vamos lá?
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 20:24:33,544 webhook_views 39704 28712 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_228'}], 'mock': True}
+INFO 2025-08-20 20:24:33,545 basehttp 39704 28712 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:24:35,563 whatsapp 39704 33444 MOCK: Sending to 5511999999999: Opção inválida. Por favor, digite 1 para me cadastrar ou 2 para não agora.
+INFO 2025-08-20 20:24:35,563 webhook_views 39704 33444 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_74'}], 'mock': True}
+INFO 2025-08-20 20:24:35,564 basehttp 39704 33444 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:24:37,582 whatsapp 39704 32436 MOCK: Sending to 5511999999999: Opção inválida. Por favor, digite 1 para me cadastrar ou 2 para não agora.
+INFO 2025-08-20 20:24:37,583 webhook_views 39704 32436 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_74'}], 'mock': True}
+INFO 2025-08-20 20:24:37,583 basehttp 39704 32436 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:24:39,620 whatsapp 39704 40152 MOCK: Sending to 5511999999999: Opção inválida. Por favor, digite 1 para me cadastrar ou 2 para não agora.
+INFO 2025-08-20 20:24:39,620 webhook_views 39704 40152 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_74'}], 'mock': True}
+INFO 2025-08-20 20:24:39,621 basehttp 39704 40152 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:24:41,639 whatsapp 39704 31048 MOCK: Sending to 5511999999999: Opção inválida. Por favor, digite 1 para me cadastrar ou 2 para não agora.
+INFO 2025-08-20 20:24:41,640 webhook_views 39704 31048 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_74'}], 'mock': True}
+INFO 2025-08-20 20:24:41,640 basehttp 39704 31048 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:24:43,682 whatsapp 39704 31576 MOCK: Sending to 5511999999999: Ótimo! Para começar, qual o seu nome completo?
+INFO 2025-08-20 20:24:43,682 webhook_views 39704 31576 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_46'}], 'mock': True}
+INFO 2025-08-20 20:24:43,683 basehttp 39704 31576 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:25:02,635 whatsapp 39704 44156 MOCK: Sending to 5511999999999: Prazer, olá! Agora, por favor, crie um nome de usuário:
+INFO 2025-08-20 20:25:02,635 webhook_views 39704 44156 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_55'}], 'mock': True}
+INFO 2025-08-20 20:25:02,636 basehttp 39704 44156 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:25:14,664 basehttp 39704 39992 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 20:25:14,669 basehttp 39704 39992 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-08-20 20:25:58,334 basehttp 39704 4584 "GET /admin/core/messagetemplate/add/ HTTP/1.1" 200 12714
+INFO 2025-08-20 20:25:58,353 basehttp 39704 4584 "GET /admin/jsi18n/ HTTP/1.1" 200 8959
+WARNING 2025-08-20 20:25:58,423 log 39704 4584 Not Found: /@vite/client
+WARNING 2025-08-20 20:25:58,424 basehttp 39704 4584 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:26:00,283 basehttp 39704 4584 "GET /admin/login/?next=/admin/%3Fide_webview_request_time%3D1755731728653 HTTP/1.1" 302 0
+INFO 2025-08-20 20:26:00,294 basehttp 39704 4584 "GET /admin/ HTTP/1.1" 200 10530
+WARNING 2025-08-20 20:26:00,475 log 39704 4584 Not Found: /@vite/client
+WARNING 2025-08-20 20:26:00,476 basehttp 39704 4584 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 20:27:58,627 basehttp 39704 42192 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 20:27:58,632 basehttp 39704 42192 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-08-20 20:28:37,238 whatsapp 39704 12284 MOCK: Sending to 5511999999999: Perfeito. Para finalizar o cadastro, precisamos de mais alguns dados em nosso site seguro para cumprir as regulamentações. Por favor, acesse o link abaixo para completar seu perfil.
+
+[Link para a página de cadastro da XPS247]
+
+Após finalizar, volte aqui e digite "Pronto" para iniciarmos sua primeira transferência!
+INFO 2025-08-20 20:28:37,238 webhook_views 39704 12284 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_315'}], 'mock': True}
+INFO 2025-08-20 20:28:37,239 basehttp 39704 12284 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:30:16,199 whatsapp 39704 25024 MOCK: Sending to 5511999999999: Aguardando você finalizar o cadastro no site. Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 20:30:16,199 webhook_views 39704 25024 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_97'}], 'mock': True}
+INFO 2025-08-20 20:30:16,200 basehttp 39704 25024 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:30:28,419 whatsapp 39704 39668 MOCK: Sending to 5511999999999: Aguardando você finalizar o cadastro no site. Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 20:30:28,419 webhook_views 39704 39668 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_97'}], 'mock': True}
+INFO 2025-08-20 20:30:28,420 basehttp 39704 39668 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:31:11,698 whatsapp 39704 42736 MOCK: Sending to 5511999999999: Aguardando você finalizar o cadastro no site. Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 20:31:11,698 webhook_views 39704 42736 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_97'}], 'mock': True}
+INFO 2025-08-20 20:31:11,699 basehttp 39704 42736 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:31:15,312 whatsapp 39704 45068 MOCK: Sending to 5511999999999: Aguardando você finalizar o cadastro no site. Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 20:31:15,313 webhook_views 39704 45068 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_97'}], 'mock': True}
+INFO 2025-08-20 20:31:15,313 basehttp 39704 45068 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:34:59,489 basehttp 39704 2020 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 20:34:59,493 basehttp 39704 2020 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-08-20 20:35:50,302 whatsapp 39704 41376 MOCK: Sending to 5511999999999: Aguardando você finalizar o cadastro no site. Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 20:35:50,302 webhook_views 39704 41376 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_97'}], 'mock': True}
+INFO 2025-08-20 20:35:50,302 basehttp 39704 41376 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 20:37:00,754 whatsapp 39704 30784 MOCK: Sending to 5511999999999: Aguardando você finalizar o cadastro no site. Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 20:37:00,754 webhook_views 39704 30784 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_97'}], 'mock': True}
+INFO 2025-08-20 20:37:00,754 basehttp 39704 30784 "POST /api/webhook/ HTTP/1.1" 200 20
