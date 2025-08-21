@@ -9,6 +9,7 @@ from .fx import dolar_comercial
 from .whatsapp import whatsapp_service
 from ..authentication import ClientAuthService
 from .transfer_service import TransferService
+from .xps247 import find_beneficiary_by_cpf
 
 logger = logging.getLogger(__name__)
 
@@ -140,6 +141,7 @@ class ConversationHandler:
             'NODE_5_OPERATION_DATA': self._handle_node_5_operation_data,
             'NODE_5_BENEFICIARY_NAME': self._handle_node_5_beneficiary_name,
             'NODE_5_BENEFICIARY_CPF': self._handle_node_5_beneficiary_cpf,
+            'NODE_5_BENEFICIARY_REGISTER': self._handle_node_5_beneficiary_register,
             'NODE_5_PIX_KEY': self._handle_node_5_pix_key,
             'NODE_5_ADDRESS': self._handle_node_5_address,
             'NODE_5_AMOUNT': self._handle_node_5_amount,
@@ -176,65 +178,76 @@ class ConversationHandler:
             # Busca cotação atual
             rate = dolar_comercial()
             
-            return f"Olá, {client.name}! Que bom ter você aqui novamente.\nA cotação do dólar hoje para envio é de R$ {rate:.4f}.\n\nVocê deseja iniciar uma transferência?\n1 - Sim\n2 - Não"
+            return f"Olá, {client.name}! Que bom ter você aqui novamente.\nA cotação do dólar hoje para envio é de R$ {rate:.4f}.\n\nVocê deseja iniciar uma transferência?\n1 - Sim, quero fazer uma transferência\n2 - Não, obrigado"
             
         except Client.DoesNotExist:
             # Novo cliente
             conversation.state_node = 'NODE_2_2_NEW_CLIENT'
             conversation.save()
             
-            return "Olá! Bem-vindo(a) à XPS247, sua forma rápida e segura de enviar dinheiro dos EUA para o Brasil. Para começarmos e garantir sua segurança, precisamos realizar um breve cadastro. Vamos lá?\n1 - Sim, quero me cadastrar\n2 - Não agora"
+            return "Olá! Bem-vindo(a) à XPS247! 🇺🇸➡️🇧🇷\n\nSua forma rápida e segura de enviar dinheiro dos EUA para o Brasil.\n\nPara começarmos e garantir sua segurança, precisamos realizar um breve cadastro.\nVamos lá?\n\n1 - Sim, quero me cadastrar\n2 - Não agora"
     
     def _handle_node_2_1_existing_client(self, conversation: Conversation, message: str) -> str:
         """
-        Nó 2.1: Mensagem para Cliente Existente
+        Nó 2.1: Cliente Existente
         """
-        message = message.strip()
-        
-        if message == "1":
+        if message.strip() == '1':
+            # Cliente quer fazer transferência
             conversation.state_node = 'NODE_3_AUTHENTICATION'
             conversation.save()
-            return "Para sua segurança, por favor, faça o login.\nInsira seu nome de usuário ou e-mail cadastrado:"
-        
-        elif message == "2":
+            return "Perfeito! 🔐\n\nPara sua segurança, preciso confirmar sua identidade.\nDigite sua senha:"
+        elif message.strip() == '2':
+            # Cliente não quer fazer transferência agora
             conversation.is_active = False
             conversation.save()
-            return "Entendido. Se precisar de ajuda com outro assunto ou quiser falar com um de nossos atendentes, me avise. Obrigado pelo contato!"
-        
+            return "Tudo bem! 😊\n\nQuando quiser fazer uma transferência, é só me chamar.\nTenha um ótimo dia!"
         else:
-            return "Opção inválida. Por favor, digite 1 para iniciar uma transferência ou 2 para cancelar."
+            return "Por favor, escolha uma opção válida:\n\n1 - Sim, quero fazer uma transferência\n2 - Não, obrigado"
     
     def _handle_node_2_2_new_client(self, conversation: Conversation, message: str) -> str:
         """
-        Nó 2.2: Mensagem para Novo Cliente
+        Nó 2.2: Novo Cliente
         """
         message = message.strip()
         
         if message == "1":
             conversation.state_node = 'NODE_4_REGISTRATION'
             conversation.save()
-            return "Ótimo! Para começar, qual o seu nome completo?"
+            return "Ótimo! 📝\n\nVamos começar o seu cadastro.\nPara começar, me diga seu nome completo:"
         
         elif message == "2":
             conversation.is_active = False
             conversation.save()
-            return "Tudo bem! Quando estiver pronto, é só me chamar. Salve nosso número para facilitar o contato. Obrigado!"
+            return "Tudo bem! 😊\n\nQuando estiver pronto para se cadastrar, é só me chamar.\nTenha um ótimo dia!"
         
         else:
-            return "Opção inválida. Por favor, digite 1 para me cadastrar ou 2 para não agora."
+            return "Por favor, escolha uma opção válida:\n\n1 - Sim, quero me cadastrar\n2 - Não agora"
     
     def _handle_node_3_authentication(self, conversation: Conversation, message: str) -> str:
         """
-        Nó 3: Autenticação - Coleta username/email
+        Nó 3: Autenticação - Validação de senha
         """
-        username_or_email = message.strip()
+        client_id = conversation.context_data.get('client_id')
+        password = message.strip()
         
-        # Salva o username/email no contexto
-        conversation.context_data['auth_username'] = username_or_email
-        conversation.state_node = 'NODE_3_PASSWORD'
-        conversation.save()
-        
-        return "Obrigado. Agora, por favor, insira sua senha:"
+        try:
+            client = Client.objects.get(id=client_id)
+            # Simula verificação de senha (em produção usar hash)
+            if password == "123456":  # Senha padrão para simulação
+                # Autenticação bem-sucedida
+                conversation.state_node = 'NODE_5_OPERATION_DATA'
+                conversation.save()
+                return "✅ Autenticação realizada com sucesso!\n\nVamos iniciar sua transferência.\nQual o nome completo do destinatário?"
+            else:
+                # Senha incorreta
+                conversation.state_node = 'NODE_3_AUTH_RETRY'
+                conversation.save()
+                return "❌ Senha incorreta.\n\nO que você gostaria de fazer?\n\n1 - Tentar novamente\n2 - Esqueci minha senha"
+                
+        except Client.DoesNotExist:
+            conversation.is_active = False
+            conversation.save()
+            return "Erro interno. Por favor, tente novamente mais tarde."
     
     def _handle_node_3_password(self, conversation: Conversation, message: str) -> str:
         """
@@ -277,14 +290,14 @@ class ConversationHandler:
             # Tentar novamente
             conversation.state_node = 'NODE_3_AUTHENTICATION'
             conversation.save()
-            return "Por favor, informe seu username ou e-mail:"
+            return "🔐 Digite sua senha novamente:"
         elif option == '2':
             # Esqueci minha senha
             conversation.state_node = 'NODE_3_FORGOT_PASSWORD'
             conversation.save()
-            return "Por favor, informe seu e-mail para enviarmos o link de redefinição de senha:"
+            return "📧 Por favor, informe seu e-mail para enviarmos o link de redefinição de senha:"
         else:
-            return "Opção inválida. Digite:\n1 - Tentar novamente\n2 - Esqueci minha senha"
+            return "Por favor, escolha uma opção válida:\n\n1 - Tentar novamente\n2 - Esqueci minha senha"
     
     def _handle_node_3_forgot_password(self, conversation: Conversation, message: str) -> str:
         """
@@ -296,7 +309,7 @@ class ConversationHandler:
         conversation.is_active = False
         conversation.save()
         
-        return f"Enviamos um link seguro para redefinição de senha para o e-mail {email}. Por favor, verifique sua caixa de entrada e spam. Após criar uma nova senha, volte aqui e me chame para continuar."
+        return f"✅ Enviamos um link seguro para redefinição de senha para o e-mail {email}.\n\nPor favor, verifique sua caixa de entrada e spam.\nApós criar uma nova senha, volte aqui e me chame para continuar! 😊"
     
     def _handle_node_4_registration(self, conversation: Conversation, message: str) -> str:
         """
@@ -305,13 +318,14 @@ class ConversationHandler:
         full_name = message.strip()
         
         if len(full_name) < 3:
-            return "Por favor, informe seu nome completo."
+            return "Por favor, digite seu nome completo (mínimo 3 caracteres):"
         
-        conversation.context_data['registration_name'] = full_name
+        # Salva o nome no contexto
+        conversation.context_data['full_name'] = full_name
         conversation.state_node = 'NODE_4_USERNAME'
         conversation.save()
         
-        return f"Prazer, {full_name}! Agora, por favor, crie um nome de usuário:"
+        return f"Obrigado, {full_name}! 👋\n\nAgora, escolha um nome de usuário para sua conta:\n(apenas letras, números e underscore)"
     
     def _handle_node_4_username(self, conversation: Conversation, message: str) -> str:
         """
@@ -319,29 +333,31 @@ class ConversationHandler:
         """
         username = message.strip()
         
+        # Validação básica do username
         if len(username) < 3:
-            return "O nome de usuário deve ter pelo menos 3 caracteres."
+            return "O nome de usuário deve ter pelo menos 3 caracteres. Tente novamente:"
         
-        # Verifica se username já existe
+        if not username.replace('_', '').isalnum():
+            return "O nome de usuário deve conter apenas letras, números e underscore. Tente novamente:"
+        
+        # Verifica se já existe
         if Client.objects.filter(username=username).exists():
             return "Este nome de usuário já está em uso. Escolha outro:"
         
-        # Cria o cliente usando ClientAuthService
-        phone = conversation.external_user_id
-        name = conversation.context_data.get('registration_name', '')
-        
-        auth_service = ClientAuthService()
-        client = auth_service.register_client(
-            name=name,
-            phone=phone,
-            username=username
+        # Cria o cliente
+        full_name = conversation.context_data.get('full_name', '')
+        client = Client.objects.create(
+            name=full_name,
+            username=username,
+            phone=conversation.external_user_id,
+            registration_completed=False
         )
         
         conversation.context_data['client_id'] = client.id
         conversation.state_node = 'NODE_4_COMPLETION'
         conversation.save()
         
-        return "Perfeito. Para finalizar o cadastro, precisamos de mais alguns dados em nosso site seguro para cumprir as regulamentações. Por favor, acesse o link abaixo para completar seu perfil.\n\n[Link para a página de cadastro da XPS247]\n\nApós finalizar, volte aqui e digite \"Pronto\" para iniciarmos sua primeira transferência!"
+        return f"Perfeito! ✅\n\nSeu usuário '{username}' foi criado.\n\nAgora você precisa completar seu cadastro em nosso site seguro:\n🔗 https://xps247.com/cadastro\n\nQuando terminar, digite 'Pronto' para continuarmos."
     
     def _handle_node_4_completion(self, conversation: Conversation, message: str) -> str:
         """
@@ -360,11 +376,11 @@ class ConversationHandler:
                 conversation.state_node = 'NODE_5_OPERATION_DATA'
                 conversation.save()
                 
-                return "Excelente! Cadastro finalizado com sucesso. Agora vamos iniciar sua primeira transferência.\n\nPor favor, informe os dados da pessoa que irá receber o dinheiro no Brasil.\n\n1. Qual o Nome Completo do destinatário?"
+                return "🎉 Excelente! Seu cadastro foi finalizado com sucesso.\n\nAgora vamos iniciar sua primeira transferência.\n\nPor favor, informe o nome completo do destinatário:"
             except Client.DoesNotExist:
                 return "Erro interno. Tente novamente."
         else:
-            return "Aguardando você finalizar o cadastro no site. Quando terminar, digite \"Pronto\" para continuarmos."
+            return "⏳ Aguardando você finalizar o cadastro no site.\n\nQuando terminar, digite \"Pronto\" para continuarmos."
     
     def _handle_node_5_operation_data(self, conversation: Conversation, message: str) -> str:
         """
@@ -378,16 +394,21 @@ class ConversationHandler:
         """
         Nó 5: Coleta nome do beneficiário
         """
-        name = message.strip()
+        beneficiary_name = message.strip()
         
-        if len(name) < 3:
-            return "Por favor, informe o nome completo do destinatário."
+        if len(beneficiary_name) < 3:
+            return "Por favor, digite o nome completo do destinatário (mínimo 3 caracteres):"
         
-        conversation.context_data['beneficiary_name'] = name
+        # Salva no contexto
+        if 'transfer_data' not in conversation.context_data:
+            conversation.context_data['transfer_data'] = {}
+        
+        conversation.context_data['transfer_data']['beneficiary_name'] = beneficiary_name
+        conversation.context_data['beneficiary_name'] = beneficiary_name
         conversation.state_node = 'NODE_5_BENEFICIARY_CPF'
         conversation.save()
         
-        return "2. Qual o CPF do destinatário? (Use apenas números)"
+        return f"✅ Nome do destinatário: {beneficiary_name}\n\nAgora, digite o CPF do destinatário:\n(apenas números, sem pontos ou traços)"
     
     def _handle_node_5_beneficiary_cpf(self, conversation: Conversation, message: str) -> str:
         """
@@ -396,13 +417,83 @@ class ConversationHandler:
         cpf = message.strip().replace('.', '').replace('-', '').replace(' ', '')
         
         if not cpf.isdigit() or len(cpf) != 11:
-            return "CPF inválido. Por favor, informe apenas os 11 números do CPF:"
+            return "❌ CPF inválido. Por favor, digite apenas os 11 números do CPF:"
         
+        # Verifica se o beneficiário existe no sistema XPS247
+        beneficiary = find_beneficiary_by_cpf(cpf)
+        
+        if beneficiary is None:
+            # Beneficiário não encontrado, solicita cadastro
+            conversation.state_node = 'NODE_5_BENEFICIARY_REGISTER'
+            conversation.context_data['pending_beneficiary_cpf'] = cpf
+            conversation.save()
+            
+            return f"❌ CPF {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]} não encontrado em nosso sistema.\n\n" \
+                   f"Para continuar, precisamos cadastrar este beneficiário.\n\n" \
+                   f"Deseja prosseguir com o cadastro?\n\n" \
+                   f"1 - Sim, cadastrar beneficiário\n" \
+                   f"2 - Não, usar outro CPF"
+        
+        # Beneficiário encontrado, preenche dados automaticamente
+        if 'transfer_data' not in conversation.context_data:
+            conversation.context_data['transfer_data'] = {}
+        
+        conversation.context_data['transfer_data']['beneficiary_cpf'] = cpf
         conversation.context_data['beneficiary_cpf'] = cpf
+        
+        # Se o beneficiário já tem dados cadastrados, preenche automaticamente
+        if beneficiary.get('pix_key'):
+            conversation.context_data['transfer_data']['pix_key'] = beneficiary['pix_key']
+            conversation.context_data['pix_key'] = beneficiary['pix_key']
+        
+        if beneficiary.get('address'):
+            conversation.context_data['transfer_data']['address'] = beneficiary['address']
+            conversation.context_data['address'] = beneficiary['address']
+        
         conversation.state_node = 'NODE_5_PIX_KEY'
         conversation.save()
         
-        return "3. Qual a Chave PIX para o recebimento? (Pode ser CPF, e-mail, telefone ou chave aleatória)"
+        return f"✅ CPF confirmado: {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}\n" \
+               f"✅ Beneficiário encontrado: {beneficiary.get('name', 'Nome não disponível')}\n\n" \
+               f"Agora, qual a Chave PIX para recebimento?\n" \
+               f"(Pode ser CPF, e-mail, telefone ou chave aleatória)"
+    
+    def _handle_node_5_beneficiary_register(self, conversation: Conversation, message: str) -> str:
+        """
+        Nó 5: Opções de cadastro do beneficiário
+        """
+        option = message.strip()
+        
+        if option == "1":
+            # Prosseguir com cadastro
+            cpf = conversation.context_data.get('pending_beneficiary_cpf')
+            
+            if 'transfer_data' not in conversation.context_data:
+                conversation.context_data['transfer_data'] = {}
+            
+            conversation.context_data['transfer_data']['beneficiary_cpf'] = cpf
+            conversation.context_data['beneficiary_cpf'] = cpf
+            conversation.state_node = 'NODE_5_PIX_KEY'
+            conversation.save()
+            
+            return f"✅ CPF confirmado: {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}\n\n" \
+                   f"Como este é um novo beneficiário, vamos coletar os dados necessários.\n\n" \
+                   f"Agora, qual a Chave PIX para recebimento?\n" \
+                   f"(Pode ser CPF, e-mail, telefone ou chave aleatória)"
+        
+        elif option == "2":
+            # Voltar para solicitar outro CPF
+            conversation.state_node = 'NODE_5_BENEFICIARY_CPF'
+            if 'pending_beneficiary_cpf' in conversation.context_data:
+                del conversation.context_data['pending_beneficiary_cpf']
+            conversation.save()
+            
+            return "Por favor, digite o CPF do destinatário:\n(apenas números, sem pontos ou traços)"
+        
+        else:
+            return "❌ Opção inválida. Por favor, escolha:\n\n" \
+                   "1 - Sim, cadastrar beneficiário\n" \
+                   "2 - Não, usar outro CPF"
     
     def _handle_node_5_pix_key(self, conversation: Conversation, message: str) -> str:
         """
@@ -411,13 +502,18 @@ class ConversationHandler:
         pix_key = message.strip()
         
         if len(pix_key) < 3:
-            return "Por favor, informe uma chave PIX válida."
+            return "❌ Chave PIX inválida. Por favor, informe uma chave PIX válida:"
         
+        # Salva no contexto
+        if 'transfer_data' not in conversation.context_data:
+            conversation.context_data['transfer_data'] = {}
+        
+        conversation.context_data['transfer_data']['pix_key'] = pix_key
         conversation.context_data['pix_key'] = pix_key
         conversation.state_node = 'NODE_5_ADDRESS'
         conversation.save()
         
-        return "4. Por favor, informe o endereço completo do destinatário no formato:\nRua/Avenida, Número, Complemento (se houver), Bairro, Cidade - Estado, CEP"
+        return f"✅ Chave PIX confirmada: {pix_key}\n\nAgora, informe o endereço completo do destinatário:\n📍 Formato: Rua/Avenida, Número, Complemento, Bairro, Cidade - Estado, CEP"
     
     def _handle_node_5_address(self, conversation: Conversation, message: str) -> str:
         """
@@ -426,13 +522,18 @@ class ConversationHandler:
         address = message.strip()
         
         if len(address) < 10:
-            return "Por favor, informe o endereço completo conforme solicitado."
+            return "❌ Endereço muito curto. Por favor, informe o endereço completo:\n📍 Formato: Rua/Avenida, Número, Complemento, Bairro, Cidade - Estado, CEP"
         
+        # Salva no contexto
+        if 'transfer_data' not in conversation.context_data:
+            conversation.context_data['transfer_data'] = {}
+        
+        conversation.context_data['transfer_data']['address'] = address
         conversation.context_data['address'] = address
         conversation.state_node = 'NODE_5_AMOUNT'
         conversation.save()
         
-        return "Dados do destinatário recebidos! Agora, para o valor:\nQuanto você deseja transferir em DÓLARES (USD)?"
+        return "✅ Endereço confirmado!\n\n💰 Agora vamos ao valor da transferência:\nQuanto você deseja enviar em DÓLARES (USD)?\n\nExemplo: 100 ou 150.50"
     
     def _handle_node_5_amount(self, conversation: Conversation, message: str) -> str:
         """
@@ -443,7 +544,7 @@ class ConversationHandler:
             amount_usd = Decimal(amount_str)
             
             if amount_usd <= 0:
-                return "Por favor, informe um valor válido maior que zero."
+                return "❌ Valor inválido. Por favor, informe um valor maior que zero:\nExemplo: 100 ou 150.50"
             
             # Usa o TransferService para calcular valores
             transfer_service = TransferService()
@@ -456,6 +557,11 @@ class ConversationHandler:
             
             calculation = transfer_service.calculate_transfer(calculation_data)
             
+            # Salva no contexto
+            if 'transfer_data' not in conversation.context_data:
+                conversation.context_data['transfer_data'] = {}
+            
+            conversation.context_data['transfer_data']['amount_usd'] = str(amount_usd)
             conversation.context_data['amount_usd'] = str(amount_usd)
             conversation.context_data['exchange_rate'] = str(calculation['exchange_rate'])
             conversation.context_data['amount_brl_gross'] = str(calculation['amount_brl_gross'])
@@ -469,13 +575,13 @@ class ConversationHandler:
             beneficiary_cpf = conversation.context_data.get('beneficiary_cpf', '')
             pix_key = conversation.context_data.get('pix_key', '')
             
-            return f"Por favor, confirme todos os dados da sua operação:\n\nVocê envia: $ {amount_usd}\nCotação do Dólar: R$ {calculation['exchange_rate']:.4f}\nValor bruto: R$ {calculation['amount_brl_gross']:.2f}\nTaxa de serviço: R$ {calculation['service_fee']:.2f}\nValor líquido a receber: R$ {calculation['amount_brl_net']:.2f}\n\nRecebedor:\n• Nome: {beneficiary_name}\n• CPF: {beneficiary_cpf}\n• Chave PIX: {pix_key}\n\nOs dados estão corretos?\n1 - Sim, tudo correto\n2 - Não, quero alterar"
+            return f"📋 **RESUMO DA TRANSFERÊNCIA**\n\n💵 Você envia: USD {amount_usd}\n📈 Cotação: R$ {calculation['exchange_rate']:.4f}\n💰 Valor bruto: R$ {calculation['amount_brl_gross']:.2f}\n🏦 Taxa de serviço: R$ {calculation['service_fee']:.2f}\n✅ **Valor líquido a receber: R$ {calculation['amount_brl_net']:.2f}**\n\n👤 **DESTINATÁRIO:**\n• Nome: {beneficiary_name}\n• CPF: {beneficiary_cpf}\n• Chave PIX: {pix_key}\n\n❓ Os dados estão corretos?\n1 - ✅ Sim, confirmar transferência\n2 - ✏️ Não, quero alterar dados"
             
         except (ValueError, TypeError):
-            return "Valor inválido. Por favor, informe apenas números (ex: 150.00):"
+            return "❌ Valor inválido. Digite apenas números:\nExemplo: 100 ou 150.50"
         except Exception as e:
             logger.error(f"Erro ao calcular transferência: {e}")
-            return "Erro ao calcular valores. Tente novamente."
+            return "❌ Erro ao calcular valores. Tente novamente com um valor válido."
     
     def _handle_node_5_confirmation(self, conversation: Conversation, message: str) -> str:
         """
@@ -509,21 +615,21 @@ class ConversationHandler:
                 # Gera link de pagamento
                 payment_link = transfer_service.generate_payment_link(transfer.id)
                 
-                return f"Perfeito! Para finalizar, gerei um link de pagamento seguro para você. Ele é válido por 20 minutos.\n\nClique aqui para pagar: {payment_link}\n\nApós a confirmação do pagamento, você receberá uma mensagem automática aqui mesmo."
+                return f"🎉 **TRANSFERÊNCIA CRIADA COM SUCESSO!**\n\n💳 Para finalizar, gerei um link de pagamento seguro para você. Ele é válido por 20 minutos.\n\n🔗 Clique aqui para pagar: {payment_link}\n\n⚡ Após a confirmação do pagamento, o dinheiro será enviado **imediatamente** para o destinatário!\n\n📱 Você receberá uma mensagem automática aqui mesmo assim que o pagamento for processado."
                 
             except Client.DoesNotExist:
-                return "Erro interno. Tente novamente."
+                return "❌ Erro interno. Tente novamente."
             except Exception as e:
                 logger.error(f"Erro ao criar transferência: {e}")
-                return "Erro ao processar transferência. Tente novamente."
+                return "❌ Erro ao processar transferência. Tente novamente."
         
         elif message == "2":
             conversation.state_node = 'NODE_5_CHANGE_OPTIONS'
             conversation.save()
-            return "O que você gostaria de fazer?\n1 - Alterar os dados da operação\n2 - Cancelar e finalizar o atendimento"
+            return "✏️ **O QUE VOCÊ GOSTARIA DE FAZER?**\n\n1 - 📝 Alterar os dados da operação\n2 - ❌ Cancelar e finalizar o atendimento"
         
         else:
-            return "Opção inválida. Digite 1 para confirmar ou 2 para alterar."
+            return "Por favor, escolha uma opção válida:\n\n1 - ✅ Sim, confirmar transferência\n2 - ✏️ Não, quero alterar dados"
     
     def _handle_node_5_change_options(self, conversation: Conversation, message: str) -> str:
         """
@@ -535,20 +641,20 @@ class ConversationHandler:
             # Alterar dados da operação - volta para o início da coleta
             conversation.state_node = 'NODE_5_BENEFICIARY_NAME'
             conversation.save()
-            return "Vamos recomeçar a coleta dos dados.\n\n1. Qual o Nome Completo do destinatário?"
+            return "📝 **VAMOS RECOMEÇAR A COLETA DOS DADOS**\n\n👤 Qual o nome completo do destinatário?"
         elif message == "2":
             # Cancelar e finalizar
             conversation.is_active = False
             conversation.save()
-            return "Operação cancelada. Obrigado por usar nossos serviços! Para iniciar uma nova transferência, me envie uma mensagem."
+            return "❌ **OPERAÇÃO CANCELADA**\n\n🙏 Obrigado por usar nossos serviços!\n\n👋 Até a próxima!"
         else:
-            return "Opção inválida. Digite:\n1 - Alterar os dados da operação\n2 - Cancelar e finalizar o atendimento"
+            return "Por favor, escolha uma opção válida:\n\n1 - 📝 Alterar os dados da operação\n2 - ❌ Cancelar e finalizar o atendimento"
     
     def _handle_node_6_payment(self, conversation: Conversation, message: str) -> str:
         """
         Nó 6: Aguardando pagamento
         """
-        return "Aguardando confirmação do pagamento. Você receberá uma mensagem automática assim que o pagamento for processado."
+        return "⏳ **AGUARDANDO CONFIRMAÇÃO DO PAGAMENTO**\n\n💳 Estamos monitorando seu pagamento em tempo real.\n\n📱 Você receberá uma notificação automática assim que o pagamento for processado!\n\n⚡ O envio do dinheiro é **imediato** após a confirmação."
     
     def _handle_node_7_new_operation(self, conversation: Conversation, message: str) -> str:
         """
@@ -560,14 +666,14 @@ class ConversationHandler:
             # Cliente quer fazer outra transferência
             conversation.state_node = 'NODE_5_OPERATION_DATA'
             conversation.save()
-            return "Excelente! Vamos iniciar uma nova transferência.\n\nPor favor, informe os dados da pessoa que irá receber o dinheiro no Brasil.\n\n1. Qual o Nome Completo do destinatário?"
+            return "🎉 **EXCELENTE! VAMOS INICIAR UMA NOVA TRANSFERÊNCIA**\n\n👤 Por favor, informe os dados da pessoa que irá receber o dinheiro no Brasil.\n\n1. Qual o Nome Completo do destinatário?"
         elif message == "2":
             # Cliente não quer fazer outra transferência
             conversation.is_active = False
             conversation.save()
-            return "Obrigado por usar nossos serviços! Tenha um ótimo dia. Para futuras transferências, me envie uma mensagem a qualquer momento."
+            return "🙏 **OBRIGADO POR USAR NOSSOS SERVIÇOS!**\n\n⭐ Esperamos ter atendido suas expectativas.\n\n👋 Para futuras transferências, me envie uma mensagem a qualquer momento!"
         else:
-            return "Opção inválida. Digite:\n1 - Sim, fazer outra transferência\n2 - Não, finalizar agora"
+            return "Por favor, escolha uma opção válida:\n\n1 - ✅ Sim, fazer outra transferência\n2 - ❌ Não, finalizar agora"
     
     def _log_message(self, conversation: Conversation, direction: str, payload: Dict[str, Any]):
         """
@@ -612,7 +718,7 @@ class ConversationHandler:
                 )
                 
                 # Envia mensagem de confirmação
-                message = f"✅ Pagamento Confirmado! Sua transação foi concluída com sucesso.\n\nO dinheiro estará na conta do(a) {transfer.beneficiary_name} em até 1 dia útil. Enviaremos uma nova mensagem assim que o valor for creditado.\n\nDeseja realizar outra transação?\n1 - Sim, fazer outra transferência\n2 - Não, finalizar agora"
+                message = f"🎉 **PAGAMENTO CONFIRMADO COM SUCESSO!**\n\n✅ Sua transferência de **${transfer.amount_usd}** foi enviada para:\n👤 **{transfer.beneficiary_name}**\n\n⚡ O dinheiro já está disponível na conta do destinatário!\n\n💫 **DESEJA FAZER UMA NOVA TRANSFERÊNCIA?**\n\n1 - ✅ Sim, fazer outra transferência\n2 - ❌ Não, finalizar atendimento"
                 
                 # Envia via WhatsApp
                 whatsapp_service.send_message(transfer.client.phone, message)
@@ -623,7 +729,7 @@ class ConversationHandler:
                 # Atualiza status da transferência
                 transfer_service.update_transfer_status(transfer, 'failed', 'webhook', 'Pagamento falhou via webhook')
                 
-                message = "❌ Pagamento não foi processado. Tente novamente ou entre em contato conosco."
+                message = "❌ **PAGAMENTO NÃO APROVADO**\n\n😔 Infelizmente seu pagamento não foi processado com sucesso.\n\n🔄 **OPÇÕES DISPONÍVEIS:**\n\n1 - 🔁 Tentar novamente\n2 - 📞 Falar com suporte\n\n💬 Estamos aqui para ajudar!"
                 whatsapp_service.send_message(transfer.client.phone, message)
                 
                 return message

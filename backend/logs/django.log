@@ -578,3 +578,691 @@ INFO 2025-08-20 20:35:50,302 basehttp 39704 41376 "POST /api/webhook/ HTTP/1.1" 
 INFO 2025-08-20 20:37:00,754 whatsapp 39704 30784 MOCK: Sending to 5511999999999: Aguardando você finalizar o cadastro no site. Quando terminar, digite "Pronto" para continuarmos.
 INFO 2025-08-20 20:37:00,754 webhook_views 39704 30784 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_97'}], 'mock': True}
 INFO 2025-08-20 20:37:00,754 basehttp 39704 30784 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:00:02,634 autoreload 39704 46688 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:00:03,252 autoreload 21132 40152 Watching for file changes with StatReloader
+INFO 2025-08-20 21:00:25,251 autoreload 21132 40152 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:00:25,834 autoreload 44256 14564 Watching for file changes with StatReloader
+WARNING 2025-08-20 21:00:30,957 log 44256 43608 Not Found: /
+WARNING 2025-08-20 21:00:30,957 basehttp 44256 43608 "GET /?ide_webview_request_time=1755734430612 HTTP/1.1" 404 2343
+WARNING 2025-08-20 21:00:31,067 log 44256 43608 Not Found: /@vite/client
+WARNING 2025-08-20 21:00:31,068 basehttp 44256 43608 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 21:00:44,909 autoreload 44256 14564 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:00:45,482 autoreload 43376 41948 Watching for file changes with StatReloader
+INFO 2025-08-20 21:01:29,560 autoreload 43376 41948 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:01:30,136 autoreload 43040 21352 Watching for file changes with StatReloader
+INFO 2025-08-20 21:01:39,469 autoreload 43040 21352 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:01:40,079 autoreload 45452 44472 Watching for file changes with StatReloader
+INFO 2025-08-20 21:01:57,866 autoreload 45452 44472 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:01:58,473 autoreload 19500 4584 Watching for file changes with StatReloader
+INFO 2025-08-20 21:02:16,209 autoreload 19500 4584 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:02:16,766 autoreload 43840 6696 Watching for file changes with StatReloader
+INFO 2025-08-20 21:02:43,943 autoreload 43840 6696 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:02:44,474 autoreload 20228 32928 Watching for file changes with StatReloader
+INFO 2025-08-20 21:03:07,472 autoreload 20228 32928 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:03:08,031 autoreload 22252 33076 Watching for file changes with StatReloader
+INFO 2025-08-20 21:04:08,981 autoreload 22252 33076 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:04:09,564 autoreload 24048 38196 Watching for file changes with StatReloader
+INFO 2025-08-20 21:04:54,052 autoreload 24048 38196 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:04:54,715 autoreload 46880 27020 Watching for file changes with StatReloader
+WARNING 2025-08-20 21:04:58,161 log 46880 38492 Not Found: /
+WARNING 2025-08-20 21:04:58,162 basehttp 46880 38492 "GET /?ide_webview_request_time=1755734430612 HTTP/1.1" 404 2343
+WARNING 2025-08-20 21:04:58,315 log 46880 38492 Not Found: /@vite/client
+WARNING 2025-08-20 21:04:58,315 basehttp 46880 38492 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 21:05:16,004 autoreload 46880 27020 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:05:16,641 autoreload 32336 26028 Watching for file changes with StatReloader
+INFO 2025-08-20 21:05:45,134 autoreload 32336 26028 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:05:45,808 autoreload 32320 44256 Watching for file changes with StatReloader
+INFO 2025-08-20 21:06:31,220 autoreload 32320 44256 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:06:31,874 autoreload 3784 35328 Watching for file changes with StatReloader
+ERROR 2025-08-20 21:11:08,335 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,335 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,337 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,337 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,338 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,338 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,339 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,339 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,340 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,340 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,341 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,342 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,343 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,343 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,344 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,344 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,345 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,345 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,351 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,352 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,358 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,358 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,363 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,363 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,364 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,364 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,365 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,365 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,367 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,367 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,369 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,369 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:08,370 whatsapp 12280 47028 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:08,370 webhook_views 12280 47028 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,743 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,743 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,745 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,745 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,746 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,746 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,750 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,750 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,751 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,752 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,752 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,753 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,754 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,754 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,755 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,755 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,756 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,756 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,757 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,757 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,758 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,758 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,764 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,764 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,767 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,767 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,769 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,770 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,772 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,772 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,778 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,778 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,779 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,779 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,780 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,780 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,781 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,781 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,783 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,783 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:33,784 whatsapp 38652 17008 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:33,784 webhook_views 38652 17008 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,061 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,062 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,063 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,064 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,065 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,065 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,069 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,069 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,070 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,071 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,072 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,072 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,073 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,073 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,074 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,074 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,075 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,075 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,077 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,077 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,079 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,079 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,083 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,083 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,087 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,087 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,089 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,089 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,091 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,092 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,098 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,098 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,099 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,099 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,100 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,100 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,101 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,102 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,104 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,104 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:11:55,105 whatsapp 11388 41748 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:11:55,105 webhook_views 11388 41748 No valid message found in WhatsApp webhook
+ERROR 2025-08-20 21:16:02,016 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:02,017 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:02,221 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:02,221 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:02,449 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:02,449 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:02,653 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:02,654 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:02,862 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:02,863 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:03,074 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:03,075 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:03,278 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:03,279 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:03,505 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:03,505 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:03,708 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:03,708 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:03,912 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:03,912 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:04,115 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:04,116 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:04,324 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:04,324 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:04,559 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:04,559 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:04,789 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:04,789 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:05,000 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:05,001 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:05,207 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:05,208 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:05,416 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:05,416 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:05,620 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:05,621 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:05,824 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:05,824 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:06,028 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:06,028 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:06,234 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:06,234 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:06,438 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:06,438 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:06,661 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:06,662 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:06,872 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:06,872 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:07,078 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:07,079 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:07,283 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:07,284 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:07,486 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:07,486 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:07,699 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:07,700 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:16:07,924 whatsapp 46496 4140 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:16:07,925 webhook_views 46496 4140 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:07,144 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:07,144 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:07,350 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:07,350 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:07,555 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:07,555 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:07,763 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:07,763 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:07,970 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:07,970 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:08,185 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:08,186 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:08,391 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:08,391 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:08,596 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:08,597 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:08,810 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:08,810 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:09,012 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:09,013 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:09,217 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:09,218 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:09,424 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:09,425 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:09,626 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:09,626 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:09,838 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:09,839 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:10,054 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:10,054 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:10,269 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:10,269 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:10,476 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:10,476 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:10,687 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:10,687 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:10,889 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:10,890 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:11,092 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:11,092 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:11,311 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:11,312 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:11,515 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:11,515 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:11,728 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:11,728 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:11,952 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:11,953 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:12,161 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:12,162 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:12,364 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:12,364 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:12,571 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:12,571 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:12,776 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:12,777 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:12,996 whatsapp 14844 44040 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:17:12,997 webhook_views 14844 44040 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:17:13,203 whatsapp 14844 44040 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 21:18:22,282 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:22,282 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:22,462 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:22,463 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:22,692 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:22,693 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:22,902 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:22,903 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:23,125 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:23,126 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:23,343 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:23,344 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:23,555 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:23,555 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:23,760 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:23,760 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:23,982 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:23,982 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:24,200 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:24,200 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:24,407 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:24,407 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:24,612 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:24,612 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:24,830 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:24,834 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:25,069 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:25,069 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:25,277 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:25,277 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:25,484 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:25,485 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:25,691 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:25,692 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:25,897 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:25,897 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:26,100 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:26,100 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:26,315 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:26,316 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:26,538 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:26,539 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:26,758 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:26,758 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:26,974 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:26,975 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:27,238 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:27,239 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:27,466 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:27,466 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:27,675 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:27,675 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:27,875 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:27,875 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:28,123 whatsapp 22784 10192 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:28,123 webhook_views 22784 10192 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:28,347 whatsapp 22784 10192 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 21:18:57,075 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:57,076 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:57,291 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:57,291 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:57,512 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:57,512 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:57,769 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:57,769 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:57,981 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:57,982 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:58,185 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:58,185 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:58,404 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:58,404 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:58,612 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:58,613 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:58,832 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:58,833 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:59,035 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:59,036 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:59,241 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:59,242 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:59,482 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:59,483 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:59,688 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:59,688 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:18:59,897 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:18:59,898 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:00,177 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:00,177 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:00,400 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:00,400 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:00,606 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:00,607 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:00,837 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:00,838 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:01,048 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:01,048 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:01,254 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:01,254 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:01,461 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:01,461 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:01,664 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:01,664 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:01,864 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:01,865 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:02,071 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:02,072 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:02,274 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:02,275 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:02,493 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:02,493 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:02,710 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:02,710 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:02,913 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:02,913 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:03,128 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:03,128 webhook_views 43284 34960 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:03,352 whatsapp 43284 34960 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 21:19:28,063 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:28,064 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:28,268 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:28,268 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:28,473 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:28,473 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:28,729 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:28,729 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:28,958 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:28,958 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:29,170 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:29,171 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:29,379 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:29,379 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:29,588 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:29,589 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:29,807 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:29,808 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:30,005 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:30,005 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:30,208 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:30,209 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:30,424 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:30,425 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:30,626 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:30,627 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:30,826 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:30,827 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:31,536 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:31,536 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:31,947 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:31,947 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:32,153 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:32,153 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:32,355 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:32,356 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:32,561 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:32,562 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:32,767 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:32,768 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:32,985 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:32,985 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:33,186 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:33,186 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:33,408 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:33,409 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:33,614 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:33,614 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:33,818 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:33,818 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:34,019 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:34,019 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:34,220 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:34,220 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:34,428 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:34,429 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:34,693 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:34,693 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:34,897 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:34,897 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:35,099 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:19:35,100 webhook_views 36636 43536 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:19:35,303 whatsapp 36636 43536 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 21:20:08,783 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:08,784 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:08,984 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:08,984 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:09,190 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:09,190 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:09,902 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:09,902 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:10,106 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:10,106 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:10,318 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:10,318 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:10,534 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:10,535 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:10,821 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:10,822 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:11,030 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:11,030 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:11,236 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:11,236 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:11,458 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:11,458 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:11,663 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:11,664 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:11,891 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:11,892 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:12,096 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:12,096 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:12,357 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:12,357 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:12,561 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:12,562 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:12,809 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:12,809 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:13,026 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:13,026 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:13,239 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:13,240 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:13,450 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:13,450 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:13,659 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:13,660 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:13,861 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:13,862 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:14,065 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:14,065 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:14,274 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:14,274 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:14,644 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:14,645 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:14,846 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:14,847 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:15,051 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:15,051 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:15,255 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:15,255 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:15,461 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:15,461 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:15,686 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:15,686 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:15,887 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:15,888 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:16,104 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:16,104 webhook_views 27352 28656 WhatsApp response sent to +5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+ERROR 2025-08-20 21:20:16,309 whatsapp 27352 28656 Failed to send WhatsApp message to +5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:20:48,935 basehttp 3784 27292 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 21:20:48,957 basehttp 3784 27292 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-20 21:21:09,891 whatsapp 3784 44528 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:21:09,892 webhook_views 3784 44528 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:21:09,892 basehttp 3784 44528 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:22:13,564 whatsapp 3784 20788 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:22:13,565 webhook_views 3784 20788 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:22:13,565 basehttp 3784 20788 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:23:12,641 whatsapp 3784 37116 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:23:12,641 webhook_views 3784 37116 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:23:12,642 basehttp 3784 37116 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:23:32,176 whatsapp 3784 20888 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:23:32,176 webhook_views 3784 20888 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:23:32,177 basehttp 3784 20888 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:24:09,417 whatsapp 3784 42672 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:24:09,418 webhook_views 3784 42672 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:24:09,419 basehttp 3784 42672 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:24:47,698 whatsapp 3784 46928 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:24:47,699 webhook_views 3784 46928 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:24:47,699 basehttp 3784 46928 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:25:04,431 whatsapp 3784 39424 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:25:04,432 webhook_views 3784 39424 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:25:04,432 basehttp 3784 39424 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:25:37,051 whatsapp 3784 17616 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:25:37,051 webhook_views 3784 17616 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:25:37,052 basehttp 3784 17616 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 21:26:26,960 whatsapp 3784 47048 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:26:26,961 webhook_views 3784 47048 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:26:26,961 basehttp 3784 47048 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:31:50,548 basehttp 3784 41760 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 21:31:50,553 basehttp 3784 41760 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-20 21:31:57,888 whatsapp 3784 6440 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:31:57,888 webhook_views 3784 6440 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:31:57,889 basehttp 3784 6440 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-20 21:32:01,941 log 3784 44012 Not Found: /api/conversation/last-response/5511999999999/
+WARNING 2025-08-20 21:32:01,941 basehttp 3784 44012 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 404 4484
+ERROR 2025-08-20 21:33:50,247 whatsapp 3784 20880 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:33:50,248 webhook_views 3784 20880 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:33:50,248 basehttp 3784 20880 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-20 21:33:54,277 log 3784 21132 Not Found: /api/conversation/last-response/5511999999999/
+WARNING 2025-08-20 21:33:54,277 basehttp 3784 21132 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 404 4484
+WARNING 2025-08-20 21:34:13,107 log 3784 24048 Not Found: /api/conversation/last-response/5511999999999/
+WARNING 2025-08-20 21:34:13,107 basehttp 3784 24048 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 404 4484
+INFO 2025-08-20 21:34:36,616 autoreload 3784 35328 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\__init__.py changed, reloading.
+INFO 2025-08-20 21:34:37,209 autoreload 44936 40252 Watching for file changes with StatReloader
+WARNING 2025-08-20 21:34:44,735 log 44936 20832 Not Found: /
+WARNING 2025-08-20 21:34:44,735 basehttp 44936 20832 "GET /?ide_webview_request_time=1755734430612 HTTP/1.1" 404 2343
+WARNING 2025-08-20 21:34:44,882 log 44936 20832 Not Found: /@vite/client
+WARNING 2025-08-20 21:34:44,883 basehttp 44936 20832 "GET /@vite/client HTTP/1.1" 404 2358
+ERROR 2025-08-20 21:35:06,717 conversation_api 44936 21536 Erro ao obter última resposta para 5511999999999: Cannot resolve keyword 'updated_at' into field. Choices are: context_data, created_at, external_user_id, id, is_active, last_seen, messages, state_node
+INFO 2025-08-20 21:35:06,718 basehttp 44936 21536 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 227
+INFO 2025-08-20 21:35:19,787 autoreload 44936 40252 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\conversation_api.py changed, reloading.
+INFO 2025-08-20 21:35:20,396 autoreload 44352 34408 Watching for file changes with StatReloader
+INFO 2025-08-20 21:35:26,652 basehttp 44352 41020 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+INFO 2025-08-20 21:36:02,574 basehttp 44352 46244 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 21:36:02,597 basehttp 44352 46244 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-20 21:36:09,165 whatsapp 44352 41564 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:36:09,166 webhook_views 44352 41564 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:36:09,166 basehttp 44352 41564 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:36:13,196 basehttp 44352 27360 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+INFO 2025-08-20 21:39:24,236 autoreload 44352 34408 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\xps247.py changed, reloading.
+INFO 2025-08-20 21:39:24,958 autoreload 11484 43996 Watching for file changes with StatReloader
+INFO 2025-08-20 21:40:00,125 autoreload 11484 43996 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:40:00,794 autoreload 13820 7388 Watching for file changes with StatReloader
+INFO 2025-08-20 21:40:28,377 autoreload 13820 7388 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 21:40:29,024 autoreload 32148 38332 Watching for file changes with StatReloader
+INFO 2025-08-20 21:40:59,044 basehttp 32148 46892 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 21:40:59,070 basehttp 32148 46892 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-20 21:41:06,589 whatsapp 32148 19892 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:41:06,589 webhook_views 32148 19892 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:41:06,590 basehttp 32148 19892 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:41:10,615 basehttp 32148 30524 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+INFO 2025-08-20 21:43:12,765 basehttp 32148 39896 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 21:43:12,769 basehttp 32148 39896 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-20 21:43:17,606 whatsapp 32148 32336 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:43:17,607 webhook_views 32148 32336 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:43:17,607 basehttp 32148 32336 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:43:21,647 basehttp 32148 16376 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+ERROR 2025-08-20 21:43:41,772 whatsapp 32148 44928 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:43:41,773 webhook_views 32148 44928 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:43:41,773 basehttp 32148 44928 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:43:45,794 basehttp 32148 4232 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+INFO 2025-08-20 21:44:22,615 basehttp 32148 45660 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 21:44:22,620 basehttp 32148 45660 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+WARNING 2025-08-20 21:44:36,724 log 32148 36844 Not Found: /api/webhook/whatsapp/
+WARNING 2025-08-20 21:44:36,724 basehttp 32148 36844 "POST /api/webhook/whatsapp/ HTTP/1.1" 404 4724
+WARNING 2025-08-20 21:44:42,446 log 32148 36844 Not Found: /webhook/
+WARNING 2025-08-20 21:44:42,447 basehttp 32148 36844 "POST /webhook/ HTTP/1.1" 404 2347
+ERROR 2025-08-20 21:44:56,858 whatsapp 32148 36844 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:44:56,862 webhook_views 32148 36844 No valid message found in WhatsApp webhook
+INFO 2025-08-20 21:44:56,863 basehttp 32148 36844 "POST /api/webhook/ HTTP/1.1" 200 23
+ERROR 2025-08-20 21:45:02,999 whatsapp 32148 36844 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:45:02,999 webhook_views 32148 36844 No valid message found in WhatsApp webhook
+INFO 2025-08-20 21:45:03,000 basehttp 32148 36844 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-20 21:45:08,353 basehttp 32148 36844 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+ERROR 2025-08-20 21:45:15,000 whatsapp 32148 36844 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 21:45:15,000 webhook_views 32148 36844 No valid message found in WhatsApp webhook
+INFO 2025-08-20 21:45:15,001 basehttp 32148 36844 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-20 21:45:20,263 basehttp 32148 36844 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+ERROR 2025-08-20 21:46:14,967 whatsapp 32148 15836 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:46:14,967 webhook_views 32148 15836 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:46:14,968 basehttp 32148 15836 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:46:17,001 basehttp 32148 41080 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 140
+WARNING 2025-08-20 21:46:19,051 xps247 32148 34516 XPS247 API not configured, simulating beneficiary not found
+ERROR 2025-08-20 21:46:19,267 whatsapp 32148 34516 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:46:19,267 webhook_views 32148 34516 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:46:19,268 basehttp 32148 34516 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:46:21,294 basehttp 32148 16292 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 102
+ERROR 2025-08-20 21:47:46,742 whatsapp 32148 18284 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:47:46,743 webhook_views 32148 18284 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:47:46,744 basehttp 32148 18284 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:47:49,776 basehttp 32148 11492 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 102
+ERROR 2025-08-20 21:47:52,033 whatsapp 32148 37952 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:47:52,034 webhook_views 32148 37952 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:47:52,035 basehttp 32148 37952 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:47:55,055 basehttp 32148 19656 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 102
+INFO 2025-08-20 21:48:22,690 basehttp 32148 45488 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 102
+INFO 2025-08-20 21:48:41,174 autoreload 32148 38332 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\conversation_api.py changed, reloading.
+INFO 2025-08-20 21:48:41,822 autoreload 17944 26028 Watching for file changes with StatReloader
+INFO 2025-08-20 21:48:49,123 basehttp 17944 39776 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 198
+ERROR 2025-08-20 21:49:43,238 whatsapp 17944 44064 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:49:43,239 webhook_views 17944 44064 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:49:43,240 basehttp 17944 44064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:49:46,268 basehttp 17944 37252 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 198
+ERROR 2025-08-20 21:49:48,545 whatsapp 17944 38388 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:49:48,546 webhook_views 17944 38388 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:49:48,546 basehttp 17944 38388 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:49:51,576 basehttp 17944 45240 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 112
+ERROR 2025-08-20 21:49:53,848 whatsapp 17944 27240 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:49:53,848 webhook_views 17944 27240 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:49:53,849 basehttp 17944 27240 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:49:56,894 basehttp 17944 46112 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 125
+ERROR 2025-08-20 21:50:32,604 whatsapp 17944 37608 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:50:32,605 webhook_views 17944 37608 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:50:32,605 basehttp 17944 37608 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:50:35,627 basehttp 17944 19656 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 111
+ERROR 2025-08-20 21:50:37,673 conversation_handler 17944 46884 Erro ao calcular transferência: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-20 21:50:37,883 whatsapp 17944 46884 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:50:37,883 webhook_views 17944 46884 WhatsApp response sent to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:50:37,884 basehttp 17944 46884 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:50:40,919 basehttp 17944 42248 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 111
+ERROR 2025-08-20 21:51:52,199 whatsapp 17944 42768 Failed to send WhatsApp message to 5511888888888: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:51:52,199 webhook_views 17944 42768 WhatsApp response sent to 5511888888888: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:51:52,200 basehttp 17944 42768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:51:55,247 basehttp 17944 28068 "GET /api/conversation/last-response/5511888888888/ HTTP/1.1" 200 131
+ERROR 2025-08-20 21:52:50,287 whatsapp 17944 45192 Failed to send WhatsApp message to 5511111111111: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:52:50,288 webhook_views 17944 45192 WhatsApp response sent to 5511111111111: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:52:50,289 basehttp 17944 45192 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:52:53,327 basehttp 17944 4228 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 131
+ERROR 2025-08-20 21:52:55,589 whatsapp 17944 41804 Failed to send WhatsApp message to 5511111111111: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:52:55,589 webhook_views 17944 41804 WhatsApp response sent to 5511111111111: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:52:55,590 basehttp 17944 41804 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:52:58,613 basehttp 17944 28068 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 131
+ERROR 2025-08-20 21:53:00,862 whatsapp 17944 39148 Failed to send WhatsApp message to 5511111111111: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:53:00,862 webhook_views 17944 39148 WhatsApp response sent to 5511111111111: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:53:00,863 basehttp 17944 39148 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:53:03,897 basehttp 17944 44324 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 131
+ERROR 2025-08-20 21:53:06,149 whatsapp 17944 40704 Failed to send WhatsApp message to 5511111111111: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:53:06,150 webhook_views 17944 40704 WhatsApp response sent to 5511111111111: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:53:06,151 basehttp 17944 40704 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:53:09,173 basehttp 17944 18680 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 131
+ERROR 2025-08-20 21:53:11,420 whatsapp 17944 28456 Failed to send WhatsApp message to 5511111111111: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:53:11,421 webhook_views 17944 28456 WhatsApp response sent to 5511111111111: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:53:11,421 basehttp 17944 28456 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:54:01,220 basehttp 17944 44872 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 111
+ERROR 2025-08-20 21:54:03,512 whatsapp 17944 31876 Failed to send WhatsApp message to 551137641: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:54:03,512 webhook_views 17944 31876 WhatsApp response sent to 551137641: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:54:03,513 basehttp 17944 31876 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:54:06,527 basehttp 17944 27180 "GET /api/conversation/last-response/551137641/ HTTP/1.1" 200 131
+ERROR 2025-08-20 21:54:08,789 whatsapp 17944 30716 Failed to send WhatsApp message to 551137641: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 21:54:08,789 webhook_views 17944 30716 WhatsApp response sent to 551137641: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 21:54:08,790 basehttp 17944 30716 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 21:54:11,818 basehttp 17944 41812 "GET /api/conversation/last-response/551137641/ HTTP/1.1" 200 131

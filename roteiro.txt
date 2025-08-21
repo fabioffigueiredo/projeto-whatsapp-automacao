@@ -1,190 +1,343 @@
-Roteiro de Automação WhatsApp para XPS247 - Árvore de Decisão
-Este roteiro descreve o fluxo de interação do cliente desde o primeiro contato até a finalização de uma transferência de dinheiro.
+# ROTEIRO DE AUTOMAÇÃO WHATSAPP - XPS247
+## Fluxo Completo de Transferência Internacional
 
-- Ponto de Partida: O cliente envia qualquer mensagem para o número de WhatsApp da empresa (ex: "Olá", "Quero enviar dinheiro", etc.).
+### 📱 PONTO DE PARTIDA
+O cliente envia qualquer mensagem para iniciar o atendimento (ex: "Olá", "Quero enviar dinheiro", etc.)
 
-# Nó 1: Verificação Inicial do Cliente
-O sistema é acionado e executa a primeira verificação.
+---
 
-- Lógica do Sistema: [API] Verificar se o número de telefone do remetente já existe no banco de dados da XPS247.
+## ETAPA 1: IDENTIFICAÇÃO DO CLIENTE
 
-- Se SIM (Cliente já cadastrado): O sistema recupera o nome do cliente e a cotação atual do dólar. Prossiga para o Nó 2.1.
+### 🔍 Verificação Automática
+**Sistema verifica:** Número do telefone existe no banco de dados?
 
-- Se NÃO (Novo cliente): O cliente é novo ou nunca se identificou. Prossiga para o Nó 2.2.
+**Se CLIENTE CADASTRADO:**
+- Sistema recupera nome e dados do cliente
+- Busca cotação atual do dólar
+- Prossegue para **ETAPA 2A** (Cliente Existente)
+
+**Se CLIENTE NOVO:**
+- Cliente não possui cadastro
+- Prossegue para **ETAPA 2B** (Novo Cliente)
 
 
-# Nó 2: Mensagem de Boas-Vindas
-## Nó 2.1: Mensagem para Cliente Existente
-- Sistema: Olá, [Nome do Cliente]! Que bom ter você aqui novamente.
-- A cotação do dólar hoje para envio é de R$ [Valor da Cotação].
+---
 
-- Sistema: Você deseja iniciar uma transferência?
-1 - Sim
-2 - Não
+## ETAPA 2A: BOAS-VINDAS - CLIENTE EXISTENTE
 
-- Se o cliente digitar 1: Vá para o Nó 3 (Autenticação).
+### 💬 Mensagem do Sistema
+```
+Olá, [Nome do Cliente]! Que bom ter você aqui novamente.
+A cotação do dólar hoje para envio é de R$ [Valor da Cotação].
 
-- Se o cliente digitar 2:
+Você deseja iniciar uma transferência?
+1 - Sim, quero fazer uma transferência
+2 - Não, obrigado
+```
 
-- Sistema: Entendido. Se precisar de ajuda com outro assunto ou quiser falar com um de nossos atendentes, me avise. Obrigado pelo contato!
-(Fim do fluxo)
+### 🔄 Fluxo de Respostas
 
-- Se a resposta for inválida:
+**Se digitar "1":**
+- Prossegue para **ETAPA 3** (Autenticação)
 
-- Sistema: Opção inválida. Por favor, digite 1 para iniciar uma transferência ou 2 para cancelar.
+**Se digitar "2":**
+```
+Entendido. Se precisar de ajuda ou quiser falar com nossos atendentes, me avise.
+Obrigado pelo contato!
+```
+- **FIM DO ATENDIMENTO**
 
-# Nó 2.2: Mensagem para Novo Cliente
-- Sistema: Olá! Bem-vindo(a) à XPS247, sua forma rápida e segura de enviar dinheiro dos EUA para o Brasil. Para começarmos e garantir sua segurança, precisamos realizar um breve cadastro. Vamos lá?
+**Se resposta inválida:**
+```
+Opção inválida. Por favor:
+1 - Para iniciar transferência
+2 - Para cancelar
+```
+
+---
+
+## ETAPA 2B: BOAS-VINDAS - CLIENTE NOVO
+
+### 💬 Mensagem do Sistema
+```
+Olá! Bem-vindo(a) à XPS247! 🇺🇸➡️🇧🇷
+
+Sua forma rápida e segura de enviar dinheiro dos EUA para o Brasil.
+
+Para começarmos e garantir sua segurança, precisamos realizar um breve cadastro.
+Vamos lá?
+
 1 - Sim, quero me cadastrar
 2 - Não agora
+```
 
-- Se o cliente digitar 1: Vá para o Nó 4 (Fluxo de Cadastro).
+### 🔄 Fluxo de Respostas
 
-- Se o cliente digitar 2:
+**Se digitar "1":**
+- Prossegue para **ETAPA 4** (Cadastro)
 
-- Sistema: Tudo bem! Quando estiver pronto, é só me chamar. Salve nosso número para facilitar o contato. Obrigado!
-(Fim do fluxo)
+**Se digitar "2":**
+```
+Tudo bem! Quando estiver pronto, é só me chamar.
+Salve nosso número para facilitar o contato. Obrigado!
+```
+- **FIM DO ATENDIMENTO**
 
-# Nó 3: Autenticação do Cliente Existente
-- Sistema: Para sua segurança, por favor, faça o login.
-- Insira seu nome de usuário ou e-mail cadastrado:
+---
 
-- Cliente: [Insere o usuário/e-mail]
+## ETAPA 3: AUTENTICAÇÃO SEGURA
 
-- Lógica doSistema: Obrigado. Agora, por favor, insira sua senha:
+### 🔐 Processo de Login
 
-- Cliente: [Insere a senha]
+**Passo 1 - Usuário:**
+```
+Para sua segurança, faça o login.
+Insira seu nome de usuário ou e-mail cadastrado:
+```
 
-- Lógica do Sistema: [API] Validar as credenciais (usuário/e-mail e senha) no banco de dados.
+**Passo 2 - Senha:**
+```
+Obrigado. Agora, insira sua senha:
+```
 
-- Se as credenciais forem VÁLIDAS:
+### ✅ Validação das Credenciais
 
-- Sistema: Login realizado com sucesso! Vamos iniciar sua transferência.
-- Prossiga para o Nó 5 (Coleta de Dados da Operação).
+**Se LOGIN VÁLIDO:**
+```
+Login realizado com sucesso! ✅
+Vamos iniciar sua transferência.
+```
+- Prossegue para **ETAPA 5** (Dados da Operação)
 
-- Se as credenciais forem INVÁLIDAS:
+**Se LOGIN INVÁLIDO:**
+```
+Usuário ou senha incorretos. ❌
 
-- Sistema: Usuário ou senha incorretos.
 1 - Tentar novamente
 2 - Esqueci minha senha
+```
 
-- Se o cliente digitar 1: Retorne ao início do Nó 3.
+### 🔄 Opções de Recuperação
 
-- Se o cliente digitar 2:
+**Se digitar "1":**
+- Retorna ao início da **ETAPA 3**
 
-- Sistema: Para redefinir sua senha, por favor, informe o e-mail que você usou no cadastro.
+**Se digitar "2":**
+```
+Para redefinir sua senha, informe o e-mail do seu cadastro:
+```
 
-- Cliente: [Insere o e-mail]
+**Se e-mail EXISTE:**
+```
+Enviamos um link seguro para: [e-mail do cliente]
+Verifique sua caixa de entrada e spam.
+Após criar nova senha, volte aqui e me chame para continuar.
+```
+- **FIM DO ATENDIMENTO**
 
-- Lógica do Sistema: [API] Verifica se o e-mail existe e envia um link para redefinição.
+**Se e-mail NÃO EXISTE:**
+```
+E-mail não encontrado. Tente novamente ou entre em contato conosco.
+```
+- **FIM DO ATENDIMENTO**
 
-- Se o e-mail existir:
+---
 
-- Sistema: Enviamos um link seguro para redefinição de senha para o e-mail [e-mail do cliente]. Por favor, verifique sua caixa de entrada e spam. Após criar uma nova senha, volte aqui e me chame para continuar.
-(Fim do fluxo de redefinição)
+## ETAPA 4: CADASTRO SIMPLIFICADO
 
-- Se o e-mail não existir:
+### 📝 Coleta de Dados Básicos
 
-- Sistema: Erro interno. Tente novamente.
-(Fim do fluxo)
+**Passo 1 - Nome:**
+```
+Ótimo! Para começar, qual o seu nome completo?
+```
 
-# Nó 4: Fluxo de Cadastro (Para Novos Clientes)
-(Este fluxo pode ser simplificado no WhatsApp para coletar apenas o essencial e talvez completar em um link externo por segurança).
+**Passo 2 - Username:**
+```
+Prazer, [Nome do Cliente]! 😊
+Agora, crie um nome de usuário:
+```
 
-- Sistema: Ótimo! Para começar, qual o seu nome completo?
+**Passo 3 - Cadastro Completo:**
+```
+Perfeito! Para finalizar o cadastro, precisamos de mais alguns dados
+em nosso site seguro para cumprir as regulamentações.
 
-- Cliente: [Insere o nome completo]
+Por favor, acesse o link abaixo:
+[Link para página de cadastro da XPS247]
 
-- Lógica do Sistema: Prazer, [Nome do Cliente]! Agora, por favor, crie um nome de usuário:
+Após finalizar, volte aqui e digite "Pronto" para iniciarmos
+sua primeira transferência!
+```
 
-- Cliente: [Insere o nome de usuário]
+### ⏳ Aguardando Confirmação
+**Sistema aguarda:** Cliente digitar "Pronto"
+**Quando confirmado:** Prossegue para **ETAPA 5** (Dados da Operação)
 
-- logica do Sistema: Perfeito. Para finalizar o cadastro, precisamos de mais alguns dados em nosso site seguro para cumprir as regulamentações. Por favor, acesse o link abaixo para completar seu perfil.
-[Link para a página de cadastro da XPS247]
+---
 
-- Após finalizar, volte aqui e digite "Pronto" para iniciarmos sua primeira transferência!
-(O fluxo aguarda a confirmação do cliente para prosseguir para o Nó 5)
+## ETAPA 5: DADOS DA TRANSFERÊNCIA
 
-# Nó 5: Coleta de Dados da Operação
-- Sistema: Excelente! Agora, por favor, informe os dados da pessoa que irá receber o dinheiro no Brasil.
+### 👤 Informações do Destinatário
 
-- Sistema: 1. Qual o Nome Completo do destinatário?
+```
+Excelente! Agora vamos coletar os dados da pessoa que
+irá receber o dinheiro no Brasil.
+```
 
-- Cliente: [Insere o nome]
+**Passo 1 - Nome:**
+```
+1. Qual o Nome Completo do destinatário?
+```
 
-- Sistema: 2. Qual o CPF do destinatário? (Use apenas números)
+**Passo 2 - CPF:**
+```
+2. Qual o CPF do destinatário?
+(Use apenas números: 12345678900)
+```
 
-- Cliente: [Insere o CPF]
+**Passo 3 - Chave PIX:**
+```
+3. Qual a Chave PIX para recebimento?
+(Pode ser: CPF, e-mail, telefone ou chave aleatória)
+```
 
-- Sistema: 3. Qual a Chave PIX para o recebimento? (Pode ser CPF, e-mail, telefone ou chave aleatória)
+**Passo 4 - Endereço:**
+```
+4. Informe o endereço completo no formato:
+Rua/Avenida, Número, Complemento, Bairro, Cidade - Estado, CEP
 
-- Cliente: [Insere a Chave PIX]
+Exemplo: Rua das Flores, 123, Apt 45, Centro, São Paulo - SP, 01234-567
+```
 
-- Sistema: 4. Por favor, informe o endereço completo do destinatário no formato:
-Rua/Avenida, Número, Complemento (se houver), Bairro, Cidade - Estado, CEP
+### 💰 Valor da Transferência
 
-- Cliente: [Insere o endereço no formato solicitado]
+```
+Dados do destinatário recebidos! ✅
 
-- Lógica do Sistema: Dados do destinatário recebidos! Agora, para o valor:
-Quanto você deseja transferir em DÓLARES (USD)?
+Agora, quanto você deseja transferir em DÓLARES (USD)?
+Exemplo: 150.00
+```
 
-- Cliente: [Insere o valor, ex: 150.00]
+### 🧮 Cálculo Automático
+**Sistema processa:**
+- Valor em USD informado
+- Cotação atual do dólar
+- Cálculo de taxas
+- Valor final em Reais (BRL)
 
-- Lógica do Sistema: [API] O sistema captura o valor em USD, busca a cotação atual, calcula as taxas e o valor final em Reais (BRL).
+---
 
-- Sistema: Por favor, confirme todos os dados da sua operação:
+## ETAPA 6: CONFIRMAÇÃO DOS DADOS
 
-- Sistema: Você envia: $ [Valor em USD]
-- Sistema:Cotação do Dólar: R$ [Cotação]
-- Sistema:Valor bruto: R$ [Valor convertido em BRL]
-- Sistema:Taxa de serviço: R$Valor a receber no Brasil (aproximado): R$ [Valor convertido em BRL]
+### 📋 Resumo da Operação
 
-- Recebedor:
+```
+📊 RESUMO DA SUA TRANSFERÊNCIA:
+
+💵 VALORES:
+• Você envia: $ [Valor em USD]
+• Cotação do Dólar: R$ [Cotação]
+• Valor bruto: R$ [Valor convertido]
+• Taxa de serviço: R$ [Taxa]
+• Valor a receber: R$ [Valor final]
+
+👤 DESTINATÁRIO:
 • Nome: [Nome do Destinatário]
 • CPF: [CPF do Destinatário]
-• Chave PIX: [Chave PIX do Destinatário]
+• Chave PIX: [Chave PIX]
+• Endereço: [Endereço completo]
 
-- Os dados estão corretos?
+✅ Os dados estão corretos?
 1 - Sim, tudo correto
 2 - Não, quero alterar
+```
 
-- Logica do sistema: Se o cliente digitar 1: Vá para o Nó 6 (Pagamento).
+### 🔄 Opções de Confirmação
 
-- Logica do sistema: Se o cliente digitar 2:
+**Se digitar "1":**
+- Prossegue para **ETAPA 7** (Pagamento)
 
-- Sistema: O que você gostaria de fazer?
-1 - Alterar os dados da operação
-2 - Cancelar e finalizar o atendimento
+**Se digitar "2":**
+```
+O que você gostaria de fazer?
+1 - Alterar dados da operação
+2 - Cancelar atendimento
+```
 
-- Se digitar 1: Retorne ao início do Nó 5.
+**Se escolher "1" (Alterar):**
+- Retorna para **ETAPA 5** (Dados da Operação)
 
-- Se digitar 2:
+**Se escolher "2" (Cancelar):**
+```
+Operação cancelada. Se mudar de ideia, estarei por aqui! 😊
+```
+- **FIM DO ATENDIMENTO**
 
-- Sistema: Operação cancelada. Se mudar de ideia, estarei por aqui!
-(Fim do fluxo)
+---
 
-# Nó 6: Pagamento e Finalização
-- Sistema: Perfeito! Para finalizar, gerei um link de pagamento seguro para você. Ele é válido por 20 minutos.
+## ETAPA 7: PAGAMENTO E FINALIZAÇÃO
 
-- Clique aqui para pagar: [Link único e seguro para o gateway de pagamento]
+### 💳 Link de Pagamento
 
-- logiga do sistema:Após a confirmação do pagamento, você receberá uma mensagem automática aqui mesmo.
+```
+Perfeito! Gerei um link de pagamento seguro para você.
+🔒 Válido por 20 minutos
 
-- Lógica do Sistema: O sistema aguarda um webhook (notificação automática) do gateway de pagamento informando sobre o status da transação.
+👆 Clique aqui para pagar:
+[Link único e seguro para gateway de pagamento]
 
-- Após receber a confirmação de pagamento bem-sucedido:
+Após a confirmação do pagamento, você receberá uma
+mensagem automática aqui mesmo.
+```
 
-- Sistema: ✅ Pagamento Confirmado! Sua transação foi concluída com sucesso.
+### ⏳ Aguardando Pagamento
+**Sistema monitora:** Webhook do gateway de pagamento
+**Status:** Aguardando confirmação da transação
 
-- O dinheiro estará na conta do(a) [Nome do Destinatário] em até [Definir tempo, ex: 1 dia útil]. Enviaremos uma nova mensagem assim que o valor for creditado.
+### ✅ Pagamento Confirmado
 
-- Deseja realizar outra transação?
+```
+✅ PAGAMENTO CONFIRMADO!
+Sua transação foi concluída com sucesso! 🎉
+
+O dinheiro estará na conta do(a) [Nome do Destinatário]
+em até 1 dia útil.
+
+Enviaremos uma nova mensagem assim que o valor for creditado.
+
+🔄 Deseja realizar outra transação?
 1 - Sim, fazer outra transferência
 2 - Não, finalizar agora
+```
 
-- Se o cliente digitar 1: Retorne ao Nó 5 (Coleta de Dados da Operação).
+### 🔄 Finalização
 
-- Se o cliente digitar 2:
+**Se digitar "1":**
+- Retorna para **ETAPA 5** (Nova Operação)
 
-Sistema: Obrigado por utilizar a XPS247! Estamos sempre à disposição. Tenha um ótimo dia!
-(Fim do fluxo)
+**Se digitar "2":**
+```
+Obrigado por utilizar a XPS247! 🙏
+Estamos sempre à disposição.
+Tenha um ótimo dia! ☀️
+```
+- **FIM DO ATENDIMENTO**
+
+---
+
+## 📝 RESUMO DO FLUXO COMPLETO
+
+1. **IDENTIFICAÇÃO** → Verificar se cliente existe
+2. **BOAS-VINDAS** → Mensagem personalizada (existente/novo)
+3. **AUTENTICAÇÃO** → Login seguro (apenas clientes existentes)
+4. **CADASTRO** → Registro simplificado (apenas novos clientes)
+5. **DADOS DA OPERAÇÃO** → Destinatário e valor
+6. **CONFIRMAÇÃO** → Revisão de todos os dados
+7. **PAGAMENTO** → Processamento e finalização
+
+### 🎯 PONTOS DE SAÍDA
+- Cliente recusa cadastro/transferência
+- Falha na autenticação
+- Cancelamento durante confirmação
+- Conclusão bem-sucedida da transferência

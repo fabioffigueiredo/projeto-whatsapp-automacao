@@ -126,6 +126,66 @@ def create_client(client_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         return None
 
 
+def find_beneficiary_by_cpf(cpf: str) -> Optional[Dict[str, Any]]:
+    """
+    Busca beneficiário no sistema XPS247 pelo CPF
+    
+    Args:
+        cpf (str): CPF do beneficiário
+    
+    Returns:
+        dict: Dados do beneficiário se encontrado, None caso contrário
+    """
+    try:
+        xps247_api_url = getattr(settings, 'XPS247_API_URL', None)
+        xps247_api_key = getattr(settings, 'XPS247_API_KEY', None)
+        
+        if not xps247_api_url or not xps247_api_key:
+            logger.warning("XPS247 API not configured, simulating beneficiary not found")
+            # Em desenvolvimento, simula que o beneficiário não foi encontrado
+            # para testar o fluxo de cadastro
+            return None
+        
+        headers = {
+            'Authorization': f'Bearer {xps247_api_key}',
+            'Content-Type': 'application/json'
+        }
+        
+        response = requests.get(
+            f"{xps247_api_url}/beneficiaries/search",
+            params={'cpf': cpf},
+            headers=headers,
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            data = response.json()
+            if data.get('beneficiaries'):
+                beneficiary = data['beneficiaries'][0]  # Pegar o primeiro resultado
+                return {
+                    'name': beneficiary.get('name'),
+                    'cpf': beneficiary.get('cpf'),
+                    'pix_key': beneficiary.get('pix_key'),
+                    'address': beneficiary.get('address'),
+                    'xps247_id': beneficiary.get('id')
+                }
+        elif response.status_code == 404:
+            logger.info(f"Beneficiary not found in XPS247 for CPF: {cpf}")
+            return None
+        else:
+            logger.error(f"XPS247 API error: {response.status_code} - {response.text}")
+            return None
+            
+    except requests.RequestException as e:
+        logger.error(f"Error connecting to XPS247 API: {e}")
+        return None
+    except Exception as e:
+        logger.error(f"Unexpected error in find_beneficiary_by_cpf: {e}")
+        return None
+    
+    return None
+
+
 def verify_client_cpf(xps247_id: str, cpf: str) -> bool:
     """
     Verifica se o CPF do cliente está correto no sistema XPS247

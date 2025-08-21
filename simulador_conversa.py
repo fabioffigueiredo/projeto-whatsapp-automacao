@@ -51,6 +51,20 @@ class SimuladorConversaWhatsApp:
         except Exception as e:
             return False, str(e)
     
+    def obter_resposta_sistema(self):
+        """Obtém a última resposta do sistema através dos logs"""
+        try:
+            # Simula a obtenção da resposta do sistema
+            # Em um cenário real, isso poderia vir de logs ou de uma API específica
+            response = requests.get(f"{self.base_url}/api/conversation/last-response/{self.phone_number}/")
+            if response.status_code == 200:
+                data = response.json()
+                return data.get('message', 'Sistema processou sua mensagem')
+            else:
+                return "Sistema processou sua mensagem"
+        except:
+            return "Sistema processou sua mensagem"
+    
     def verificar_servidor(self):
         """Verifica se o servidor Django está rodando"""
         try:
@@ -134,8 +148,12 @@ class SimuladorConversaWhatsApp:
                     print("⏳ Aguardando resposta do sistema...")
                     time.sleep(2)
                     
-                    print("🤖 Sistema processou sua mensagem")
-                    print("💡 Verifique os logs do servidor para ver a resposta")
+                    # Obter e exibir a resposta do sistema
+                    resposta_sistema = self.obter_resposta_sistema()
+                    timestamp_resposta = datetime.now().strftime("%H:%M:%S")
+                    
+                    print(f"\n🤖 [{timestamp_resposta}] Sistema:")
+                    print(f"💬 {resposta_sistema}")
                     
                 else:
                     print(f"❌ Erro ao enviar mensagem: {resposta}")
