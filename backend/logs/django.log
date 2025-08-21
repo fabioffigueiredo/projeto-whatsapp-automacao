@@ -1637,3 +1637,886 @@ INFO 2025-08-20 22:16:31,127 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 
 INFO 2025-08-20 22:17:01,213 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
 INFO 2025-08-20 22:17:31,296 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
 INFO 2025-08-20 22:18:01,394 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:18:31,501 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:19:01,606 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:19:31,732 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:20:01,922 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:20:32,020 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+ERROR 2025-08-20 22:21:00,806 whatsapp 11 139770910992064 Failed to parse WhatsApp webhook: list index out of range
+WARNING 2025-08-20 22:21:00,807 webhook_views 11 139770910992064 No valid message found in WhatsApp webhook
+INFO 2025-08-20 22:21:00,807 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-20 22:21:02,121 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:21:32,217 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 22:21:59,517 log 11 139770902599360 Not Found: /
+WARNING 2025-08-20 22:21:59,518 basehttp 11 139770902599360 "GET / HTTP/1.1" 404 2304
+ERROR 2025-08-20 22:21:59,591 conversation_handler 11 139770902599360 Erro ao calcular transfer√™ncia: [<class 'decimal.ConversionSyntax'>]
+INFO 2025-08-20 22:21:59,618 whatsapp 11 139770902599360 MOCK: Sending to 5511999999999: ‚ùå Erro ao calcular valores. Tente novamente com um valor v√°lido.
+INFO 2025-08-20 22:21:59,618 webhook_views 11 139770902599360 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:21:59,619 basehttp 11 139770902599360 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:22:02,327 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:22:32,430 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:23:02,513 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:23:32,604 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:24:02,673 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:24:32,753 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:25:02,828 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:25:32,930 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:26:03,013 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:26:33,099 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:27:03,176 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:27:33,250 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:28:03,337 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:28:33,405 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:29:03,492 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:29:33,587 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:30:03,676 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:30:33,762 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:31:03,833 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:31:33,911 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 22:31:50,444 log 11 139770910992064 Not Found: /
+WARNING 2025-08-20 22:31:50,445 basehttp 11 139770910992064 "GET / HTTP/1.1" 404 2304
+ERROR 2025-08-20 22:31:50,504 conversation_handler 11 139770910992064 Erro ao calcular transfer√™ncia: [<class 'decimal.ConversionSyntax'>]
+INFO 2025-08-20 22:31:50,530 whatsapp 11 139770910992064 MOCK: Sending to 5511999999999: ‚ùå Erro ao calcular valores. Tente novamente com um valor v√°lido.
+INFO 2025-08-20 22:31:50,530 webhook_views 11 139770910992064 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:31:50,531 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:32:04,005 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:32:34,081 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:33:04,177 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:33:34,255 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:34:04,328 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:34:34,416 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:35:04,505 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:35:34,588 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:36:04,659 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:36:34,733 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:37:04,804 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:37:34,888 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:38:04,970 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:38:35,062 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:39:05,159 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:39:35,237 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:40:05,324 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:40:35,414 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:41:05,487 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:41:35,562 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:42:05,645 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:42:35,722 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:43:05,815 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:43:35,898 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:44:05,979 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:44:36,070 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:45:06,158 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:45:36,250 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:46:06,332 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:46:36,412 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:47:06,500 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:47:36,595 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:48:06,667 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:48:36,743 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:49:06,836 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 22:49:18,267 log 11 139770910992064 Not Found: /
+WARNING 2025-08-20 22:49:18,267 basehttp 11 139770910992064 "GET / HTTP/1.1" 404 2304
+ERROR 2025-08-20 22:49:18,334 conversation_handler 11 139770910992064 Erro ao calcular transfer√™ncia: [<class 'decimal.ConversionSyntax'>]
+INFO 2025-08-20 22:49:18,358 whatsapp 11 139770910992064 MOCK: Sending to 5511999999999: ‚ùå Erro ao calcular valores. Tente novamente com um valor v√°lido.
+INFO 2025-08-20 22:49:18,358 webhook_views 11 139770910992064 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:49:18,359 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:49:36,950 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:50:07,029 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:50:37,126 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:51:07,213 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:51:37,308 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 22:51:45,688 log 11 139770910992064 Not Found: /
+WARNING 2025-08-20 22:51:45,689 basehttp 11 139770910992064 "GET / HTTP/1.1" 404 2304
+ERROR 2025-08-20 22:51:45,754 conversation_handler 11 139770910992064 Erro ao calcular transfer√™ncia: [<class 'decimal.ConversionSyntax'>]
+INFO 2025-08-20 22:51:45,781 whatsapp 11 139770910992064 MOCK: Sending to 5511999999999: ‚ùå Erro ao calcular valores. Tente novamente com um valor v√°lido.
+INFO 2025-08-20 22:51:45,781 webhook_views 11 139770910992064 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:51:45,782 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:52:07,421 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:52:37,506 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 22:52:58,132 log 11 139770910992064 Not Found: /
+WARNING 2025-08-20 22:52:58,133 basehttp 11 139770910992064 "GET / HTTP/1.1" 404 2304
+ERROR 2025-08-20 22:52:58,206 conversation_handler 11 139770910992064 Erro ao calcular transfer√™ncia: [<class 'decimal.ConversionSyntax'>]
+INFO 2025-08-20 22:52:58,234 whatsapp 11 139770910992064 MOCK: Sending to 5511999999999: ‚ùå Erro ao calcular valores. Tente novamente com um valor v√°lido.
+INFO 2025-08-20 22:52:58,234 webhook_views 11 139770910992064 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:52:58,235 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:53:07,600 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-08-20 22:53:33,188 log 11 139770910992064 Not Found: /
+WARNING 2025-08-20 22:53:33,189 basehttp 11 139770910992064 "GET / HTTP/1.1" 404 2304
+ERROR 2025-08-20 22:53:33,235 conversation_handler 11 139770910992064 Erro ao calcular transfer√™ncia: [<class 'decimal.ConversionSyntax'>]
+INFO 2025-08-20 22:53:33,257 whatsapp 11 139770910992064 MOCK: Sending to 5511999999999: ‚ùå Erro ao calcular valores. Tente novamente com um valor v√°lido.
+INFO 2025-08-20 22:53:33,257 webhook_views 11 139770910992064 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:53:33,258 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:53:37,700 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:54:07,773 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:54:37,861 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:55:07,949 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:55:38,047 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:55:44,268 autoreload 11 139771074927488 /app/backend/config/settings.py changed, reloading.
+INFO 2025-08-20 22:55:44,434 autoreload 30124 992 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\config\settings.py changed, reloading.
+INFO 2025-08-20 22:55:45,102 autoreload 32320 9244 Watching for file changes with StatReloader
+INFO 2025-08-20 22:55:45,530 autoreload 813 130106975767424 Watching for file changes with StatReloader
+WARNING 2025-08-20 22:55:45,873 whatsapp 813 130106975767424 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 22:56:08,139 basehttp 813 130106819344064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:56:38,232 basehttp 813 130106819344064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:56:55,345 autoreload 813 130106975767424 /app/backend/core/views/webhook_views.py changed, reloading.
+INFO 2025-08-20 22:56:55,996 autoreload 32320 9244 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\webhook_views.py changed, reloading.
+INFO 2025-08-20 22:56:56,187 autoreload 831 135093891038080 Watching for file changes with StatReloader
+WARNING 2025-08-20 22:56:56,469 whatsapp 831 135093891038080 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 22:56:56,646 autoreload 46408 43768 Watching for file changes with StatReloader
+INFO 2025-08-20 23:00:13,234 autoreload 46408 43768 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\config\settings.py changed, reloading.
+INFO 2025-08-20 23:00:13,352 autoreload 831 135093891038080 /app/backend/config/settings.py changed, reloading.
+INFO 2025-08-20 23:00:14,014 autoreload 26472 46032 Watching for file changes with StatReloader
+INFO 2025-08-20 23:00:14,565 autoreload 882 125407669975936 Watching for file changes with StatReloader
+WARNING 2025-08-20 23:00:14,958 whatsapp 882 125407669975936 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 23:03:52,224 autoreload 26472 46032 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\config\urls.py changed, reloading.
+INFO 2025-08-20 23:03:52,799 autoreload 15268 4236 Watching for file changes with StatReloader
+INFO 2025-08-20 23:04:23,586 autoreload 882 125407669975936 /app/backend/config/settings.py changed, reloading.
+INFO 2025-08-20 23:04:24,378 autoreload 15268 4236 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\config\settings.py changed, reloading.
+INFO 2025-08-20 23:04:24,431 autoreload 943 126187230313344 Watching for file changes with StatReloader
+WARNING 2025-08-20 23:04:24,706 whatsapp 943 126187230313344 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 23:04:25,004 autoreload 27512 38368 Watching for file changes with StatReloader
+INFO 2025-08-20 23:08:36,369 autoreload 27512 38368 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\dashboard\urls.py changed, reloading.
+INFO 2025-08-20 23:08:37,047 autoreload 22796 46540 Watching for file changes with StatReloader
+INFO 2025-08-20 23:09:01,286 autoreload 22796 46540 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\dashboard\views.py changed, reloading.
+INFO 2025-08-20 23:09:01,912 autoreload 42544 44356 Watching for file changes with StatReloader
+INFO 2025-08-20 23:09:56,311 autoreload 14620 33820 Watching for file changes with StatReloader
+INFO 2025-08-20 23:10:02,223 basehttp 14620 42292 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31755
+WARNING 2025-08-20 23:10:02,371 log 14620 42292 Not Found: /api/dashboard/stats/
+WARNING 2025-08-20 23:10:02,371 basehttp 14620 42292 "GET /api/dashboard/stats/ HTTP/1.1" 404 3493
+WARNING 2025-08-20 23:10:02,435 log 14620 42292 Not Found: /@vite/client
+WARNING 2025-08-20 23:10:02,435 basehttp 14620 42292 "GET /@vite/client HTTP/1.1" 404 2511
+WARNING 2025-08-20 23:10:10,298 log 14620 42292 Not Found: /api/dashboard/message-analytics/
+WARNING 2025-08-20 23:10:10,298 basehttp 14620 42292 "GET /api/dashboard/message-analytics/?period=7 HTTP/1.1" 404 3538
+WARNING 2025-08-20 23:10:15,155 log 14620 42292 Not Found: /api/dashboard/system-health/
+WARNING 2025-08-20 23:10:15,155 basehttp 14620 42292 "GET /api/dashboard/system-health/ HTTP/1.1" 404 3517
+WARNING 2025-08-20 23:10:32,381 log 14620 42292 Not Found: /api/dashboard/realtime/
+WARNING 2025-08-20 23:10:32,382 basehttp 14620 42292 "GET /api/dashboard/realtime/ HTTP/1.1" 404 3502
+INFO 2025-08-20 23:10:55,637 autoreload 14620 33820 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\dashboard\views.py changed, reloading.
+INFO 2025-08-20 23:10:56,253 autoreload 22252 17948 Watching for file changes with StatReloader
+WARNING 2025-08-20 23:11:02,390 log 22252 46448 Not Found: /api/dashboard/realtime/
+WARNING 2025-08-20 23:11:02,391 basehttp 22252 46448 "GET /api/dashboard/realtime/ HTTP/1.1" 404 3502
+INFO 2025-08-20 23:11:18,571 autoreload 22252 17948 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\dashboard\views.py changed, reloading.
+INFO 2025-08-20 23:11:19,191 autoreload 43252 42112 Watching for file changes with StatReloader
+WARNING 2025-08-20 23:11:32,384 log 43252 46508 Not Found: /api/dashboard/realtime/
+WARNING 2025-08-20 23:11:32,384 basehttp 43252 46508 "GET /api/dashboard/realtime/ HTTP/1.1" 404 3502
+INFO 2025-08-20 23:11:38,427 basehttp 43252 46508 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31755
+INFO 2025-08-20 23:11:38,483 basehttp 43252 46508 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31755
+INFO 2025-08-20 23:11:38,593 basehttp 43252 46508 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+WARNING 2025-08-20 23:11:38,654 log 43252 46508 Not Found: /@vite/client
+WARNING 2025-08-20 23:11:38,654 basehttp 43252 46508 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:11:41,915 basehttp 43252 46508 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31755
+INFO 2025-08-20 23:11:41,977 basehttp 43252 46508 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31755
+INFO 2025-08-20 23:11:42,073 basehttp 43252 46508 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+WARNING 2025-08-20 23:11:42,109 log 43252 46508 Not Found: /@vite/client
+WARNING 2025-08-20 23:11:42,110 basehttp 43252 46508 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:11:58,527 autoreload 43252 42112 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\dashboard\views.py changed, reloading.
+INFO 2025-08-20 23:11:59,207 autoreload 10408 43724 Watching for file changes with StatReloader
+INFO 2025-08-20 23:12:22,299 autoreload 10408 43724 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\dashboard\views.py changed, reloading.
+INFO 2025-08-20 23:12:22,931 autoreload 27032 43536 Watching for file changes with StatReloader
+INFO 2025-08-20 23:12:25,892 basehttp 27032 22804 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31755
+WARNING 2025-08-20 23:12:26,352 log 27032 33444 Not Found: /
+WARNING 2025-08-20 23:12:26,352 basehttp 27032 33444 "GET /?ide_webview_request_time=1755742346028 HTTP/1.1" 404 2496
+WARNING 2025-08-20 23:12:26,400 log 27032 33444 Not Found: /@vite/client
+WARNING 2025-08-20 23:12:26,400 basehttp 27032 33444 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:12:38,831 autoreload 27032 43536 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\dashboard\views.py changed, reloading.
+INFO 2025-08-20 23:12:39,473 autoreload 28652 39260 Watching for file changes with StatReloader
+INFO 2025-08-20 23:12:40,185 basehttp 28652 42736 "GET /dashboard?ide_webview_request_time=1755742359073 HTTP/1.1" 301 0
+INFO 2025-08-20 23:12:40,411 basehttp 28652 35968 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 31755
+INFO 2025-08-20 23:12:40,472 basehttp 28652 35968 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+WARNING 2025-08-20 23:12:40,489 log 28652 35968 Not Found: /@vite/client
+WARNING 2025-08-20 23:12:40,489 basehttp 28652 35968 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:12:45,602 basehttp 28652 35968 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 31755
+INFO 2025-08-20 23:12:45,661 basehttp 28652 16064 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31755
+INFO 2025-08-20 23:12:45,788 basehttp 28652 16064 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+WARNING 2025-08-20 23:12:45,869 log 28652 16064 Not Found: /@vite/client
+WARNING 2025-08-20 23:12:45,869 basehttp 28652 16064 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:12:55,435 basehttp 28652 43540 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+INFO 2025-08-20 23:13:01,199 basehttp 28652 43540 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+INFO 2025-08-20 23:13:17,157 basehttp 28652 16064 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31838
+INFO 2025-08-20 23:13:17,190 basehttp 28652 16064 "GET /dashboard/?ide_webview_request_time=1755742202209 HTTP/1.1" 200 31838
+INFO 2025-08-20 23:13:17,286 basehttp 28652 16064 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+WARNING 2025-08-20 23:13:17,375 log 28652 16064 Not Found: /@vite/client
+WARNING 2025-08-20 23:13:17,376 basehttp 28652 16064 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:13:29,627 basehttp 28652 43540 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-20 23:13:37,459 log 28652 43540 Not Found: /dashboard/api/message-analytics/
+WARNING 2025-08-20 23:13:37,460 basehttp 28652 43540 "GET /dashboard/api/message-analytics/ HTTP/1.1" 404 4058
+INFO 2025-08-20 23:13:41,849 basehttp 28652 43540 "GET /dashboard/api/messages-chart/ HTTP/1.1" 200 294
+WARNING 2025-08-20 23:13:47,300 log 28652 16064 Not Found: /dashboard/api/realtime/
+WARNING 2025-08-20 23:13:47,301 basehttp 28652 16064 "GET /dashboard/api/realtime/ HTTP/1.1" 404 4031
+WARNING 2025-08-20 23:14:17,301 log 28652 16064 Not Found: /dashboard/api/realtime/
+WARNING 2025-08-20 23:14:17,302 basehttp 28652 16064 "GET /dashboard/api/realtime/ HTTP/1.1" 404 4031
+WARNING 2025-08-20 23:14:47,303 log 28652 16064 Not Found: /dashboard/api/realtime/
+WARNING 2025-08-20 23:14:47,303 basehttp 28652 16064 "GET /dashboard/api/realtime/ HTTP/1.1" 404 4031
+WARNING 2025-08-20 23:15:17,297 log 28652 16064 Not Found: /dashboard/api/realtime/
+WARNING 2025-08-20 23:15:17,298 basehttp 28652 16064 "GET /dashboard/api/realtime/ HTTP/1.1" 404 4031
+WARNING 2025-08-20 23:15:47,290 log 28652 16064 Not Found: /dashboard/api/realtime/
+WARNING 2025-08-20 23:15:47,291 basehttp 28652 16064 "GET /dashboard/api/realtime/ HTTP/1.1" 404 4031
+INFO 2025-08-20 23:15:53,858 basehttp 28652 16064 "GET /dashboard/?ide_webview_request_time=1755742553853 HTTP/1.1" 200 33617
+INFO 2025-08-20 23:15:53,882 basehttp 28652 16064 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+WARNING 2025-08-20 23:15:54,082 log 28652 16064 Not Found: /@vite/client
+WARNING 2025-08-20 23:15:54,083 basehttp 28652 16064 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:16:23,885 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:16:33,904 basehttp 28652 16064 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-20 23:16:33,941 basehttp 28652 16064 "GET /dashboard/api/stats/ HTTP/1.1" 200 309
+INFO 2025-08-20 23:16:33,964 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-20 23:16:33,979 log 28652 16064 Not Found: /@vite/client
+WARNING 2025-08-20 23:16:33,980 basehttp 28652 16064 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:17:03,938 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:17:33,938 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:18:03,937 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:18:33,938 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:19:03,945 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:19:33,940 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:20:03,952 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:20:33,947 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:21:03,946 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:21:33,947 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:22:03,945 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:22:33,950 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:23:03,945 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:23:33,937 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:24:03,942 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:24:33,947 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:25:03,944 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:25:33,946 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:26:03,939 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-20 23:26:33,945 basehttp 28652 16064 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-20 23:47:59,157 log 28652 26648 Not Found: /webhook/
+WARNING 2025-08-20 23:47:59,158 basehttp 28652 26648 "GET /webhook/?hub.mode=subscribe&hub.challenge=1899437316&hub.verify_token=31ZuU7RFNeaCiq7slczQIu9GO2K_4EtdjaZGtKwGtTuYfAsSm HTTP/1.1" 404 2631
+WARNING 2025-08-20 23:48:43,553 log 28652 44080 Not Found: /
+WARNING 2025-08-20 23:48:43,554 basehttp 28652 44080 "GET /?hub.mode=subscribe&hub.challenge=1274981235&hub.verify_token=31ZuU7RFNeaCiq7slczQIu9GO2K_4EtdjaZGtKwGtTuYfAsSm HTTP/1.1" 404 2589
+WARNING 2025-08-20 23:49:27,302 log 28652 43208 Not Found: /
+WARNING 2025-08-20 23:49:27,303 basehttp 28652 43208 "GET /?hub.mode=subscribe&hub.challenge=1767399179&hub.verify_token=meu_token_123 HTTP/1.1" 404 2553
+WARNING 2025-08-20 23:50:08,199 log 28652 28712 Not Found: /
+WARNING 2025-08-20 23:50:08,199 basehttp 28652 28712 "GET /?hub.mode=subscribe&hub.challenge=1496999256&hub.verify_token=31ZuU7RFNeaCiq7slczQIu9GO2K_4EtdjaZGtKwGtTuYfAsSm HTTP/1.1" 404 2589
+WARNING 2025-08-20 23:51:04,642 log 28652 17516 Not Found: /
+WARNING 2025-08-20 23:51:04,644 basehttp 28652 17516 "GET /?hub.mode=subscribe&hub.challenge=1685881791&hub.verify_token=31ZuU7RFNeaCiq7slczQIu9GO2K_4EtdjaZGtKwGtTuYfAsSm HTTP/1.1" 404 2589
+WARNING 2025-08-20 23:52:07,079 log 28652 47764 Not Found: /webhook/
+WARNING 2025-08-20 23:52:07,079 basehttp 28652 47764 "GET /webhook/?hub.mode=subscribe&hub.verify_token=test123&hub.challenge=test_challenge HTTP/1.1" 404 2593
+WARNING 2025-08-20 23:52:12,906 whatsapp_business_service 28652 47764 Falha na verificaÁ„o do webhook: mode=subscribe, token=test123
+WARNING 2025-08-20 23:52:12,906 log 28652 47764 Forbidden: /api/webhook/
+WARNING 2025-08-20 23:52:12,907 basehttp 28652 47764 "GET /api/webhook/?hub.mode=subscribe&hub.verify_token=test123&hub.challenge=test_challenge HTTP/1.1" 403 9
+INFO 2025-08-20 23:52:35,778 whatsapp_business_service 28652 8 Webhook verificado com sucesso
+INFO 2025-08-20 23:52:35,779 basehttp 28652 8 "GET /api/webhook/?hub.mode=subscribe&hub.verify_token=test_verify_token&hub.challenge=test_challenge HTTP/1.1" 200 14
+WARNING 2025-08-20 23:54:25,204 log 28652 27236 Not Found: /
+WARNING 2025-08-20 23:54:25,205 basehttp 28652 27236 "GET /?hub.mode=subscribe&hub.challenge=1051997446&hub.verify_token=test_verify_token HTTP/1.1" 404 2557
+INFO 2025-08-20 23:54:54,707 whatsapp_business_service 28652 20940 Webhook verificado com sucesso
+INFO 2025-08-20 23:54:54,707 basehttp 28652 20940 "GET /api/webhook/?hub.mode=subscribe&hub.challenge=2113975240&hub.verify_token=test_verify_token HTTP/1.1" 200 10
+INFO 2025-08-20 23:57:27,419 basehttp 28652 47216 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 23:57:27,441 basehttp 28652 47216 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-20 23:57:50,082 conversation_handler 28652 1904 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-20 23:57:50,287 whatsapp_business_service 28652 1904 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:50,287 whatsapp_business_service 28652 1904 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A-DWyXklwLedmDsZQgpm5xW"}}
+ERROR 2025-08-20 23:57:50,287 webhook_views 28652 1904 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:50,474 whatsapp 28652 1904 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 23:57:50,475 webhook_views 28652 1904 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 23:57:50,475 basehttp 28652 1904 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 23:57:52,514 conversation_handler 28652 39824 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-20 23:57:52,688 whatsapp_business_service 28652 39824 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:52,688 whatsapp_business_service 28652 39824 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"ACHcrIxe5QuHm2wS2He0j3l"}}
+ERROR 2025-08-20 23:57:52,688 webhook_views 28652 39824 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:52,844 whatsapp 28652 39824 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 23:57:52,845 webhook_views 28652 39824 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 23:57:52,845 basehttp 28652 39824 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 23:57:54,857 conversation_handler 28652 20892 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-20 23:57:55,040 whatsapp_business_service 28652 20892 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:55,041 whatsapp_business_service 28652 20892 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"Alw9Bf4DL5Q2p1ZHzSYw6I8"}}
+ERROR 2025-08-20 23:57:55,041 webhook_views 28652 20892 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:55,214 whatsapp 28652 20892 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 23:57:55,215 webhook_views 28652 20892 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 23:57:55,215 basehttp 28652 20892 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 23:57:57,228 conversation_handler 28652 13640 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-20 23:57:57,397 whatsapp_business_service 28652 13640 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:57,397 whatsapp_business_service 28652 13640 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"ANYejkNJ3uf0CPN4-3MgE-b"}}
+ERROR 2025-08-20 23:57:57,397 webhook_views 28652 13640 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:57,568 whatsapp 28652 13640 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 23:57:57,569 webhook_views 28652 13640 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 23:57:57,569 basehttp 28652 13640 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 23:57:59,594 conversation_handler 28652 41472 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-20 23:57:59,768 whatsapp_business_service 28652 41472 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:59,768 whatsapp_business_service 28652 41472 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AEabngEOrCFwOnanBRTk6pH"}}
+ERROR 2025-08-20 23:57:59,768 webhook_views 28652 41472 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:57:59,927 whatsapp 28652 41472 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 23:57:59,928 webhook_views 28652 41472 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 23:57:59,929 basehttp 28652 41472 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-20 23:58:01,954 conversation_handler 28652 47408 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-20 23:58:02,116 whatsapp_business_service 28652 47408 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:58:02,117 whatsapp_business_service 28652 47408 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A49WQgaBlX8k5wRwrSHuGGy"}}
+ERROR 2025-08-20 23:58:02,117 webhook_views 28652 47408 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-20 23:58:02,292 whatsapp 28652 47408 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-20 23:58:02,292 webhook_views 28652 47408 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-20 23:58:02,293 basehttp 28652 47408 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 23:58:09,912 basehttp 28652 2560 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-20 23:58:09,957 basehttp 28652 2560 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-20 23:58:10,044 basehttp 28652 2560 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-20 23:58:10,104 basehttp 28652 2560 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-20 23:58:10,142 log 28652 2560 Not Found: /@vite/client
+WARNING 2025-08-20 23:58:10,143 basehttp 28652 2560 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:58:13,859 basehttp 28652 2560 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-20 23:58:13,902 basehttp 28652 2560 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-20 23:58:13,991 basehttp 28652 2560 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-20 23:58:14,069 basehttp 28652 2560 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-20 23:58:14,095 log 28652 2560 Not Found: /@vite/client
+WARNING 2025-08-20 23:58:14,096 basehttp 28652 2560 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-20 23:58:15,989 basehttp 28652 2560 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-20 23:58:16,047 basehttp 28652 2560 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-20 23:58:16,133 basehttp 28652 2560 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-20 23:58:16,195 basehttp 28652 2560 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-20 23:58:16,212 log 28652 2560 Not Found: /@vite/client
+WARNING 2025-08-20 23:58:16,212 basehttp 28652 2560 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-21 00:14:26,356 autoreload 41576 46888 Watching for file changes with StatReloader
+INFO 2025-08-21 00:16:14,665 basehttp 28652 7120 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-21 00:16:14,670 basehttp 28652 7120 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-21 00:16:20,054 conversation_handler 28652 43212 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:16:20,236 whatsapp_business_service 28652 43212 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:20,236 whatsapp_business_service 28652 43212 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AcoBumrbQrnMvtD3OFyuxRi"}}
+ERROR 2025-08-21 00:16:20,236 webhook_views 28652 43212 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:20,407 whatsapp 28652 43212 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:16:20,407 webhook_views 28652 43212 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:16:20,408 basehttp 28652 43212 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:16:22,434 conversation_handler 28652 44704 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:16:22,601 whatsapp_business_service 28652 44704 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:22,601 whatsapp_business_service 28652 44704 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A6jMych9ZVchgaf2Two9e8P"}}
+ERROR 2025-08-21 00:16:22,601 webhook_views 28652 44704 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:22,774 whatsapp 28652 44704 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:16:22,775 webhook_views 28652 44704 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:16:22,775 basehttp 28652 44704 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:16:24,788 conversation_handler 28652 30212 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:16:24,952 whatsapp_business_service 28652 30212 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:24,952 whatsapp_business_service 28652 30212 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A_9nsSzAKwaSy65FXxqaBpE"}}
+ERROR 2025-08-21 00:16:24,953 webhook_views 28652 30212 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:25,126 whatsapp 28652 30212 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:16:25,127 webhook_views 28652 30212 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:16:25,127 basehttp 28652 30212 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:16:27,138 conversation_handler 28652 9300 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:16:27,301 whatsapp_business_service 28652 9300 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:27,301 whatsapp_business_service 28652 9300 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"APfbA0FkBBYUVK_W7pg_0DD"}}
+ERROR 2025-08-21 00:16:27,302 webhook_views 28652 9300 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:27,457 whatsapp 28652 9300 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:16:27,458 webhook_views 28652 9300 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:16:27,458 basehttp 28652 9300 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:16:29,482 conversation_handler 28652 15744 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:16:29,659 whatsapp_business_service 28652 15744 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:29,659 whatsapp_business_service 28652 15744 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"ALHzYW6fMAlvUb7ZMbO9mfe"}}
+ERROR 2025-08-21 00:16:29,659 webhook_views 28652 15744 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:29,815 whatsapp 28652 15744 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:16:29,815 webhook_views 28652 15744 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:16:29,816 basehttp 28652 15744 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:16:31,828 conversation_handler 28652 36328 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:16:31,991 whatsapp_business_service 28652 36328 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:31,991 whatsapp_business_service 28652 36328 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AOsxXLGFJ4nV55e1-XaWh-e"}}
+ERROR 2025-08-21 00:16:31,991 webhook_views 28652 36328 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:16:32,168 whatsapp 28652 36328 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:16:32,169 webhook_views 28652 36328 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:16:32,169 basehttp 28652 36328 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:17:09,712 basehttp 28652 47236 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-21 00:17:09,770 basehttp 28652 47236 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-21 00:17:09,885 basehttp 28652 47236 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-21 00:17:09,923 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 00:17:09,973 log 28652 47236 Not Found: /@vite/client
+WARNING 2025-08-21 00:17:09,973 basehttp 28652 47236 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-21 00:17:39,888 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:18:09,888 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:18:39,897 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:19:09,888 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:19:39,896 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:20:09,895 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:20:39,890 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:21:09,890 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:21:39,897 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:22:09,898 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:22:39,887 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:23:09,894 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:23:39,886 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:24:09,889 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:24:39,885 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:25:09,888 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:25:39,886 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:26:09,887 basehttp 28652 47236 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:26:38,718 basehttp 28652 14032 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-21 00:26:38,723 basehttp 28652 14032 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-21 00:26:42,763 conversation_handler 28652 46248 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:26:42,939 whatsapp_business_service 28652 46248 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:42,939 whatsapp_business_service 28652 46248 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A-Uv8NCnll9_Kr5x3Osbkyc"}}
+ERROR 2025-08-21 00:26:42,939 webhook_views 28652 46248 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:43,096 whatsapp 28652 46248 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:26:43,096 webhook_views 28652 46248 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:26:43,097 basehttp 28652 46248 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:26:45,110 conversation_handler 28652 45156 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:26:45,283 whatsapp_business_service 28652 45156 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:45,283 whatsapp_business_service 28652 45156 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AeHeXs937I5jgQdFn0nwXy-"}}
+ERROR 2025-08-21 00:26:45,283 webhook_views 28652 45156 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:45,460 whatsapp 28652 45156 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:26:45,460 webhook_views 28652 45156 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:26:45,461 basehttp 28652 45156 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:26:47,485 conversation_handler 28652 44584 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:26:47,656 whatsapp_business_service 28652 44584 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:47,656 whatsapp_business_service 28652 44584 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"ALdBrhNTXybdPa43Ib380VH"}}
+ERROR 2025-08-21 00:26:47,656 webhook_views 28652 44584 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:47,816 whatsapp 28652 44584 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:26:47,816 webhook_views 28652 44584 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:26:47,817 basehttp 28652 44584 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:26:49,842 conversation_handler 28652 8220 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:26:50,029 whatsapp_business_service 28652 8220 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:50,030 whatsapp_business_service 28652 8220 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"Az8-sF-AN0yHVPsnm5SpY_a"}}
+ERROR 2025-08-21 00:26:50,030 webhook_views 28652 8220 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:50,192 whatsapp 28652 8220 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:26:50,192 webhook_views 28652 8220 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:26:50,193 basehttp 28652 8220 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:26:52,205 conversation_handler 28652 47940 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:26:52,373 whatsapp_business_service 28652 47940 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:52,373 whatsapp_business_service 28652 47940 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AChm1RQl_BUv8BSrHd06qf3"}}
+ERROR 2025-08-21 00:26:52,373 webhook_views 28652 47940 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:52,532 whatsapp 28652 47940 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:26:52,532 webhook_views 28652 47940 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:26:52,533 basehttp 28652 47940 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:26:54,558 conversation_handler 28652 38548 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:26:54,729 whatsapp_business_service 28652 38548 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:54,729 whatsapp_business_service 28652 38548 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AiHQsKUbUgxSbG0UwzvXVl0"}}
+ERROR 2025-08-21 00:26:54,729 webhook_views 28652 38548 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+ERROR 2025-08-21 00:26:54,892 whatsapp 28652 38548 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages
+INFO 2025-08-21 00:26:54,893 webhook_views 28652 38548 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
+INFO 2025-08-21 00:26:54,893 basehttp 28652 38548 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:27:24,105 autoreload 43888 26108 Watching for file changes with StatReloader
+INFO 2025-08-21 00:27:28,420 basehttp 43888 20908 "GET /dashboard/?ide_webview_request_time=1755742593837 HTTP/1.1" 200 33901
+INFO 2025-08-21 00:27:28,756 basehttp 43888 1084 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 33901
+INFO 2025-08-21 00:27:28,800 basehttp 43888 1084 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-21 00:27:28,859 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 00:27:28,894 log 43888 1084 Not Found: /@vite/client
+WARNING 2025-08-21 00:27:28,895 basehttp 43888 1084 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-21 00:27:32,493 basehttp 43888 46464 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-21 00:27:32,513 basehttp 43888 46464 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+WARNING 2025-08-21 00:27:35,178 whatsapp_business_service 43888 41452 Assinatura do webhook inv·lida
+WARNING 2025-08-21 00:27:35,179 webhook_views 43888 41452 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 00:27:35,179 log 43888 41452 Forbidden: /api/webhook/
+WARNING 2025-08-21 00:27:35,179 basehttp 43888 41452 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 00:27:41,959 whatsapp_business_service 43888 40608 Assinatura do webhook inv·lida
+WARNING 2025-08-21 00:27:41,959 webhook_views 43888 40608 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 00:27:41,959 log 43888 40608 Forbidden: /api/webhook/
+WARNING 2025-08-21 00:27:41,960 basehttp 43888 40608 "POST /api/webhook/ HTTP/1.1" 403 9
+INFO 2025-08-21 00:27:58,799 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:28:28,801 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:28:58,806 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:28:58,915 basehttp 43888 42200 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-21 00:28:58,920 basehttp 43888 42200 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-21 00:29:02,650 conversation_handler 43888 45180 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:29:02,829 whatsapp_business_service 43888 45180 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:02,829 whatsapp_business_service 43888 45180 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"A5PAsKAl7A4FqsW8gG4KRA6"}}
+ERROR 2025-08-21 00:29:02,829 webhook_views 43888 45180 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:03,074 whatsapp 43888 45180 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:29:03,074 webhook_views 43888 45180 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:29:03,075 basehttp 43888 45180 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:29:05,100 conversation_handler 43888 46500 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:29:05,274 whatsapp_business_service 43888 46500 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:05,274 whatsapp_business_service 43888 46500 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AhbbE--kZ842JXJRGEJju7t"}}
+ERROR 2025-08-21 00:29:05,274 webhook_views 43888 46500 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:05,460 whatsapp 43888 46500 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:29:05,461 webhook_views 43888 46500 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:29:05,461 basehttp 43888 46500 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:29:07,474 conversation_handler 43888 39512 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:29:07,657 whatsapp_business_service 43888 39512 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:07,657 whatsapp_business_service 43888 39512 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AELMVE1P2CyesfE2CbBcPrQ"}}
+ERROR 2025-08-21 00:29:07,657 webhook_views 43888 39512 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:07,816 whatsapp 43888 39512 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:29:07,817 webhook_views 43888 39512 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:29:07,817 basehttp 43888 39512 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:29:09,829 conversation_handler 43888 45968 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:29:09,995 whatsapp_business_service 43888 45968 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:09,995 whatsapp_business_service 43888 45968 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AfAQhYDwZUm0VWm455A-xkl"}}
+ERROR 2025-08-21 00:29:09,995 webhook_views 43888 45968 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:10,154 whatsapp 43888 45968 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:29:10,155 webhook_views 43888 45968 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:29:10,155 basehttp 43888 45968 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:29:12,167 conversation_handler 43888 7492 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:29:12,337 whatsapp_business_service 43888 7492 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:12,337 whatsapp_business_service 43888 7492 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AnPHlReYS9lAaSCmFB-rU9J"}}
+ERROR 2025-08-21 00:29:12,337 webhook_views 43888 7492 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:12,496 whatsapp 43888 7492 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:29:12,496 webhook_views 43888 7492 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:29:12,497 basehttp 43888 7492 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:29:14,541 conversation_handler 43888 4532 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:29:14,713 whatsapp_business_service 43888 4532 Erro ao enviar mensagem para 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:14,714 whatsapp_business_service 43888 4532 Resposta da API: {"error":{"message":"Invalid OAuth access token - Cannot parse access token","type":"OAuthException","code":190,"fbtrace_id":"AcpjHzMemFiihl22SdLFKd4"}}
+ERROR 2025-08-21 00:29:14,714 webhook_views 43888 4532 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:29:14,874 whatsapp 43888 4532 Failed to send WhatsApp message to 5511999999999: 401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:29:14,874 webhook_views 43888 4532 WhatsApp response sent via fallback to 5511999999999: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:29:14,875 basehttp 43888 4532 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:29:21,953 basehttp 43888 1084 "GET /dashboard/api/messages-chart/?period=7 HTTP/1.1" 200 294
+WARNING 2025-08-21 00:29:24,763 log 43888 1084 Not Found: /dashboard/api/system-health/
+WARNING 2025-08-21 00:29:24,764 basehttp 43888 1084 "GET /dashboard/api/system-health/ HTTP/1.1" 404 4046
+INFO 2025-08-21 00:29:28,804 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:29:58,806 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:30:28,792 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:30:58,804 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:31:28,799 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:31:58,804 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:32:28,795 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:32:58,807 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:33:28,802 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:33:58,807 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:34:28,798 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:34:58,793 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:35:28,800 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:35:58,803 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:36:28,805 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:36:58,796 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:37:28,794 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:37:58,807 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:38:28,801 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:38:58,805 basehttp 43888 1084 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:39:09,083 autoreload 29080 18752 Watching for file changes with StatReloader
+INFO 2025-08-21 00:39:17,013 basehttp 29080 27392 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-21 00:39:17,038 basehttp 29080 27392 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-21 00:39:20,988 conversation_handler 29080 29916 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:39:21,587 whatsapp_business_service 29080 29916 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:21,588 whatsapp_business_service 29080 29916 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"AxyF4QMkGkogOEB0rE2eqqQ"}}
+ERROR 2025-08-21 00:39:21,588 webhook_views 29080 29916 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:22,006 whatsapp 29080 29916 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:39:22,006 webhook_views 29080 29916 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:39:22,007 basehttp 29080 29916 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:39:24,052 conversation_handler 29080 27876 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:39:24,490 whatsapp_business_service 29080 27876 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:24,491 whatsapp_business_service 29080 27876 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"A37g0YKstX01EgoCB7d3TB2"}}
+ERROR 2025-08-21 00:39:24,491 webhook_views 29080 27876 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:24,851 whatsapp 29080 27876 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:39:24,852 webhook_views 29080 27876 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:39:24,852 basehttp 29080 27876 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:39:26,877 conversation_handler 29080 45940 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:39:27,330 whatsapp_business_service 29080 45940 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:27,330 whatsapp_business_service 29080 45940 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"Afu4LWlCi426Xj1HYSKgLIX"}}
+ERROR 2025-08-21 00:39:27,330 webhook_views 29080 45940 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:27,815 whatsapp 29080 45940 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:39:27,815 webhook_views 29080 45940 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:39:27,816 basehttp 29080 45940 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:39:29,112 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+ERROR 2025-08-21 00:39:29,840 conversation_handler 29080 42148 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:39:30,322 whatsapp_business_service 29080 42148 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:30,323 whatsapp_business_service 29080 42148 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"A3hwdOPUMb2RbjChHQ_e5UY"}}
+ERROR 2025-08-21 00:39:30,323 webhook_views 29080 42148 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:30,768 whatsapp 29080 42148 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:39:30,769 webhook_views 29080 42148 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:39:30,770 basehttp 29080 42148 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:39:32,804 conversation_handler 29080 44408 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:39:33,211 whatsapp_business_service 29080 44408 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:33,211 whatsapp_business_service 29080 44408 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"AF3rkB-n__LDKda8xXbqodi"}}
+ERROR 2025-08-21 00:39:33,211 webhook_views 29080 44408 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:34,059 whatsapp 29080 44408 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:39:34,059 webhook_views 29080 44408 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:39:34,060 basehttp 29080 44408 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:39:36,075 conversation_handler 29080 45936 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:39:36,495 whatsapp_business_service 29080 45936 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:36,496 whatsapp_business_service 29080 45936 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"AcV_0aJ2WjLJr_gJLPmex7r"}}
+ERROR 2025-08-21 00:39:36,496 webhook_views 29080 45936 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:39:36,903 whatsapp 29080 45936 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:39:36,904 webhook_views 29080 45936 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:39:36,904 basehttp 29080 45936 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:39:58,805 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:40:28,802 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:40:58,800 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 00:41:04,762 webhook_views 29080 4756 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:41:04,763 basehttp 29080 4756 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 00:41:05,195 webhook_views 29080 47428 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:41:05,196 basehttp 29080 47428 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:41:28,796 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:41:58,798 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:42:28,793 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:42:40,774 basehttp 29080 11540 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-21 00:42:40,779 basehttp 29080 11540 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+ERROR 2025-08-21 00:42:46,393 conversation_handler 29080 33576 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:42:46,824 whatsapp_business_service 29080 33576 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:46,824 whatsapp_business_service 29080 33576 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"Ax2X9r5xJ-vCO5T0RRi7T_S"}}
+ERROR 2025-08-21 00:42:46,824 webhook_views 29080 33576 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:47,231 whatsapp 29080 33576 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:42:47,232 webhook_views 29080 33576 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:42:47,232 basehttp 29080 33576 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:42:49,244 conversation_handler 29080 46320 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:42:49,642 whatsapp_business_service 29080 46320 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:49,642 whatsapp_business_service 29080 46320 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"AnhZbVlrspH5BEFoLcHg_-b"}}
+ERROR 2025-08-21 00:42:49,642 webhook_views 29080 46320 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:50,082 whatsapp 29080 46320 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:42:50,082 webhook_views 29080 46320 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:42:50,083 basehttp 29080 46320 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:42:52,104 conversation_handler 29080 44956 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:42:52,550 whatsapp_business_service 29080 44956 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:52,550 whatsapp_business_service 29080 44956 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"ALhQB686-GbxMUiSrBpa6c-"}}
+ERROR 2025-08-21 00:42:52,550 webhook_views 29080 44956 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:52,948 whatsapp 29080 44956 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:42:52,949 webhook_views 29080 44956 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:42:52,950 basehttp 29080 44956 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:42:54,979 conversation_handler 29080 43320 Erro ao calcular transferÍncia: [<class 'decimal.ConversionSyntax'>]
+ERROR 2025-08-21 00:42:55,377 whatsapp_business_service 29080 43320 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:55,377 whatsapp_business_service 29080 43320 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"AjxRBfDnFcHK0ckuk2u-ozd"}}
+ERROR 2025-08-21 00:42:55,377 webhook_views 29080 43320 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:55,733 whatsapp 29080 43320 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:42:55,734 webhook_views 29080 43320 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:42:55,735 basehttp 29080 43320 "POST /api/webhook/ HTTP/1.1" 200 20
+ERROR 2025-08-21 00:42:57,748 conversation_handler 29080 40064 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:42:58,151 whatsapp_business_service 29080 40064 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:58,151 whatsapp_business_service 29080 40064 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"AXO8x96bwZm0jqOcP80rCkr"}}
+ERROR 2025-08-21 00:42:58,151 webhook_views 29080 40064 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:42:58,534 whatsapp 29080 40064 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:42:58,534 webhook_views 29080 40064 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:42:58,535 basehttp 29080 40064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:42:58,796 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+ERROR 2025-08-21 00:43:00,548 conversation_handler 29080 46960 Erro ao calcular transferÍncia: 'TransferService' object has no attribute 'calculate_transfer'
+ERROR 2025-08-21 00:43:00,941 whatsapp_business_service 29080 46960 Erro ao enviar mensagem para 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:43:00,942 whatsapp_business_service 29080 46960 Resposta da API: {"error":{"message":"(#131030) Recipient phone number not in allowed list","type":"OAuthException","code":131030,"error_data":{"messaging_product":"whatsapp","details":"O n\u00famero de telefone do destinat\u00e1rio n\u00e3o est\u00e1 na lista de permiss\u00e3o: Adicione o telefone do destinat\u00e1rio \u00e0 lista de destinat\u00e1rios e tente novamente."},"fbtrace_id":"A7L7mtKNe91CTIcXfnnN2MN"}}
+ERROR 2025-08-21 00:43:00,942 webhook_views 29080 46960 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+ERROR 2025-08-21 00:43:01,392 whatsapp 29080 46960 Failed to send WhatsApp message to 5511999999999: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages
+INFO 2025-08-21 00:43:01,393 webhook_views 29080 46960 WhatsApp response sent via fallback to 5511999999999: {'error': '400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/675345592339034/messages', 'success': False}
+INFO 2025-08-21 00:43:01,394 basehttp 29080 46960 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:43:28,797 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:43:39,336 basehttp 29080 46632 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-21 00:43:39,340 basehttp 29080 46632 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-08-21 00:43:47,298 whatsapp_business_service 29080 20436 Mensagem enviada com sucesso para 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjhBOTQ4MjZEMkE4MDE3NEE3MgA='}]}
+INFO 2025-08-21 00:43:47,299 webhook_views 29080 20436 WhatsApp response sent to 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjhBOTQ4MjZEMkE4MDE3NEE3MgA='}]}
+INFO 2025-08-21 00:43:47,299 basehttp 29080 20436 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 00:43:48,274 webhook_views 29080 7176 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:43:48,275 basehttp 29080 7176 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:43:50,091 whatsapp_business_service 29080 43136 Mensagem enviada com sucesso para 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkYxOTZGMUUyRkM0MUVCM0JCMwA='}]}
+INFO 2025-08-21 00:43:50,091 webhook_views 29080 43136 WhatsApp response sent to 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkYxOTZGMUUyRkM0MUVCM0JCMwA='}]}
+INFO 2025-08-21 00:43:50,092 basehttp 29080 43136 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 00:43:50,977 webhook_views 29080 27116 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:43:50,978 basehttp 29080 27116 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:43:52,788 whatsapp_business_service 29080 48340 Mensagem enviada com sucesso para 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkJCMzc2MkY3QThGNERGQzE1MgA='}]}
+INFO 2025-08-21 00:43:52,789 webhook_views 29080 48340 WhatsApp response sent to 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkJCMzc2MkY3QThGNERGQzE1MgA='}]}
+INFO 2025-08-21 00:43:52,790 basehttp 29080 48340 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 00:43:53,979 webhook_views 29080 48584 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:43:53,980 basehttp 29080 48584 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:43:55,568 whatsapp_business_service 29080 20392 Mensagem enviada com sucesso para 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjM2ODUzRDlCRUMwMkFBODk1QgA='}]}
+INFO 2025-08-21 00:43:55,569 webhook_views 29080 20392 WhatsApp response sent to 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjM2ODUzRDlCRUMwMkFBODk1QgA='}]}
+INFO 2025-08-21 00:43:55,569 basehttp 29080 20392 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 00:43:56,456 webhook_views 29080 14932 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:43:56,457 basehttp 29080 14932 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:43:58,417 whatsapp_business_service 29080 48948 Mensagem enviada com sucesso para 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkQ2ODVGOTU5MEVEMEExMzM3RgA='}]}
+INFO 2025-08-21 00:43:58,418 webhook_views 29080 48948 WhatsApp response sent to 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkQ2ODVGOTU5MEVEMEExMzM3RgA='}]}
+INFO 2025-08-21 00:43:58,418 basehttp 29080 48948 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-21 00:43:58,799 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 00:43:59,363 webhook_views 29080 20436 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:43:59,363 basehttp 29080 20436 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:44:01,068 whatsapp_business_service 29080 47276 Mensagem enviada com sucesso para 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkZCRUZBNDVDRUE4MTc3MDJBNAA='}]}
+INFO 2025-08-21 00:44:01,068 webhook_views 29080 47276 WhatsApp response sent to 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkZCRUZBNDVDRUE4MTc3MDJBNAA='}]}
+INFO 2025-08-21 00:44:01,069 basehttp 29080 47276 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 00:44:01,963 webhook_views 29080 34564 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:44:01,964 basehttp 29080 34564 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:44:28,797 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:44:58,795 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:45:28,801 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 00:45:46,668 webhook_views 29080 48344 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:45:46,669 basehttp 29080 48344 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 00:45:58,796 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:46:28,806 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:46:58,806 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:47:28,807 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:47:58,797 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 00:48:28,807 basehttp 29080 37952 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 00:49:29,935 log 29080 20904 Not Found: /api/
+WARNING 2025-08-21 00:49:29,935 basehttp 29080 20904 "GET /api/ HTTP/1.1" 404 3445
+WARNING 2025-08-21 00:49:32,220 log 29080 9520 Not Found: /api/webhook/whatsapp/
+WARNING 2025-08-21 00:49:32,221 basehttp 29080 9520 "POST /api/webhook/whatsapp/ HTTP/1.1" 404 3497
+WARNING 2025-08-21 00:50:16,139 log 29080 27656 Not Found: /api/
+WARNING 2025-08-21 00:50:16,140 basehttp 29080 27656 "GET /api/ HTTP/1.1" 404 3445
+WARNING 2025-08-21 00:50:18,313 whatsapp_business_service 29080 47480 Assinatura do webhook inv·lida
+WARNING 2025-08-21 00:50:18,313 webhook_views 29080 47480 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 00:50:18,314 log 29080 47480 Forbidden: /api/webhook/
+WARNING 2025-08-21 00:50:18,314 basehttp 29080 47480 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 00:57:59,122 webhook_views 29080 35212 No valid message found in WhatsApp webhook
+INFO 2025-08-21 00:57:59,123 basehttp 29080 35212 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 00:58:00,212 whatsapp_business_service 29080 12324 Assinatura do webhook inv·lida
+WARNING 2025-08-21 00:58:00,212 webhook_views 29080 12324 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 00:58:00,213 log 29080 12324 Forbidden: /api/webhook/
+WARNING 2025-08-21 00:58:00,213 basehttp 29080 12324 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 00:58:02,271 log 29080 46500 Not Found: /api/
+WARNING 2025-08-21 00:58:02,271 basehttp 29080 46500 "GET /api/ HTTP/1.1" 404 3445
+WARNING 2025-08-21 00:58:04,332 whatsapp_business_service 29080 44584 Falha na verificaÁ„o do webhook: mode=None, token=None
+WARNING 2025-08-21 00:58:04,333 log 29080 44584 Forbidden: /api/webhook/
+WARNING 2025-08-21 00:58:04,333 basehttp 29080 44584 "GET /api/webhook/ HTTP/1.1" 403 9
+INFO 2025-08-21 01:00:37,617 basehttp 29080 44232 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 33901
+INFO 2025-08-21 01:00:37,698 basehttp 29080 44232 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-21 01:00:37,735 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 01:00:37,760 log 29080 44232 Not Found: /@vite/client
+WARNING 2025-08-21 01:00:37,761 basehttp 29080 44232 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-21 01:00:39,424 basehttp 29080 44232 "GET /dashboard/api/messages-chart/?period=7 HTTP/1.1" 200 294
+WARNING 2025-08-21 01:00:42,468 log 29080 44232 Not Found: /dashboard/api/system-health/
+WARNING 2025-08-21 01:00:42,468 basehttp 29080 44232 "GET /dashboard/api/system-health/ HTTP/1.1" 404 4046
+INFO 2025-08-21 01:00:43,992 basehttp 29080 44232 "GET /dashboard/api/messages-chart/?period=7 HTTP/1.1" 200 294
+INFO 2025-08-21 01:01:07,697 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:01:37,705 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:02:07,707 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 01:02:07,738 webhook_views 29080 45416 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:02:07,738 basehttp 29080 45416 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:02:37,701 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:03:07,695 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 01:03:27,008 webhook_views 29080 21396 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:03:27,008 basehttp 29080 21396 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:03:37,694 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:04:07,923 basehttp 29080 44232 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 33901
+INFO 2025-08-21 01:04:08,021 basehttp 29080 44232 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 33901
+INFO 2025-08-21 01:04:08,108 basehttp 29080 44232 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-21 01:04:08,171 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 01:04:08,252 log 29080 44232 Not Found: /@vite/client
+WARNING 2025-08-21 01:04:08,253 basehttp 29080 44232 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-21 01:04:13,009 basehttp 29080 44232 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 33901
+INFO 2025-08-21 01:04:13,058 basehttp 29080 44232 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 33901
+INFO 2025-08-21 01:04:13,166 basehttp 29080 44232 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-21 01:04:13,202 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 01:04:13,295 log 29080 44232 Not Found: /@vite/client
+WARNING 2025-08-21 01:04:13,295 basehttp 29080 44232 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-21 01:04:18,606 basehttp 29080 44232 "GET /dashboard/api/messages-chart/?period=7 HTTP/1.1" 200 294
+INFO 2025-08-21 01:04:43,166 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:05:13,173 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:05:43,168 basehttp 29080 44232 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 01:06:48,086 whatsapp_business_service 29080 48156 Falha na verificaÁ„o do webhook: mode=None, token=None
+WARNING 2025-08-21 01:06:48,087 log 29080 48156 Forbidden: /api/webhook/
+WARNING 2025-08-21 01:06:48,087 basehttp 29080 48156 "GET /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 01:06:50,029 webhook_views 29080 1568 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:06:50,030 basehttp 29080 1568 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:09:38,768 webhook_views 29080 43600 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:09:38,769 basehttp 29080 43600 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:09:40,488 webhook_views 29080 44424 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:09:40,489 basehttp 29080 44424 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:09:45,390 webhook_views 29080 15624 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:09:45,391 basehttp 29080 15624 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:10:30,146 whatsapp_business_service 29080 42628 Mensagem enviada com sucesso para 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjA4Qzc2RUREMTZEMTM0MDcwQwA='}]}
+INFO 2025-08-21 01:10:30,147 webhook_views 29080 42628 WhatsApp response sent to 5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjA4Qzc2RUREMTZEMTM0MDcwQwA='}]}
+INFO 2025-08-21 01:10:30,148 basehttp 29080 42628 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:10:31,348 webhook_views 29080 42896 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:10:31,349 basehttp 29080 42896 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:10:31,480 webhook_views 29080 43208 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:10:31,481 basehttp 29080 43208 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:10:31,640 webhook_views 29080 20560 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:10:31,641 basehttp 29080 20560 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:14:21,589 autoreload 29080 18752 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-21 01:14:22,257 autoreload 44328 43200 Watching for file changes with StatReloader
+WARNING 2025-08-21 01:20:31,264 whatsapp_business_service 44328 8812 Assinatura do webhook inv·lida
+WARNING 2025-08-21 01:20:31,265 webhook_views 44328 8812 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 01:20:31,265 log 44328 8812 Forbidden: /api/webhook/
+WARNING 2025-08-21 01:20:31,266 basehttp 44328 8812 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 01:20:34,299 whatsapp_business_service 44328 13152 Assinatura do webhook inv·lida
+WARNING 2025-08-21 01:20:34,299 webhook_views 44328 13152 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 01:20:34,300 log 44328 13152 Forbidden: /api/webhook/
+WARNING 2025-08-21 01:20:34,300 basehttp 44328 13152 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 01:20:37,328 whatsapp_business_service 44328 24616 Assinatura do webhook inv·lida
+WARNING 2025-08-21 01:20:37,328 webhook_views 44328 24616 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 01:20:37,329 log 44328 24616 Forbidden: /api/webhook/
+WARNING 2025-08-21 01:20:37,329 basehttp 44328 24616 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 01:20:40,371 whatsapp_business_service 44328 18496 Assinatura do webhook inv·lida
+WARNING 2025-08-21 01:20:40,371 webhook_views 44328 18496 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 01:20:40,372 log 44328 18496 Forbidden: /api/webhook/
+WARNING 2025-08-21 01:20:40,372 basehttp 44328 18496 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 01:20:43,381 whatsapp_business_service 44328 21704 Assinatura do webhook inv·lida
+WARNING 2025-08-21 01:20:43,381 webhook_views 44328 21704 Invalid WhatsApp webhook signature
+WARNING 2025-08-21 01:20:43,381 log 44328 21704 Forbidden: /api/webhook/
+WARNING 2025-08-21 01:20:43,382 basehttp 44328 21704 "POST /api/webhook/ HTTP/1.1" 403 9
+WARNING 2025-08-21 01:21:04,934 log 44328 18448 Not Found: /
+WARNING 2025-08-21 01:21:04,934 basehttp 44328 18448 "GET / HTTP/1.1" 404 2457
+WARNING 2025-08-21 01:21:06,316 log 44328 18448 Not Found: /favicon.ico
+WARNING 2025-08-21 01:21:06,316 basehttp 44328 18448 "GET /favicon.ico HTTP/1.1" 404 2508
+INFO 2025-08-21 01:22:42,257 autoreload 44328 43200 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\webhook_views.py changed, reloading.
+INFO 2025-08-21 01:22:42,865 autoreload 29816 44680 Watching for file changes with StatReloader
+ERROR 2025-08-21 01:23:41,486 conversation_handler 29816 45032 Erro ao processar mensagem de +5521964641561: 'Conversation' object has no attribute 'updated_at'
+INFO 2025-08-21 01:23:42,353 whatsapp_business_service 29816 45032 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkM5QzhCRDFDOTM2MDMxNzQ3OAA='}]}
+INFO 2025-08-21 01:23:42,354 webhook_views 29816 45032 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkM5QzhCRDFDOTM2MDMxNzQ3OAA='}]}
+INFO 2025-08-21 01:23:42,355 basehttp 29816 45032 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:23:43,909 webhook_views 29816 17192 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:43,910 basehttp 29816 17192 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:45,558 webhook_views 29816 40860 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:45,559 basehttp 29816 40860 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:23:47,132 whatsapp_business_service 29816 16116 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjg0RTE5QkQ2OURDMjY2N0MyMQA='}]}
+INFO 2025-08-21 01:23:47,132 webhook_views 29816 16116 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjg0RTE5QkQ2OURDMjY2N0MyMQA='}]}
+INFO 2025-08-21 01:23:47,133 basehttp 29816 16116 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:23:48,067 webhook_views 29816 21704 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:48,068 basehttp 29816 21704 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:48,922 webhook_views 29816 8044 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:48,923 basehttp 29816 8044 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:23:51,853 whatsapp_business_service 29816 6628 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjBFQzBCQUJFNEYxRDYxMUQwNAA='}]}
+INFO 2025-08-21 01:23:51,854 webhook_views 29816 6628 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjBFQzBCQUJFNEYxRDYxMUQwNAA='}]}
+INFO 2025-08-21 01:23:51,854 basehttp 29816 6628 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:23:52,789 webhook_views 29816 28368 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:52,789 basehttp 29816 28368 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:53,498 webhook_views 29816 42296 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:53,499 basehttp 29816 42296 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:23:56,671 whatsapp_business_service 29816 45532 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjdFRTEyNzJBMzE5NzNBRkIyQgA='}]}
+INFO 2025-08-21 01:23:56,672 webhook_views 29816 45532 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjdFRTEyNzJBMzE5NzNBRkIyQgA='}]}
+INFO 2025-08-21 01:23:56,672 basehttp 29816 45532 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:23:57,552 webhook_views 29816 11524 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:57,553 basehttp 29816 11524 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:57,560 webhook_views 29816 47672 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:57,561 basehttp 29816 47672 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:57,590 webhook_views 29816 43588 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:57,591 basehttp 29816 43588 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:57,604 webhook_views 29816 26528 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:57,605 basehttp 29816 26528 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:58,063 webhook_views 29816 22644 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:58,064 basehttp 29816 22644 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:23:58,326 webhook_views 29816 41772 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:23:58,327 basehttp 29816 41772 "POST /api/webhook/ HTTP/1.1" 200 23
+ERROR 2025-08-21 01:24:00,729 conversation_handler 29816 44748 Erro ao processar mensagem de +5521964641561: 'Conversation' object has no attribute 'updated_at'
+INFO 2025-08-21 01:24:01,361 whatsapp_business_service 29816 44748 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjlGQzFGODIxRjRFNERGRTI0RgA='}]}
+INFO 2025-08-21 01:24:01,362 webhook_views 29816 44748 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjlGQzFGODIxRjRFNERGRTI0RgA='}]}
+INFO 2025-08-21 01:24:01,362 basehttp 29816 44748 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:24:02,306 webhook_views 29816 19264 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:02,306 basehttp 29816 19264 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:02,725 webhook_views 29816 47096 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:02,726 basehttp 29816 47096 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:02,752 webhook_views 29816 45700 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:02,752 basehttp 29816 45700 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:24:06,068 whatsapp_business_service 29816 46700 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjlGMTVCM0E0OTlBRTJFMkY4NQA='}]}
+INFO 2025-08-21 01:24:06,069 webhook_views 29816 46700 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjlGMTVCM0E0OTlBRTJFMkY4NQA='}]}
+INFO 2025-08-21 01:24:06,070 basehttp 29816 46700 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:24:07,116 webhook_views 29816 5352 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:07,117 basehttp 29816 5352 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:07,399 webhook_views 29816 37968 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:07,399 basehttp 29816 37968 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:07,476 webhook_views 29816 4744 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:07,476 basehttp 29816 4744 "POST /api/webhook/ HTTP/1.1" 200 23
+ERROR 2025-08-21 01:24:10,100 conversation_handler 29816 13088 Erro ao processar mensagem de +5521964641561: 'Conversation' object has no attribute 'updated_at'
+INFO 2025-08-21 01:24:10,779 whatsapp_business_service 29816 13088 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkM5ODJERUNBMzJCNkVEOTY4QgA='}]}
+INFO 2025-08-21 01:24:10,779 webhook_views 29816 13088 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEkM5ODJERUNBMzJCNkVEOTY4QgA='}]}
+INFO 2025-08-21 01:24:10,780 basehttp 29816 13088 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:24:11,543 webhook_views 29816 28716 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:11,544 basehttp 29816 28716 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:12,107 webhook_views 29816 43964 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:12,108 basehttp 29816 43964 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:12,157 webhook_views 29816 19452 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:12,158 basehttp 29816 19452 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:24:15,605 whatsapp_business_service 29816 12528 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjNDMTMxOEEyN0VBNjYzNkM4RgA='}]}
+INFO 2025-08-21 01:24:15,605 webhook_views 29816 12528 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjNDMTMxOEEyN0VBNjYzNkM4RgA='}]}
+INFO 2025-08-21 01:24:15,606 basehttp 29816 12528 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:24:16,464 webhook_views 29816 15112 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:16,465 basehttp 29816 15112 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:17,150 webhook_views 29816 1764 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:17,151 basehttp 29816 1764 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:17,243 webhook_views 29816 37148 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:17,244 basehttp 29816 37148 "POST /api/webhook/ HTTP/1.1" 200 23
+ERROR 2025-08-21 01:24:19,651 conversation_handler 29816 26936 Erro ao processar mensagem de +5521964641561: 'Conversation' object has no attribute 'updated_at'
+INFO 2025-08-21 01:24:20,457 whatsapp_business_service 29816 26936 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjIyOUVDNzdCNjIzMDA5MkM0MAA='}]}
+INFO 2025-08-21 01:24:20,458 webhook_views 29816 26936 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjIyOUVDNzdCNjIzMDA5MkM0MAA='}]}
+INFO 2025-08-21 01:24:20,459 basehttp 29816 26936 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:24:21,326 webhook_views 29816 39148 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:21,327 basehttp 29816 39148 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:21,782 webhook_views 29816 41284 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:21,783 basehttp 29816 41284 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:21,867 webhook_views 29816 13720 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:21,868 basehttp 29816 13720 "POST /api/webhook/ HTTP/1.1" 200 23
+ERROR 2025-08-21 01:24:24,509 conversation_handler 29816 45592 Erro ao processar mensagem de +5521964641561: 'Conversation' object has no attribute 'updated_at'
+INFO 2025-08-21 01:24:25,196 whatsapp_business_service 29816 45592 Mensagem enviada com sucesso para +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjg0NkU3MzIyODVBQ0RGREI5QwA='}]}
+INFO 2025-08-21 01:24:25,197 webhook_views 29816 45592 WhatsApp response sent to +5521964641561: {'messaging_product': 'whatsapp', 'contacts': [{'input': '+5521964641561', 'wa_id': '5521964641561'}], 'messages': [{'id': 'wamid.HBgNNTUyMTk2NDY0MTU2MRUCABEYEjg0NkU3MzIyODVBQ0RGREI5QwA='}]}
+INFO 2025-08-21 01:24:25,197 basehttp 29816 45592 "POST /api/webhook/ HTTP/1.1" 200 20
+WARNING 2025-08-21 01:24:26,064 webhook_views 29816 42900 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:26,065 basehttp 29816 42900 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:26,522 webhook_views 29816 44408 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:26,522 basehttp 29816 44408 "POST /api/webhook/ HTTP/1.1" 200 23
+WARNING 2025-08-21 01:24:26,575 webhook_views 29816 39580 No valid message found in WhatsApp webhook
+INFO 2025-08-21 01:24:26,576 basehttp 29816 39580 "POST /api/webhook/ HTTP/1.1" 200 23
+INFO 2025-08-21 01:25:01,131 autoreload 29816 44680 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\webhook_views.py changed, reloading.
+INFO 2025-08-21 01:25:01,722 autoreload 48780 37276 Watching for file changes with StatReloader
+INFO 2025-08-21 01:25:06,415 basehttp 48780 18048 "GET /dashboard/?ide_webview_request_time=1755742359073 HTTP/1.1" 200 33901
+INFO 2025-08-21 01:25:06,466 basehttp 48780 18048 "GET /dashboard/api/stats/ HTTP/1.1" 200 310
+INFO 2025-08-21 01:25:06,579 basehttp 48780 18048 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+WARNING 2025-08-21 01:25:06,603 log 48780 18048 Not Found: /@vite/client
+WARNING 2025-08-21 01:25:06,603 basehttp 48780 18048 "GET /@vite/client HTTP/1.1" 404 2511
+INFO 2025-08-21 01:25:36,472 basehttp 48780 18048 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:26:06,460 basehttp 48780 18048 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:26:36,467 basehttp 48780 18048 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927
+INFO 2025-08-21 01:27:06,464 basehttp 48780 18048 "GET /dashboard/api/recent-messages/ HTTP/1.1" 200 927

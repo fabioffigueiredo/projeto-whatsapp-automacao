@@ -14,6 +14,7 @@ from ..services.fx import dolar_comercial
 from ..services.payments import create_payment_link, verify_webhook_signature
 from ..services.xps247 import find_client_by_phone
 from ..services.whatsapp import whatsapp_service
+from ..services.whatsapp_business_service import whatsapp_service as whatsapp_business_service
 from ..services.conversation_handler import ConversationHandler
 from decimal import Decimal
 
@@ -24,7 +25,7 @@ logger = logging.getLogger(__name__)
 @csrf_exempt
 def whatsapp_webhook(request):
     """
-    Webhook para receber mensagens do WhatsApp Cloud API
+    Webhook para receber mensagens do WhatsApp Business API
     GET: Verificação do webhook
     POST: Recebimento de mensagens
     """
@@ -34,7 +35,7 @@ def whatsapp_webhook(request):
         token = request.GET.get("hub.verify_token")
         challenge = request.GET.get("hub.challenge")
         
-        verified_challenge = whatsapp_service.verify_webhook(mode, token, challenge)
+        verified_challenge = whatsapp_business_service.verify_webhook(mode, token, challenge)
         if verified_challenge:
             return HttpResponse(verified_challenge, content_type="text/plain")
         else:
@@ -42,6 +43,15 @@ def whatsapp_webhook(request):
     
     # Processamento de mensagens (POST)
     try:
+        # Validação de assinatura
+        if hasattr(settings, 'WHATSAPP_APP_SECRET') and settings.WHATSAPP_APP_SECRET:
+            signature = request.META.get('HTTP_X_HUB_SIGNATURE_256', '')
+            payload = request.body.decode('utf-8')
+            
+            if not whatsapp_business_service.validate_webhook_signature(payload, signature):
+                logger.warning("Invalid WhatsApp webhook signature")
+                return HttpResponse("Forbidden", status=403)
+        
         # Log do webhook recebido
         WebhookLog.objects.create(
             source="whatsapp",
@@ -56,16 +66,33 @@ def whatsapp_webhook(request):
             return Response({"status": "no_message"}, status=200)
         
         phone = message_data["phone"]
-        text = message_data["message"].strip().lower()
+        message_text = message_data["message"]
+        message_id = message_data.get("message_id")
+        
+        # Marca mensagem como lida
+        if message_id:
+            try:
+                whatsapp_business_service.mark_message_as_read(message_id)
+            except Exception as e:
+                logger.warning(f"Failed to mark message as read: {e}")
         
         # Processa a conversa usando o ConversationHandler
         conversation_handler = ConversationHandler()
-        reply = conversation_handler.process_message(phone, message_data["message"])
+        reply = conversation_handler.process_message(phone, message_text)
         
-        # Envia resposta via WhatsApp
+        # Envia resposta via WhatsApp Business API
         if reply:
-            send_result = whatsapp_service.send_message(phone, reply)
-            logger.info(f"WhatsApp response sent to {phone}: {send_result}")
+            try:
+                send_result = whatsapp_business_service.send_text_message(phone, reply)
+                logger.info(f"WhatsApp response sent to {phone}: {send_result}")
+            except Exception as e:
+                logger.error(f"Failed to send WhatsApp message to {phone}: {e}")
+                # Fallback para o serviço antigo se necessário
+                try:
+                    send_result = whatsapp_service.send_message(phone, reply)
+                    logger.info(f"WhatsApp response sent via fallback to {phone}: {send_result}")
+                except Exception as fallback_error:
+                    logger.error(f"Fallback also failed for {phone}: {fallback_error}")
         
         return Response({"status": "success"}, status=200)
         

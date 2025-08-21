@@ -17,11 +17,21 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-# WhatsApp Cloud API Configuration
+# WhatsApp Business API Configuration
 WHATSAPP_ACCESS_TOKEN = os.getenv("WHATSAPP_ACCESS_TOKEN")
 WHATSAPP_PHONE_NUMBER_ID = os.getenv("WHATSAPP_PHONE_NUMBER_ID")
+WHATSAPP_BUSINESS_ACCOUNT_ID = os.getenv("WHATSAPP_BUSINESS_ACCOUNT_ID")
+WHATSAPP_APP_ID = os.getenv("WHATSAPP_APP_ID")
+WHATSAPP_APP_SECRET = os.getenv("WHATSAPP_APP_SECRET")
 WHATSAPP_VERIFY_TOKEN = os.getenv("WHATSAPP_VERIFY_TOKEN", "whatsapp_verify_token_123")
 WHATSAPP_WEBHOOK_URL = os.getenv("WHATSAPP_WEBHOOK_URL", "https://your-domain.com/api/webhook/whatsapp")
+WHATSAPP_API_VERSION = os.getenv("WHATSAPP_API_VERSION", "v18.0")
+WHATSAPP_BASE_URL = f"https://graph.facebook.com/{WHATSAPP_API_VERSION}"
+
+# N8N Integration Configuration
+N8N_WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL", "http://localhost:5678/webhook/whatsapp")
+N8N_API_KEY = os.getenv("N8N_API_KEY")
+N8N_BASE_URL = os.getenv("N8N_BASE_URL", "http://localhost:5678")
 
 # Payment System Configuration
 PAYMENT_PROVIDER = os.getenv("PAYMENT_PROVIDER", "stripe")  # stripe, mercadopago, etc.
@@ -37,10 +47,22 @@ FIXER_API_KEY = os.getenv("FIXER_API_KEY")
 XPS247_API_KEY = os.getenv("XPS247_API_KEY")
 XPS247_BASE_URL = os.getenv("XPS247_BASE_URL", "https://api.xps247.com")
 
+# Email Configuration
+EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.smtp.EmailBackend")
+EMAIL_HOST = os.getenv("EMAIL_HOST", "smtp.gmail.com")
+EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
+EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True") == "True"
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", EMAIL_HOST_USER)
+
+# Admin Notification Configuration
+ADMIN_NOTIFICATION_EMAILS = os.getenv("ADMIN_NOTIFICATION_EMAILS", "").split(",") if os.getenv("ADMIN_NOTIFICATION_EMAILS") else []
+
 INSTALLED_APPS = [
     "django.contrib.admin","django.contrib.auth","django.contrib.contenttypes",
     "django.contrib.sessions","django.contrib.messages","django.contrib.staticfiles",
-    "rest_framework","corsheaders","core",
+    "rest_framework","corsheaders","core","dashboard",
 ]
 
 MIDDLEWARE = [

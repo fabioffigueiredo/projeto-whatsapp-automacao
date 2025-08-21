@@ -7,11 +7,34 @@ Simula mensagens enviadas pelo WhatsApp Cloud API
 import requests
 import json
 import time
+import hmac
+import hashlib
+import os
+from dotenv import load_dotenv
+
+# Carrega variáveis de ambiente
+load_dotenv('backend/.env')
 
 # Configurações
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "http://127.0.0.1:8001"
 WEBHOOK_URL = f"{BASE_URL}/api/webhook/"
-TEST_PHONE = "+5511999999999"  # Número de teste
+TEST_PHONE = "+5521964641561"  # Número de teste
+WHATSAPP_APP_SECRET = os.getenv('WHATSAPP_APP_SECRET')
+
+def generate_webhook_signature(payload, secret):
+    """
+    Gera a assinatura do webhook para validação
+    """
+    if not secret:
+        return None
+    
+    signature = hmac.new(
+        secret.encode('utf-8'),
+        payload.encode('utf-8'),
+        hashlib.sha256
+    ).hexdigest()
+    
+    return f"sha256={signature}"
 
 def simulate_whatsapp_message(phone, message):
     """
@@ -51,10 +74,23 @@ def simulate_whatsapp_message(phone, message):
     }
     
     try:
+        # Converte para JSON string para gerar assinatura
+        payload = json.dumps(webhook_data)
+        
+        # Gera headers com assinatura
+        headers = {"Content-Type": "application/json"}
+        
+        # Adiciona assinatura se o app secret estiver configurado
+        if WHATSAPP_APP_SECRET:
+            signature = generate_webhook_signature(payload, WHATSAPP_APP_SECRET)
+            if signature:
+                headers["X-Hub-Signature-256"] = signature
+                print(f"🔐 Assinatura gerada: {signature[:20]}...")
+        
         response = requests.post(
             WEBHOOK_URL,
-            json=webhook_data,
-            headers={"Content-Type": "application/json"},
+            data=payload,
+            headers=headers,
             timeout=10
         )
         

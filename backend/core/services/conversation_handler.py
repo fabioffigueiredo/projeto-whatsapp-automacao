@@ -10,6 +10,7 @@ from .whatsapp import whatsapp_service
 # from ..authentication import ClientAuthService  # Comentado temporariamente devido à dependência de JWT
 from .transfer_service import TransferService
 from .xps247 import find_beneficiary_by_cpf
+from .auto_message_handler import auto_message_handler
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +30,18 @@ class ConversationHandler:
             # Busca ou cria a conversação
             conversation = self._get_or_create_conversation(phone)
             
-            # Processa baseado no estado atual
+            # Verifica se deve usar resposta automática
+            auto_response = self._check_auto_response(conversation, message)
+            if auto_response:
+                # Log da mensagem recebida
+                self._log_message(conversation, "in", {"text": message, "type": "auto_handled"})
+                
+                # Log da resposta automática
+                self._log_message(conversation, "out", {"text": auto_response, "type": "auto_response"})
+                
+                return auto_response
+            
+            # Processa baseado no estado atual (fluxo original)
             response = self._handle_state(conversation, message)
             
             # Log da mensagem recebida
@@ -740,4 +752,50 @@ class ConversationHandler:
         except Exception as e:
             logger.error(f"Erro ao processar confirmação de pagamento: {e}")
             
+        return None
+    
+    def _check_auto_response(self, conversation: Conversation, message: str) -> Optional[str]:
+        """
+        Verifica se a mensagem deve ser tratada pelo sistema de respostas automáticas
+        """
+        # Palavras-chave que sempre ativam resposta automática
+        auto_keywords = [
+            'menu', 'ajuda', 'help', 'opcoes', 'opções',
+            'cotacao', 'cotação', 'dolar', 'dólar', 'cambio', 'câmbio',
+            'sobre', 'empresa', 'contato', 'informacao', 'informação',
+            'suporte', 'atendente', 'humano', 'pessoa'
+        ]
+        
+        message_lower = message.lower().strip()
+        
+        # Verifica se contém palavras-chave de resposta automática
+        for keyword in auto_keywords:
+            if keyword in message_lower:
+                return auto_message_handler.process_auto_message(
+                    conversation.external_user_id, 
+                    message, 
+                    conversation
+                )
+        
+        # Se conversa está inativa há mais de 1 hora, usa resposta automática
+        if conversation.updated_at:
+            time_diff = timezone.now() - conversation.updated_at
+            if time_diff.total_seconds() > 3600:  # 1 hora
+                return auto_message_handler.process_auto_message(
+                    conversation.external_user_id, 
+                    message, 
+                    conversation
+                )
+        
+        # Se é primeira mensagem da conversa, usa resposta automática
+        if not conversation.context_data or conversation.state_node == 'NODE_1_VERIFICATION':
+            # Verifica se é saudação ou mensagem genérica
+            greetings = ['ola', 'olá', 'oi', 'bom dia', 'boa tarde', 'boa noite', 'hey', 'hello']
+            if any(greeting in message_lower for greeting in greetings):
+                return auto_message_handler.process_auto_message(
+                    conversation.external_user_id, 
+                    message, 
+                    conversation
+                )
+        
         return None

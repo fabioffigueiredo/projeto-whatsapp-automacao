@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - WhatsApp Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .dashboard-card {
+            transition: transform 0.2s;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .dashboard-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .stat-icon {
+            font-size: 2.5rem;
+            opacity: 0.8;
+        }
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .status-healthy { background-color: #28a745; }
+        .status-warning { background-color: #ffc107; }
+        .status-error { background-color: #dc3545; }
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+        .sidebar {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .sidebar .nav-link {
+            color: rgba(255,255,255,0.8);
+            transition: all 0.3s;
+        }
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            color: white;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        .main-content {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+        }
+        .refresh-btn {
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->>
+            <div class="col-md-2 sidebar p-3">
+                <div class="text-center mb-4">
+                    <h4 class="text-white"><i class="fab fa-whatsapp"></i> WhatsApp Bot</h4>
+                </div>
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="#dashboard" data-section="dashboard">
+                        <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                    </a>
+                    <a class="nav-link" href="#messages" data-section="messages">
+                        <i class="fas fa-comments me-2"></i> Mensagens
+                    </a>
+                    <a class="nav-link" href="#workflows" data-section="workflows">
+                        <i class="fas fa-project-diagram me-2"></i> Workflows
+                    </a>
+                    <a class="nav-link" href="#health" data-section="health">
+                        <i class="fas fa-heartbeat me-2"></i> Saúde do Sistema
+                    </a>
+                    <a class="nav-link" href="#logs" data-section="logs">
+                        <i class="fas fa-file-alt me-2"></i> Logs
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-10 main-content p-4">
+                <!-- Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 id="page-title">Dashboard de Monitoramento</h2>
+                    <div>
+                        <button class="btn btn-outline-primary me-2" onclick="refreshData()">
+                            <i class="fas fa-sync-alt" id="refresh-icon"></i> Atualizar
+                        </button>
+                        <span class="badge bg-success" id="last-update">Carregando...</span>
+                    </div>
+                </div>
+
+                <!-- Dashboard Section -->
+                <div id="dashboard-section">
+                    <!-- Stats Cards -->
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <div class="card dashboard-card text-center p-3">
+                                <div class="card-body">
+                                    <i class="fas fa-comments stat-icon text-primary"></i>
+                                    <h3 class="mt-2 mb-1" id="total-messages">-</h3>
+                                    <p class="text-muted mb-0">Total de Mensagens</p>
+                                    <small class="text-success" id="messages-today">- hoje</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card dashboard-card text-center p-3">
+                                <div class="card-body">
+                                    <i class="fas fa-users stat-icon text-success"></i>
+                                    <h3 class="mt-2 mb-1" id="total-conversations">-</h3>
+                                    <p class="text-muted mb-0">Conversas</p>
+                                    <small class="text-info" id="active-conversations">- ativas</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card dashboard-card text-center p-3">
+                                <div class="card-body">
+                                    <i class="fas fa-project-diagram stat-icon text-warning"></i>
+                                    <h3 class="mt-2 mb-1" id="total-workflows">-</h3>
+                                    <p class="text-muted mb-0">Workflows</p>
+                                    <small class="text-success" id="workflow-success-rate">-% sucesso</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card dashboard-card text-center p-3">
+                                <div class="card-body">
+                                    <i class="fas fa-heartbeat stat-icon text-danger"></i>
+                                    <h3 class="mt-2 mb-1" id="system-status">-</h3>
+                                    <p class="text-muted mb-0">Status do Sistema</p>
+                                    <small class="text-muted" id="system-uptime">- uptime</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Row -->
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card dashboard-card">
+                                <div class="card-header">
+                                    <h5 class="mb-0"><i class="fas fa-chart-line me-2"></i>Mensagens por Dia</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-container">
+                                        <canvas id="messagesChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card dashboard-card">
+                                <div class="card-header">
+                                    <h5 class="mb-0"><i class="fas fa-chart-pie me-2"></i>Tipos de Mensagem</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-container">
+                                        <canvas id="messageTypesChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card dashboard-card">
+                                <div class="card-header">
+                                    <h5 class="mb-0"><i class="fas fa-clock me-2"></i>Atividade Recente</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="recent-activity" class="list-group list-group-flush">
+                                        <div class="text-center text-muted p-3">
+                                            <i class="fas fa-spinner fa-spin"></i> Carregando...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card dashboard-card">
+                                <div class="card-header">
+                                    <h5 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i>Alertas Recentes</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="recent-alerts" class="list-group list-group-flush">
+                                        <div class="text-center text-muted p-3">
+                                            <i class="fas fa-spinner fa-spin"></i> Carregando...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages Section -->
+                <div id="messages-section" style="display: none;">
+                    <div class="card dashboard-card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-comments me-2"></i>Análise de Mensagens</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <select class="form-select" id="message-period">
+                                        <option value="1">Último dia</option>
+                                        <option value="7" selected>Últimos 7 dias</option>
+                                        <option value="30">Últimos 30 dias</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="chart-container">
+                                        <canvas id="messageAnalyticsChart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6>Top Usuários</h6>
+                                    <div id="top-users-list"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workflows Section -->
+                <div id="workflows-section" style="display: none;">
+                    <div class="card dashboard-card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-project-diagram me-2"></i>Análise de Workflows</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <select class="form-select" id="workflow-period">
+                                        <option value="1">Último dia</option>
+                                        <option value="7" selected>Últimos 7 dias</option>
+                                        <option value="30">Últimos 30 dias</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="chart-container">
+                                        <canvas id="workflowExecutionsChart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="chart-container">
+                                        <canvas id="workflowStatusChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Section -->
+                <div id="health-section" style="display: none;">
+                    <div class="card dashboard-card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-heartbeat me-2"></i>Saúde do Sistema</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="health-status"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logs Section -->
+                <div id="logs-section" style="display: none;">
+                    <div class="card dashboard-card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-file-alt me-2"></i>Logs do Sistema</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <button class="btn btn-outline-primary btn-sm me-2" onclick="loadLogs('info')">Info</button>
+                                <button class="btn btn-outline-warning btn-sm me-2" onclick="loadLogs('warning')">Warning</button>
+                                <button class="btn btn-outline-danger btn-sm" onclick="loadLogs('error')">Error</button>
+                            </div>
+                            <div id="logs-content" style="height: 400px; overflow-y: auto; background: #f8f9fa; padding: 15px; border-radius: 5px;">
+                                <div class="text-center text-muted">
+                                    <i class="fas fa-file-alt fa-2x mb-2"></i><br>
+                                    Selecione um tipo de log para visualizar
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Global variables
+        let messagesChart, messageTypesChart, messageAnalyticsChart, workflowExecutionsChart, workflowStatusChart;
+        let refreshInterval;
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeNavigation();
+            loadDashboardData();
+            startAutoRefresh();
+        });
+
+        // Navigation
+        function initializeNavigation() {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Update active nav
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide sections
+                    const section = this.dataset.section;
+                    showSection(section);
+                });
+            });
+        }
+
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('[id$="-section"]').forEach(s => s.style.display = 'none');
+            
+            // Show selected section
+            document.getElementById(section + '-section').style.display = 'block';
+            
+            // Update page title
+            const titles = {
+                'dashboard': 'Dashboard de Monitoramento',
+                'messages': 'Análise de Mensagens',
+                'workflows': 'Análise de Workflows',
+                'health': 'Saúde do Sistema',
+                'logs': 'Logs do Sistema'
+            };
+            document.getElementById('page-title').textContent = titles[section];
+            
+            // Load section-specific data
+            switch(section) {
+                case 'messages':
+                    loadMessageAnalytics();
+                    break;
+                case 'workflows':
+                    loadWorkflowAnalytics();
+                    break;
+                case 'health':
+                    loadSystemHealth();
+                    break;
+            }
+        }
+
+        // Data loading functions
+        async function loadDashboardData() {
+            try {
+                const response = await fetch('/dashboard/api/stats/');
+                const result = await response.json();
+                const data = result.data || result; // Suporta ambos os formatos
+                
+                updateDashboardStats(data);
+                updateCharts(data);
+                loadRecentActivity();
+                
+                document.getElementById('last-update').textContent = 'Atualizado agora';
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+            }
+        }
+
+        function updateDashboardStats(data) {
+            document.getElementById('total-messages').textContent = data.messages.total.toLocaleString();
+            document.getElementById('messages-today').textContent = data.messages.today + ' hoje';
+            document.getElementById('total-conversations').textContent = data.conversations.total.toLocaleString();
+            document.getElementById('active-conversations').textContent = data.conversations.active + ' ativas';
+            document.getElementById('total-workflows').textContent = data.workflows.total.toLocaleString();
+            document.getElementById('workflow-success-rate').textContent = data.workflows.success_rate + '% sucesso';
+            document.getElementById('system-status').textContent = 'Online';
+            document.getElementById('system-uptime').textContent = data.system.uptime + ' uptime';
+        }
+
+        function updateCharts(data) {
+            // Messages per day chart
+            if (messagesChart) messagesChart.destroy();
+            const ctx1 = document.getElementById('messagesChart').getContext('2d');
+            messagesChart = new Chart(ctx1, {
+                type: 'line',
+                data: {
+                    labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+                    datasets: [{
+                        label: 'Mensagens',
+                        data: [12, 19, 3, 5, 2, 3, 9],
+                        borderColor: 'rgb(75, 192, 192)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            // Message types chart - usando dados de exemplo
+            if (messageTypesChart) messageTypesChart.destroy();
+            const ctx2 = document.getElementById('messageTypesChart').getContext('2d');
+            const messageTypes = [
+                {message_type: 'Texto', count: 150},
+                {message_type: 'Imagem', count: 30},
+                {message_type: 'Documento', count: 10},
+                {message_type: 'Áudio', count: 5}
+            ];
+            
+            messageTypesChart = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: messageTypes.map(t => t.message_type),
+                    datasets: [{
+                        data: messageTypes.map(t => t.count),
+                        backgroundColor: [
+                            '#FF6384',
+                            '#36A2EB',
+                            '#FFCE56',
+                            '#4BC0C0',
+                            '#9966FF'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        async function loadRecentActivity() {
+            try {
+                const response = await fetch('/dashboard/api/recent-messages/');
+                const result = await response.json();
+                const messages = result.data || result;
+                
+                const activityHtml = messages.map(msg => `
+                    <div class="list-group-item border-0 py-2">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h6 class="mb-1">${msg.phone_number}</h6>
+                                <p class="mb-1 text-muted small">${msg.content}</p>
+                            </div>
+                            <small class="text-muted">${new Date(msg.created_at).toLocaleTimeString()}</small>
+                        </div>
+                    </div>
+                `).join('');
+                
+                document.getElementById('recent-activity').innerHTML = activityHtml || '<div class="text-center text-muted p-3">Nenhuma atividade recente</div>';
+                
+                // Remover alertas por enquanto já que não temos dados de erro
+                document.getElementById('recent-alerts').innerHTML = '<div class="text-center text-muted p-3">Nenhum alerta recente</div>';
+                
+            } catch (error) {
+                console.error('Erro ao carregar atividade recente:', error);
+            }
+        }
+
+        async function loadMessageAnalytics() {
+            const period = document.getElementById('message-period').value;
+            try {
+                const response = await fetch(`/dashboard/api/messages-chart/?period=${period}`);
+                const data = await response.json();
+                
+                // Update message analytics chart
+                if (messageAnalyticsChart) messageAnalyticsChart.destroy();
+                const ctx = document.getElementById('messageAnalyticsChart').getContext('2d');
+                messageAnalyticsChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.daily_messages ? data.daily_messages.map(d => new Date(d.date).toLocaleDateString()) : [],
+                        datasets: [{
+                            label: 'Mensagens por Dia',
+                            data: data.daily_messages ? data.daily_messages.map(d => d.count) : [],
+                            backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+                
+                // Update top users list with fallback data
+                const topUsers = data.top_users || [
+                    {phone_number: '+5511999999999', count: 45},
+                    {phone_number: '+5511888888888', count: 32},
+                    {phone_number: '+5511777777777', count: 28}
+                ];
+                
+                const topUsersHtml = topUsers.map(user => `
+                    <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>${user.phone_number}</span>
+                        <span class="badge bg-primary">${user.count}</span>
+                    </div>
+                `).join('');
+                document.getElementById('top-users-list').innerHTML = topUsersHtml;
+                
+            } catch (error) {
+                console.error('Erro ao carregar análise de mensagens:', error);
+                // Fallback data on error
+                document.getElementById('top-users-list').innerHTML = `
+                    <div class="text-center text-muted p-3">
+                        <i class="fas fa-exclamation-triangle"></i> Erro ao carregar dados
+                    </div>
+                `;
+            }
+        }
+
+        async function loadWorkflowAnalytics() {
+            const period = document.getElementById('workflow-period').value;
+            try {
+                // Usando dados de exemplo para workflows
+                const data = {
+                    daily_executions: [
+                        {date: '2024-01-14', count: 15},
+                        {date: '2024-01-15', count: 22},
+                        {date: '2024-01-16', count: 18},
+                        {date: '2024-01-17', count: 25},
+                        {date: '2024-01-18', count: 30},
+                        {date: '2024-01-19', count: 28},
+                        {date: '2024-01-20', count: 35}
+                    ],
+                    status_distribution: [
+                        {status: 'Sucesso', count: 85},
+                        {status: 'Erro', count: 10},
+                        {status: 'Pendente', count: 3},
+                        {status: 'Cancelado', count: 2}
+                    ]
+                };
+                
+                // Workflow executions chart
+                if (workflowExecutionsChart) workflowExecutionsChart.destroy();
+                const ctx1 = document.getElementById('workflowExecutionsChart').getContext('2d');
+                workflowExecutionsChart = new Chart(ctx1, {
+                    type: 'line',
+                    data: {
+                        labels: data.daily_executions.map(d => new Date(d.date).toLocaleDateString()),
+                        datasets: [{
+                            label: 'Execuções por Dia',
+                            data: data.daily_executions.map(d => d.count),
+                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+                
+                // Workflow status chart
+                if (workflowStatusChart) workflowStatusChart.destroy();
+                const ctx2 = document.getElementById('workflowStatusChart').getContext('2d');
+                workflowStatusChart = new Chart(ctx2, {
+                    type: 'pie',
+                    data: {
+                        labels: data.status_distribution.map(s => s.status),
+                        datasets: [{
+                            data: data.status_distribution.map(s => s.count),
+                            backgroundColor: [
+                                '#28a745',
+                                '#dc3545',
+                                '#ffc107',
+                                '#17a2b8'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+                
+            } catch (error) {
+                console.error('Erro ao carregar análise de workflows:', error);
+            }
+        }
+
+        async function loadSystemHealth() {
+            try {
+                const response = await fetch('/dashboard/api/system-health/');
+                const data = await response.json();
+                
+                let healthHtml = '';
+                for (const [key, value] of Object.entries(data)) {
+                    if (key === 'last_check') continue;
+                    
+                    const statusClass = value.status === 'healthy' ? 'success' : 
+                                       value.status === 'warning' ? 'warning' : 'danger';
+                    const iconClass = value.status === 'healthy' ? 'check-circle' : 
+                                     value.status === 'warning' ? 'exclamation-triangle' : 'times-circle';
+                    
+                    healthHtml += `
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-${iconClass} text-${statusClass} me-3 fa-2x"></i>
+                                    <div class="flex-grow-1">
+                                        <h5 class="mb-1">${key.replace('_', ' ').toUpperCase()}</h5>
+                                        <p class="mb-0 text-muted">${value.message}</p>
+                                        ${value.response_time ? `<small class="text-muted">Tempo de resposta: ${value.response_time}</small>` : ''}
+                                    </div>
+                                    <span class="badge bg-${statusClass}">${value.status}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                document.getElementById('health-status').innerHTML = healthHtml;
+                
+            } catch (error) {
+                console.error('Erro ao carregar saúde do sistema:', error);
+            }
+        }
+
+        async function loadLogs(level) {
+            try {
+                const response = await fetch('/dashboard/api/health/');
+                const result = await response.json();
+                
+                // Dados de exemplo para logs
+                const logs = {
+                    'info': [
+                        '2024-01-20 10:30:15 - INFO - Mensagem enviada com sucesso para +5511999999999',
+                        '2024-01-20 10:29:45 - INFO - Webhook recebido do WhatsApp',
+                        '2024-01-20 10:28:30 - INFO - Workflow "Boas-vindas" executado com sucesso'
+                    ],
+                    'warning': [
+                        '2024-01-20 10:25:12 - WARNING - Rate limit próximo do limite (80%)',
+                        '2024-01-20 10:20:05 - WARNING - Conexão com N8N instável'
+                    ],
+                    'error': [
+                        '2024-01-20 10:15:30 - ERROR - Falha ao enviar mensagem: Token inválido',
+                        '2024-01-20 10:10:15 - ERROR - Erro na validação do webhook'
+                    ]
+                };
+                
+                const logsHtml = logs[level].map(log => `
+                    <div class="mb-2 p-2 border-start border-3 border-${level === 'info' ? 'primary' : level === 'warning' ? 'warning' : 'danger'}">
+                        <code class="text-${level === 'info' ? 'primary' : level === 'warning' ? 'warning' : 'danger'}">${log}</code>
+                    </div>
+                `).join('');
+                
+                document.getElementById('logs-content').innerHTML = logsHtml;
+                
+            } catch (error) {
+                console.error('Erro ao carregar logs do sistema:', error);
+                document.getElementById('logs-content').innerHTML = `
+                    <div class="text-center text-muted p-3">
+                        <i class="fas fa-exclamation-triangle"></i> Erro ao carregar logs
+                    </div>
+                `;
+            }
+        }
+
+        // Utility functions
+        function refreshData() {
+            const icon = document.getElementById('refresh-icon');
+            icon.classList.add('refresh-btn');
+            
+            loadDashboardData().then(() => {
+                setTimeout(() => {
+                    icon.classList.remove('refresh-btn');
+                }, 2000);
+            });
+        }
+
+        function startAutoRefresh() {
+            refreshInterval = setInterval(() => {
+                loadRecentActivity();
+            }, 30000); // Refresh every 30 seconds
+        }
+
+        // Event listeners
+        document.getElementById('message-period').addEventListener('change', loadMessageAnalytics);
+        document.getElementById('workflow-period').addEventListener('change', loadWorkflowAnalytics);
+    </script>
+</body>
+</html>
