@@ -1,0 +1,252 @@
+{
+  "name": "WhatsApp Advanced Orchestrator",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "whatsapp-webhook",
+        "responseMode": "responseNode"
+      },
+      "name": "WhatsApp Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Extract and validate WhatsApp data\nconst body = $json.body || $json;\nconst phone = body.phone || body.From || body.entry?.[0]?.changes?.[0]?.value?.messages?.[0]?.from || '';\nconst message = body.message || body.Body || body.entry?.[0]?.changes?.[0]?.value?.messages?.[0]?.text?.body || '';\nconst messageType = body.entry?.[0]?.changes?.[0]?.value?.messages?.[0]?.type || 'text';\n\n// Log incoming message\nconsole.log('Incoming WhatsApp message:', { phone, message, messageType });\n\nreturn [{ \n  phone: phone.replace(/\\D/g, ''), // Clean phone number\n  message: message.trim(),\n  messageType,\n  timestamp: new Date().toISOString(),\n  originalPayload: body\n}];"
+      },
+      "name": "Extract & Validate",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.phone }}",
+              "operation": "isNotEmpty"
+            },
+            {
+              "value1": "={{ $json.message }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://backend:8000/api/webhook/whatsapp",
+        "responseFormat": "json",
+        "jsonParameters": true,
+        "body": "={{ { \"phone\": $json.phone, \"message\": $json.message, \"timestamp\": $json.timestamp } }}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "name": "Process Message",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [960, 200]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Log analytics data\nconst response = $json;\nconst analytics = {\n  phone: $('Extract & Validate').item.json.phone,\n  message: $('Extract & Validate').item.json.message,\n  conversationState: response.conversation_state,\n  responseTime: new Date() - new Date($('Extract & Validate').item.json.timestamp),\n  success: !!response.message,\n  timestamp: new Date().toISOString()\n};\n\nconsole.log('Analytics:', analytics);\n\nreturn [{ analytics, response }];"
+      },
+      "name": "Analytics Logger",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1200, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.response.conversation_state }}",
+              "value2": "NODE_7_PAYMENT"
+            }
+          ]
+        }
+      },
+      "name": "Check Payment State",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1440, 200]
+    },
+    {
+      "parameters": {
+        "url": "http://backend:8000/api/payments/process",
+        "responseFormat": "json",
+        "jsonParameters": true,
+        "body": "={{ { \"phone\": $('Extract & Validate').item.json.phone, \"amount\": $json.response.transfer_data?.amount } }}"
+      },
+      "name": "Process Payment",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [1680, 100]
+    },
+    {
+      "parameters": {
+        "url": "http://backend:8000/api/notifications/send",
+        "responseFormat": "json",
+        "jsonParameters": true,
+        "body": "={{ { \"phone\": $('Extract & Validate').item.json.phone, \"type\": 'payment_initiated', \"data\": $json } }}"
+      },
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [1920, 100]
+    },
+    {
+      "parameters": {
+        "responseBody": "={{ $('Analytics Logger').item.json.response }}"
+      },
+      "name": "Success Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1440, 300]
+    },
+    {
+      "parameters": {
+        "responseBody": "={{ { \"error\": \"Invalid input data\", \"phone\": $('Extract & Validate').item.json.phone, \"message\": $('Extract & Validate').item.json.message } }}",
+        "responseCode": 400
+      },
+      "name": "Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [720, 500]
+    },
+    {
+      "parameters": {
+        "url": "http://backend:8000/api/analytics/log",
+        "responseFormat": "json",
+        "jsonParameters": true,
+        "body": "={{ $json.analytics }}",
+        "options": {
+          "ignoreResponseCode": true
+        }
+      },
+      "name": "Log Analytics",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [1200, 400]
+    }
+  ],
+  "connections": {
+    "WhatsApp Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract & Validate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract & Validate": {
+      "main": [
+        [
+          {
+            "node": "Validate Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Input": {
+      "main": [
+        [
+          {
+            "node": "Process Message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Message": {
+      "main": [
+        [
+          {
+            "node": "Analytics Logger",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analytics Logger": {
+      "main": [
+        [
+          {
+            "node": "Check Payment State",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Log Analytics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Payment State": {
+      "main": [
+        [
+          {
+            "node": "Process Payment",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Payment": {
+      "main": [
+        [
+          {
+            "node": "Send Notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Notification": {
+      "main": [
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

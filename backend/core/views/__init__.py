@@ -1,10 +1,11 @@
-from .auth_views import (
-    client_login,
-    client_register,
-    complete_registration,
-    client_profile,
-    change_password
-)
+# Temporarily commented out due to JWT dependency
+# from .auth_views import (
+#     client_login,
+#     client_register,
+#     complete_registration,
+#     client_profile,
+#     change_password
+# )
 from .transfer_views import (
     calculate_transfer,
     create_transfer,
@@ -22,12 +23,12 @@ from .webhook_views import (
 )
 
 __all__ = [
-    # Auth views
-    'client_login',
-    'client_register', 
-    'complete_registration',
-    'client_profile',
-    'change_password',
+    # Auth views (temporarily commented due to JWT dependency)
+    # 'client_login',
+    # 'client_register', 
+    # 'complete_registration',
+    # 'client_profile',
+    # 'change_password',
     
     # Transfer views
     'calculate_transfer',

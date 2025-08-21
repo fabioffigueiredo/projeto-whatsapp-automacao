@@ -1266,3 +1266,374 @@ ERROR 2025-08-20 21:54:08,789 whatsapp 17944 30716 Failed to send WhatsApp messa
 INFO 2025-08-20 21:54:08,789 webhook_views 17944 30716 WhatsApp response sent to 551137641: {'error': '401 Client Error: Unauthorized for url: https://graph.facebook.com/v18.0/123456789/messages', 'success': False}
 INFO 2025-08-20 21:54:08,790 basehttp 17944 30716 "POST /api/webhook/ HTTP/1.1" 200 20
 INFO 2025-08-20 21:54:11,818 basehttp 17944 41812 "GET /api/conversation/last-response/551137641/ HTTP/1.1" 200 131
+WARNING 2025-08-20 22:00:44,595 log 17944 39108 Not Found: /
+WARNING 2025-08-20 22:00:44,596 basehttp 17944 39108 "GET /?ide_webview_request_time=1755734430612 HTTP/1.1" 404 2343
+WARNING 2025-08-20 22:00:44,750 log 17944 39108 Not Found: /@vite/client
+WARNING 2025-08-20 22:00:44,751 basehttp 17944 39108 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 22:02:17,079 autoreload 17944 26028 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\__init__.py changed, reloading.
+INFO 2025-08-20 22:02:17,846 autoreload 42300 38644 Watching for file changes with StatReloader
+INFO 2025-08-20 22:08:03,949 autoreload 42300 38644 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\__init__.py changed, reloading.
+INFO 2025-08-20 22:08:04,553 autoreload 6064 9900 Watching for file changes with StatReloader
+INFO 2025-08-20 22:08:11,755 autoreload 6064 9900 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\__init__.py changed, reloading.
+INFO 2025-08-20 22:08:12,343 autoreload 3624 38824 Watching for file changes with StatReloader
+INFO 2025-08-20 22:08:50,622 autoreload 3624 38824 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 22:08:51,238 autoreload 44448 42096 Watching for file changes with StatReloader
+INFO 2025-08-20 22:08:58,457 autoreload 44448 42096 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\__init__.py changed, reloading.
+INFO 2025-08-20 22:08:59,056 autoreload 44072 42624 Watching for file changes with StatReloader
+INFO 2025-08-20 22:09:47,579 autoreload 44072 42624 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:09:48,178 autoreload 35024 15052 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:03,825 autoreload 35024 15052 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:04,456 autoreload 27796 23284 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:09,486 autoreload 27796 23284 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:10,102 autoreload 42132 26236 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:16,204 autoreload 42132 26236 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:16,807 autoreload 43596 44792 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:20,832 autoreload 43596 44792 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:21,497 autoreload 45388 28912 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:27,631 autoreload 45388 28912 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:28,275 autoreload 17012 18692 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:33,388 autoreload 17012 18692 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:34,095 autoreload 37676 38256 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:39,158 autoreload 37676 38256 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:39,781 autoreload 24504 40724 Watching for file changes with StatReloader
+INFO 2025-08-20 22:10:44,858 autoreload 24504 40724 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\views\transfer_views.py changed, reloading.
+INFO 2025-08-20 22:10:45,472 autoreload 46316 42392 Watching for file changes with StatReloader
+WARNING 2025-08-20 22:10:52,975 whatsapp 10 124804613766016 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:10:55,210 whatsapp 10 129406006913920 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:10:57,482 whatsapp 10 128654348454784 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:10:59,872 whatsapp 10 137796172000128 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:11:02,707 whatsapp 10 126602657446784 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:11:06,293 whatsapp 11 132822725950336 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:11:11,515 whatsapp 10 139458267736960 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:11:19,953 whatsapp 11 132127488117632 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:11:34,947 whatsapp 10 133635675966336 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 22:11:37,102 autoreload 46316 42392 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 22:11:37,773 autoreload 10420 43544 Watching for file changes with StatReloader
+INFO 2025-08-20 22:11:55,510 autoreload 10420 43544 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\services\conversation_handler.py changed, reloading.
+INFO 2025-08-20 22:11:56,164 autoreload 45484 10232 Watching for file changes with StatReloader
+WARNING 2025-08-20 22:12:02,681 whatsapp 10 139877018368896 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:04,923 whatsapp 10 133614986689408 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:07,174 whatsapp 10 132913403800448 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:09,502 whatsapp 11 134791939140480 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:11,800 whatsapp 10 136418060245888 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:14,539 whatsapp 10 136970951568256 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:18,132 whatsapp 10 138281684884352 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:23,279 whatsapp 10 136812451560320 WhatsApp credentials not configured. Using mock mode.
+WARNING 2025-08-20 22:12:31,599 whatsapp 10 139160288295808 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 22:12:41,300 autoreload 45484 10232 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\__init__.py changed, reloading.
+INFO 2025-08-20 22:12:41,929 autoreload 45096 43496 Watching for file changes with StatReloader
+WARNING 2025-08-20 22:12:46,480 whatsapp 11 137818031065984 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 22:12:49,119 autoreload 45096 43496 C:\Users\Fabio\Desktop\projetos\projeto-whatsapp-automacao\backend\core\urls\__init__.py changed, reloading.
+INFO 2025-08-20 22:12:49,762 autoreload 30124 992 Watching for file changes with StatReloader
+WARNING 2025-08-20 22:12:57,073 whatsapp 10 123275801480064 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 22:12:58,671 autoreload 11 139771074927488 Watching for file changes with StatReloader
+WARNING 2025-08-20 22:12:58,938 whatsapp 11 139771074927488 WhatsApp credentials not configured. Using mock mode.
+INFO 2025-08-20 22:13:00,570 basehttp 11 139770919384768 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:13:30,654 basehttp 11 139770919384768 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:13:42,720 whatsapp 11 139770919384768 MOCK: Sending to 5511111111111: Por favor, digite seu nome completo (mínimo 3 caracteres):
+INFO 2025-08-20 22:13:42,721 webhook_views 11 139770919384768 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_58'}], 'mock': True}
+INFO 2025-08-20 22:13:42,722 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:43,735 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 135
+INFO 2025-08-20 22:13:43,799 whatsapp 11 139770910992064 MOCK: Sending to 5511111111111: Obrigado, João Silva! 👋
+
+Agora, escolha um nome de usuário para sua conta:
+(apenas letras, números e underscore)
+INFO 2025-08-20 22:13:43,800 webhook_views 11 139770910992064 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_112'}], 'mock': True}
+INFO 2025-08-20 22:13:43,801 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:44,814 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:13:44,896 whatsapp 11 139770919384768 MOCK: Sending to 5511111111111: Perfeito! ✅
+
+Seu usuário 'joao123' foi criado.
+
+Agora você precisa completar seu cadastro em nosso site seguro:
+🔗 https://xps247.com/cadastro
+
+Quando terminar, digite 'Pronto' para continuarmos.
+INFO 2025-08-20 22:13:44,897 webhook_views 11 139770919384768 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_194'}], 'mock': True}
+INFO 2025-08-20 22:13:44,897 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:45,910 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:45,969 whatsapp 11 139770910992064 MOCK: Sending to 5511111111111: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:45,969 webhook_views 11 139770910992064 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_100'}], 'mock': True}
+INFO 2025-08-20 22:13:45,970 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:46,981 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:47,041 whatsapp 11 139770919384768 MOCK: Sending to 5511111111111: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:47,041 webhook_views 11 139770919384768 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_100'}], 'mock': True}
+INFO 2025-08-20 22:13:47,042 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:48,054 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:48,119 whatsapp 11 139770910992064 MOCK: Sending to 5511111111111: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:48,119 webhook_views 11 139770910992064 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_100'}], 'mock': True}
+INFO 2025-08-20 22:13:48,120 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:49,133 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:49,205 whatsapp 11 139770919384768 MOCK: Sending to 5511111111111: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:49,205 webhook_views 11 139770919384768 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_100'}], 'mock': True}
+INFO 2025-08-20 22:13:49,206 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:50,219 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:50,276 whatsapp 11 139770910992064 MOCK: Sending to 5511111111111: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:50,277 webhook_views 11 139770910992064 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_100'}], 'mock': True}
+INFO 2025-08-20 22:13:50,278 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:51,290 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:51,347 whatsapp 11 139770919384768 MOCK: Sending to 5511111111111: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:51,348 webhook_views 11 139770919384768 WhatsApp response sent to 5511111111111: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511111111111', 'wa_id': '5511111111111'}], 'messages': [{'id': 'mock_msg_5511111111111_100'}], 'mock': True}
+INFO 2025-08-20 22:13:51,349 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:52,359 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511111111111/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:54,445 whatsapp 11 139770910992064 MOCK: Sending to 5511222222222: Olá! Bem-vindo(a) à XPS247! 🇺🇸➡️🇧🇷
+
+Sua forma rápida e segura de enviar dinheiro dos EUA para o Brasil.
+
+Para começarmos e garantir sua segurança, precisamos realizar um breve cadastro.
+Vamos lá?
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:13:54,446 webhook_views 11 139770910992064 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_238'}], 'mock': True}
+INFO 2025-08-20 22:13:54,446 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:55,458 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:13:55,526 whatsapp 11 139770919384768 MOCK: Sending to 5511222222222: Ótimo! 📝
+
+Vamos começar o seu cadastro.
+Para começar, me diga seu nome completo:
+INFO 2025-08-20 22:13:55,526 webhook_views 11 139770919384768 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_80'}], 'mock': True}
+INFO 2025-08-20 22:13:55,527 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:56,539 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 135
+INFO 2025-08-20 22:13:56,605 whatsapp 11 139770910992064 MOCK: Sending to 5511222222222: Obrigado, usuario123! 👋
+
+Agora, escolha um nome de usuário para sua conta:
+(apenas letras, números e underscore)
+INFO 2025-08-20 22:13:56,606 webhook_views 11 139770910992064 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_112'}], 'mock': True}
+INFO 2025-08-20 22:13:56,607 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:57,619 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:13:57,715 whatsapp 11 139770919384768 MOCK: Sending to 5511222222222: Perfeito! ✅
+
+Seu usuário 'senha123' foi criado.
+
+Agora você precisa completar seu cadastro em nosso site seguro:
+🔗 https://xps247.com/cadastro
+
+Quando terminar, digite 'Pronto' para continuarmos.
+INFO 2025-08-20 22:13:57,716 webhook_views 11 139770919384768 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_195'}], 'mock': True}
+INFO 2025-08-20 22:13:57,716 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:58,729 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:58,792 whatsapp 11 139770910992064 MOCK: Sending to 5511222222222: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:58,792 webhook_views 11 139770910992064 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_100'}], 'mock': True}
+INFO 2025-08-20 22:13:58,793 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:13:59,804 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:13:59,870 whatsapp 11 139770919384768 MOCK: Sending to 5511222222222: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:13:59,870 webhook_views 11 139770919384768 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_100'}], 'mock': True}
+INFO 2025-08-20 22:13:59,871 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:00,730 basehttp 11 139770910992064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:14:00,882 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:14:00,937 whatsapp 11 139770910992064 MOCK: Sending to 5511222222222: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:14:00,937 webhook_views 11 139770910992064 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_100'}], 'mock': True}
+INFO 2025-08-20 22:14:00,938 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:01,949 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:14:02,003 whatsapp 11 139770919384768 MOCK: Sending to 5511222222222: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:14:02,004 webhook_views 11 139770919384768 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_100'}], 'mock': True}
+INFO 2025-08-20 22:14:02,004 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:03,016 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:14:03,071 whatsapp 11 139770910992064 MOCK: Sending to 5511222222222: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:14:03,071 webhook_views 11 139770910992064 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_100'}], 'mock': True}
+INFO 2025-08-20 22:14:03,072 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:04,083 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:14:04,153 whatsapp 11 139770919384768 MOCK: Sending to 5511222222222: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:14:04,154 webhook_views 11 139770919384768 WhatsApp response sent to 5511222222222: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511222222222', 'wa_id': '5511222222222'}], 'messages': [{'id': 'mock_msg_5511222222222_100'}], 'mock': True}
+INFO 2025-08-20 22:14:04,154 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:05,166 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511222222222/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:14:07,252 whatsapp 11 139770919384768 MOCK: Sending to 5511333333333: Olá! Bem-vindo(a) à XPS247! 🇺🇸➡️🇧🇷
+
+Sua forma rápida e segura de enviar dinheiro dos EUA para o Brasil.
+
+Para começarmos e garantir sua segurança, precisamos realizar um breve cadastro.
+Vamos lá?
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:07,253 webhook_views 11 139770919384768 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_238'}], 'mock': True}
+INFO 2025-08-20 22:14:07,253 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:08,266 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:08,339 whatsapp 11 139770910992064 MOCK: Sending to 5511333333333: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:08,339 webhook_views 11 139770910992064 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_79'}], 'mock': True}
+INFO 2025-08-20 22:14:08,340 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:09,352 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:09,425 whatsapp 11 139770919384768 MOCK: Sending to 5511333333333: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:09,425 webhook_views 11 139770919384768 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_79'}], 'mock': True}
+INFO 2025-08-20 22:14:09,426 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:10,438 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:10,494 whatsapp 11 139770910992064 MOCK: Sending to 5511333333333: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:10,494 webhook_views 11 139770910992064 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_79'}], 'mock': True}
+INFO 2025-08-20 22:14:10,495 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:11,508 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:11,565 whatsapp 11 139770919384768 MOCK: Sending to 5511333333333: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:11,565 webhook_views 11 139770919384768 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_79'}], 'mock': True}
+INFO 2025-08-20 22:14:11,566 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:12,578 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:12,647 whatsapp 11 139770910992064 MOCK: Sending to 5511333333333: Ótimo! 📝
+
+Vamos começar o seu cadastro.
+Para começar, me diga seu nome completo:
+INFO 2025-08-20 22:14:12,647 webhook_views 11 139770910992064 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_80'}], 'mock': True}
+INFO 2025-08-20 22:14:12,648 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:13,660 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 135
+INFO 2025-08-20 22:14:13,743 whatsapp 11 139770919384768 MOCK: Sending to 5511333333333: Obrigado, maria@test.com! 👋
+
+Agora, escolha um nome de usuário para sua conta:
+(apenas letras, números e underscore)
+INFO 2025-08-20 22:14:13,743 webhook_views 11 139770919384768 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_116'}], 'mock': True}
+INFO 2025-08-20 22:14:13,744 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:14,756 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:14,816 whatsapp 11 139770910992064 MOCK: Sending to 5511333333333: O nome de usuário deve conter apenas letras, números e underscore. Tente novamente:
+INFO 2025-08-20 22:14:14,816 webhook_views 11 139770910992064 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_83'}], 'mock': True}
+INFO 2025-08-20 22:14:14,817 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:15,830 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:15,886 whatsapp 11 139770919384768 MOCK: Sending to 5511333333333: O nome de usuário deve ter pelo menos 3 caracteres. Tente novamente:
+INFO 2025-08-20 22:14:15,886 webhook_views 11 139770919384768 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_68'}], 'mock': True}
+INFO 2025-08-20 22:14:15,887 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:16,899 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:16,955 whatsapp 11 139770910992064 MOCK: Sending to 5511333333333: O nome de usuário deve ter pelo menos 3 caracteres. Tente novamente:
+INFO 2025-08-20 22:14:16,955 webhook_views 11 139770910992064 WhatsApp response sent to 5511333333333: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511333333333', 'wa_id': '5511333333333'}], 'messages': [{'id': 'mock_msg_5511333333333_68'}], 'mock': True}
+INFO 2025-08-20 22:14:16,956 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:17,968 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511333333333/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:20,039 whatsapp 11 139770919384768 MOCK: Sending to 5511444444444: Olá! Bem-vindo(a) à XPS247! 🇺🇸➡️🇧🇷
+
+Sua forma rápida e segura de enviar dinheiro dos EUA para o Brasil.
+
+Para começarmos e garantir sua segurança, precisamos realizar um breve cadastro.
+Vamos lá?
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:20,039 webhook_views 11 139770919384768 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_238'}], 'mock': True}
+INFO 2025-08-20 22:14:20,040 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:21,052 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:21,107 whatsapp 11 139770910992064 MOCK: Sending to 5511444444444: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:21,107 webhook_views 11 139770910992064 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_79'}], 'mock': True}
+INFO 2025-08-20 22:14:21,108 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:22,121 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:22,195 whatsapp 11 139770919384768 MOCK: Sending to 5511444444444: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:22,195 webhook_views 11 139770919384768 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_79'}], 'mock': True}
+INFO 2025-08-20 22:14:22,196 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:23,207 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:23,280 whatsapp 11 139770910992064 MOCK: Sending to 5511444444444: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:23,280 webhook_views 11 139770910992064 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_79'}], 'mock': True}
+INFO 2025-08-20 22:14:23,281 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:24,293 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 131
+INFO 2025-08-20 22:14:24,377 whatsapp 11 139770919384768 MOCK: Sending to 5511444444444: Ótimo! 📝
+
+Vamos começar o seu cadastro.
+Para começar, me diga seu nome completo:
+INFO 2025-08-20 22:14:24,378 webhook_views 11 139770919384768 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_80'}], 'mock': True}
+INFO 2025-08-20 22:14:24,378 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:25,391 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 135
+INFO 2025-08-20 22:14:25,461 whatsapp 11 139770910992064 MOCK: Sending to 5511444444444: Obrigado, pedro@email.com! 👋
+
+Agora, escolha um nome de usuário para sua conta:
+(apenas letras, números e underscore)
+INFO 2025-08-20 22:14:25,461 webhook_views 11 139770910992064 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_117'}], 'mock': True}
+INFO 2025-08-20 22:14:25,462 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:26,474 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:26,533 whatsapp 11 139770919384768 MOCK: Sending to 5511444444444: O nome de usuário deve conter apenas letras, números e underscore. Tente novamente:
+INFO 2025-08-20 22:14:26,533 webhook_views 11 139770919384768 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_83'}], 'mock': True}
+INFO 2025-08-20 22:14:26,534 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:27,548 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:27,605 whatsapp 11 139770910992064 MOCK: Sending to 5511444444444: O nome de usuário deve ter pelo menos 3 caracteres. Tente novamente:
+INFO 2025-08-20 22:14:27,605 webhook_views 11 139770910992064 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_68'}], 'mock': True}
+INFO 2025-08-20 22:14:27,606 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:28,619 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:28,692 whatsapp 11 139770919384768 MOCK: Sending to 5511444444444: O nome de usuário deve ter pelo menos 3 caracteres. Tente novamente:
+INFO 2025-08-20 22:14:28,692 webhook_views 11 139770919384768 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_68'}], 'mock': True}
+INFO 2025-08-20 22:14:28,693 basehttp 11 139770919384768 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:29,705 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:29,777 whatsapp 11 139770910992064 MOCK: Sending to 5511444444444: O nome de usuário deve ter pelo menos 3 caracteres. Tente novamente:
+INFO 2025-08-20 22:14:29,777 webhook_views 11 139770910992064 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_68'}], 'mock': True}
+INFO 2025-08-20 22:14:29,778 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:30,791 basehttp 11 139770919384768 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 90
+INFO 2025-08-20 22:14:30,796 basehttp 11 139770919384768 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:14:30,872 whatsapp 11 139770902599360 MOCK: Sending to 5511444444444: Perfeito! ✅
+
+Seu usuário '150' foi criado.
+
+Agora você precisa completar seu cadastro em nosso site seguro:
+🔗 https://xps247.com/cadastro
+
+Quando terminar, digite 'Pronto' para continuarmos.
+INFO 2025-08-20 22:14:30,872 webhook_views 11 139770902599360 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_190'}], 'mock': True}
+INFO 2025-08-20 22:14:30,873 basehttp 11 139770902599360 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:31,886 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 92
+INFO 2025-08-20 22:14:31,940 whatsapp 11 139770910992064 MOCK: Sending to 5511444444444: ⏳ Aguardando você finalizar o cadastro no site.
+
+Quando terminar, digite "Pronto" para continuarmos.
+INFO 2025-08-20 22:14:31,940 webhook_views 11 139770910992064 WhatsApp response sent to 5511444444444: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511444444444', 'wa_id': '5511444444444'}], 'messages': [{'id': 'mock_msg_5511444444444_100'}], 'mock': True}
+INFO 2025-08-20 22:14:31,941 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:32,952 basehttp 11 139770902599360 "GET /api/conversation/last-response/5511444444444/ HTTP/1.1" 200 92
+ERROR 2025-08-20 22:14:41,504 conversation_handler 11 139770902599360 Erro ao calcular transferência: 'TransferService' object has no attribute 'calculate_transfer'
+INFO 2025-08-20 22:14:41,527 whatsapp 11 139770902599360 MOCK: Sending to 5511999999999: ❌ Erro ao calcular valores. Tente novamente com um valor válido.
+INFO 2025-08-20 22:14:41,527 webhook_views 11 139770902599360 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:14:41,528 basehttp 11 139770902599360 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:42,540 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 111
+ERROR 2025-08-20 22:14:42,573 conversation_handler 11 139770910992064 Erro ao calcular transferência: 'TransferService' object has no attribute 'calculate_transfer'
+INFO 2025-08-20 22:14:42,596 whatsapp 11 139770910992064 MOCK: Sending to 5511999999999: ❌ Erro ao calcular valores. Tente novamente com um valor válido.
+INFO 2025-08-20 22:14:42,597 webhook_views 11 139770910992064 WhatsApp response sent to 5511999999999: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511999999999', 'wa_id': '5511999999999'}], 'messages': [{'id': 'mock_msg_5511999999999_64'}], 'mock': True}
+INFO 2025-08-20 22:14:42,597 basehttp 11 139770910992064 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:43,612 basehttp 11 139770902599360 "GET /api/conversation/last-response/5511999999999/ HTTP/1.1" 200 111
+INFO 2025-08-20 22:14:48,782 whatsapp 11 139770902599360 MOCK: Sending to 5511888888888: Por favor, escolha uma opção válida:
+
+1 - Sim, quero me cadastrar
+2 - Não agora
+INFO 2025-08-20 22:14:48,783 webhook_views 11 139770902599360 WhatsApp response sent to 5511888888888: {'messaging_product': 'whatsapp', 'contacts': [{'input': '5511888888888', 'wa_id': '5511888888888'}], 'messages': [{'id': 'mock_msg_5511888888888_79'}], 'mock': True}
+INFO 2025-08-20 22:14:48,784 basehttp 11 139770902599360 "POST /api/webhook/ HTTP/1.1" 200 20
+INFO 2025-08-20 22:14:49,798 basehttp 11 139770910992064 "GET /api/conversation/last-response/5511888888888/ HTTP/1.1" 200 131
+WARNING 2025-08-20 22:14:55,251 log 11 139770910992064 Not Found: /
+WARNING 2025-08-20 22:14:55,252 basehttp 11 139770910992064 "GET /?ide_webview_request_time=1755738895237 HTTP/1.1" 404 2343
+WARNING 2025-08-20 22:14:55,369 log 11 139770910992064 Not Found: /@vite/client
+WARNING 2025-08-20 22:14:55,370 basehttp 11 139770910992064 "GET /@vite/client HTTP/1.1" 404 2358
+INFO 2025-08-20 22:15:00,880 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:15:30,964 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:16:01,036 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:16:31,127 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:17:01,213 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:17:31,296 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-20 22:18:01,394 basehttp 11 139770902599360 "GET /admin/ HTTP/1.1" 302 0
