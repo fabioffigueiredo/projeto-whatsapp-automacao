@@ -12,7 +12,7 @@
 ### 📋 Passo a Passo
 
 1. **Acesse o Facebook Developer Console**
-   - URL: https://developers.facebook.com/apps/1204751104747318/whatsapp-business/wa-dev-console/
+   - URL: https://developers.facebook.com/apps/id/whatsapp-business/wa-dev-console/
    - Faça login com sua conta Facebook
 
 2. **Navegue para WhatsApp Business**
@@ -24,7 +24,7 @@
    - Ou seção "To" field
 
 4. **Adicione o número**
-   - No campo "To", digite: `+5521964641561`
+   - No campo "To", digite: `+552199999999999`
    - Clique em "Add phone number" ou botão similar
    - ✅ Confirme que o número foi adicionado
 
@@ -37,7 +37,7 @@
 ## 📱 Números para Adicionar
 
 ```
-+5521964641561  ← Seu número principal
++5521 ← Seu número principal
 +5511999999999  ← Número adicional (se necessário)
 ```
 
@@ -46,7 +46,7 @@
 ## ⚠️ Pontos Importantes
 
 ### ✅ Formato Correto
-- ✅ `+5521964641561` (com + e código do país)
+- ✅ `+552199999999999` (com + e código do país)
 - ❌ `21964641561` (sem código do país)
 - ❌ `5521964641561` (sem +)
 
@@ -130,9 +130,9 @@ python test_phone_messages.py
 
 ## 📞 Contatos de Teste
 
-**Número WhatsApp Business:** 15551766425  
-**Seu número:** +5521964641561  
-**App ID:** 1204751104747318  
+**Número WhatsApp Business:** 999999999999 
+**Seu número:** +55219999999999
+**App ID:** 1288787897897897 
 
 ---
 
