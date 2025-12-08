@@ -18,7 +18,7 @@ load_dotenv('backend/.env')
 # Configurações
 BASE_URL = "http://127.0.0.1:8001"
 WEBHOOK_URL = f"{BASE_URL}/api/webhook/"
-TEST_PHONE = "+5521964641561"  # Número de teste
+TEST_PHONE = "n telefone"  # Número de teste
 WHATSAPP_APP_SECRET = os.getenv('WHATSAPP_APP_SECRET')
 
 def generate_webhook_signature(payload, secret):
