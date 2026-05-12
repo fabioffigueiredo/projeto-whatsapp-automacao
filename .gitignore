@@ -256,3 +256,54 @@ simulador_*.py
 .directory
 .Trash-*
 .nfs*
+
+# ===========================================================================
+# SEGURANCA - Arquivos que NUNCA devem ser versionados
+# ===========================================================================
+
+# Variaveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+!.env.template
+*.env
+secrets.json
+secrets.yaml
+secrets.yml
+
+# Bancos de dados locais
+*.sqlite3
+*.sqlite
+*.db
+db.sqlite3-journal
+
+# Chaves e certificados
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+id_rsa
+id_rsa.pub
+id_ed25519
+
+# Arquivos de credenciais de cloud
+.aws/
+.azure/
+gcloud/
+credentials.json
+service_account*.json
+
+# Arquivos de sistema macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Logs que podem conter dados sensiveis
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
